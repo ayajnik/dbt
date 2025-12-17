@@ -1,0 +1,239 @@
+==================== 2025-12-17T21:48:08.745593Z | 019b2e48-e88b-7d80-9548-996b058f02bd ====================
+Installing dbt project and profile setup
+21:48:08.795170 [info ]: Warning A dbt_project.yml already exists in this directory; skipping sample project creation.
+21:48:08.813460 [info ]: Info Created .vscode/extensions.json with dbt extension recommendation
+21:48:08.831134 [info ]: Info Setting up your profile...
+21:48:08.864579 [info ]: Info Creating new profile...
+21:48:28.795644 [info ]: No dbt_cloud.yml found - proceeding without cloud pre-population
+21:51:52.336056 [info ]: Success Profile written to C:\Users\ayush\.dbt\profiles.yml
+21:51:52.340530 [info ]: Validating profile inputs, adapters, and connection
+
+dbt-fusion 2.0.0-preview.86
+21:51:52.361463 [info ]: Started loading project
+   Loading ~/.dbt/profiles.yml
+21:51:52.483619 [info ]: Finished loading project [  0.12s]
+21:51:52.492902 [info ]: Started debugging
+21:51:52.494878 [info ]: Debugging profile: dev
+21:51:52.497678 [info ]: Debugging dbt version: 2.0.0-preview.86
+21:51:52.499333 [info ]: Debugging platform: windows x86_64 (windows)
+21:51:52.500877 [info ]: Debugging adapter type: snowflake (remote)
+21:51:52.587556 [info ]: Debugging dependencies:
+  git: OK
+21:51:52.598122 [info ]: Debugging connection:
+  "account": "WWA73851",
+  "user": "ayush_yajnik",
+  "database": "analytics",
+  "warehouse": "transforming",
+  "schema": "dbt_ayajnik"
+21:52:13.713782 [info ]: Finished debugging [ 21.22s]
+21:52:13.727780 [error]: dbt1011: [Snowflake] 261004 (08004): failed to auth for unknown reason. HTTP: 404, URL: https://WWA73851.snowflakecomputing.com:443/session/v1/login-request?databaseName=analytics&requestId=37a7a3b1-3f5e-4f27-7d5e-36f5e79665cd&request_guid=f486119a-6f59-4a5c-67c5-f72b6eac3371&schemaName=dbt_ayajnik&warehouse=transforming
+21:52:14.409045 [info ]: 
+==================== Execution Summary =====================
+Finished 'init' with 1 error for target 'dev' [4m 6s]
+==================== 2025-12-17T21:53:37.089080Z | 019b2e4d-eb37-72b1-a39e-f429c2ec014c ====================
+Installing dbt project and profile setup
+21:53:37.097032 [info ]: Warning A dbt_project.yml already exists in this directory; skipping sample project creation.
+21:53:37.099791 [info ]: Info dbt extension already recommended in .vscode/extensions.json, skipping
+21:53:37.100797 [info ]: Info Setting up your profile...
+21:53:37.129616 [info ]: Profile 'default' already exists. You can choose how to proceed.
+21:54:11.271326 [info ]: Info Creating new profile...
+21:54:12.553857 [info ]: No dbt_cloud.yml found - proceeding without cloud pre-population
+21:55:01.552092 [info ]: Info Backup created at C:\Users\ayush\.dbt\profiles.yml.bkp
+21:55:01.555006 [info ]: Success Profile written to C:\Users\ayush\.dbt\profiles.yml
+21:55:01.555244 [info ]: Validating profile inputs, adapters, and connection
+
+dbt-fusion 2.0.0-preview.86
+21:55:01.556245 [info ]: Started loading project
+   Loading ~/.dbt/profiles.yml
+21:55:01.576601 [info ]: Finished loading project [  0.02s]
+21:55:01.577176 [info ]: Started debugging
+21:55:01.577305 [info ]: Debugging profile: dev
+21:55:01.577599 [info ]: Debugging dbt version: 2.0.0-preview.86
+21:55:01.578078 [info ]: Debugging platform: windows x86_64 (windows)
+21:55:01.578553 [info ]: Debugging adapter type: snowflake (remote)
+21:55:01.643998 [info ]: Debugging dependencies:
+  git: OK
+21:55:01.645546 [info ]: Debugging connection:
+  "account": "EGNDRWE",
+  "user": "ayushyajnik",
+  "database": "analytics",
+  "warehouse": "transforming",
+  "schema": "dbt_ayajnik"
+21:55:02.498441 [info ]: Finished debugging [  0.92s]
+21:55:02.500754 [error]: dbt1011: [Snowflake] 261004 (08004): failed to auth for unknown reason. HTTP: 404, URL: https://EGNDRWE.snowflakecomputing.com:443/session/v1/login-request?databaseName=analytics&requestId=7a70ea72-1964-47df-570d-fef037c15270&request_guid=726c05cb-7f5f-4430-55be-7459b90f4253&schemaName=dbt_ayajnik&warehouse=transforming
+21:55:03.162979 [info ]: 
+==================== Execution Summary =====================
+Finished 'init' with 1 error for target 'dev' [1m 26s]
+==================== 2025-12-17T21:56:13.881580Z | 019b2e50-4fb2-73f2-8aac-5f62a7e3a1e2 ====================
+Installing dbt project and profile setup
+21:56:13.891650 [info ]: Warning A dbt_project.yml already exists in this directory; skipping sample project creation.
+21:56:13.894183 [info ]: Info dbt extension already recommended in .vscode/extensions.json, skipping
+21:56:13.895632 [info ]: Info Setting up your profile...
+21:56:13.901149 [info ]: Profile 'default' already exists. You can choose how to proceed.
+21:56:16.383253 [info ]: Info Creating new profile...
+21:56:17.799396 [info ]: No dbt_cloud.yml found - proceeding without cloud pre-population
+21:57:14.372869 [info ]: Info Backup created at C:\Users\ayush\.dbt\profiles.yml.bkp
+21:57:14.373883 [info ]: Success Profile written to C:\Users\ayush\.dbt\profiles.yml
+21:57:14.374277 [info ]: Validating profile inputs, adapters, and connection
+
+dbt-fusion 2.0.0-preview.86
+21:57:14.375684 [info ]: Started loading project
+   Loading ~/.dbt/profiles.yml
+21:57:14.429895 [info ]: Finished loading project [  0.05s]
+21:57:14.430590 [info ]: Started debugging
+21:57:14.430912 [info ]: Debugging profile: dev
+21:57:14.431403 [info ]: Debugging dbt version: 2.0.0-preview.86
+21:57:14.431806 [info ]: Debugging platform: windows x86_64 (windows)
+21:57:14.433442 [info ]: Debugging adapter type: snowflake (remote)
+21:57:14.523034 [info ]: Debugging dependencies:
+  git: OK
+21:57:14.523803 [info ]: Debugging connection:
+  "account": "EGNDRWE-WWA73851",
+  "user": "ayushyajnik",
+  "database": "analytics",
+  "warehouse": "transforming",
+  "schema": "dbt_ayajnik"
+21:57:15.324890 [debug]: Query executed on node unknown:
+select 1 as id
+21:57:15.385504 [info ]: Debugging connection test: OK
+21:57:15.388922 [info ]: Debugged All checks passed!
+21:57:15.391439 [info ]: Finished debugging [  0.96s]
+21:57:15.895567 [info ]: 
+==================== Execution Summary =====================
+Finished 'init' successfully for target 'dev' [1m 2s]
+==================== 2025-12-17T22:01:18.347399Z | 019b2e54-f501-7ad1-b65a-a92ba02a1759 ====================
+dbt-fusion 2.0.0-preview.86
+22:01:18.349944 [info ]: Started loading project
+   Loading ~/.dbt/profiles.yml
+22:01:18.870364 [info ]: Finished loading project [  0.52s]
+22:01:18.873458 [info ]: Started parsing
+22:01:19.048115 [info ]: Finished parsing [  0.17s]
+22:01:19.112221 [info ]: Started scheduling
+22:01:19.118749 [info ]: Finished scheduling [  0.01s]
+22:01:19.619190 [info ]: Started building task graph
+22:01:19.633938 [info ]: Finished building task graph [  0.01s]
+22:01:19.665890 [info ]: Started rendering (1 nodes)
+22:01:19.672121 [info ]: Started model dbt_ayajnik.customers
+22:01:19.677135 [debug]: Started rendering model dbt_ayajnik.customers
+22:01:19.715725 [debug]: Finished rendering [  0.04s] model dbt_ayajnik.customers [success]
+22:01:19.716619 [info ]: Finished rendering [  0.05s] (1 nodes, 0 skipped, 0 errors)
+22:01:19.716965 [info ]: Started analyzing (1 nodes)
+22:01:19.717280 [debug]: Started analyzing model dbt_ayajnik.customers
+22:01:20.762513 [debug]: Query executed on node model.jaffle_shop.customers:
+describe table "RAW"."JAFFLE_SHOP"."CUSTOMERS"
+22:01:20.868355 [debug]: Query executed on node model.jaffle_shop.customers:
+describe table "RAW"."JAFFLE_SHOP"."ORDERS"
+22:01:21.242698 [info ]:  Succeeded [  1.56s] model dbt_ayajnik.customers (view)
+22:01:21.242994 [debug]: Finished analyzing [  1.53s] model dbt_ayajnik.customers [success]
+22:01:21.244457 [info ]: Finished analyzing [  1.53s] (1 nodes, 0 skipped, 0 errors)
+22:01:21.408230 [info ]: 
+==================== Execution Summary =====================
+Finished 'compile' successfully for target 'dev' [3.1s]
+Processed: 1 model
+Summary: 1 total | 1 success
+==================== 2025-12-17T22:01:51.267226Z | 019b2e55-759d-7802-8e01-90fac73eecbc ====================
+dbt-fusion 2.0.0-preview.86
+22:01:51.268828 [info ]: Started loading project
+   Loading ~/.dbt/profiles.yml
+22:01:51.526121 [info ]: Finished loading project [  0.26s]
+22:01:51.530319 [info ]: Started parsing
+22:01:51.591391 [info ]: Finished parsing [  0.06s]
+22:01:51.617248 [info ]: Started scheduling
+22:01:51.619873 [info ]: Finished scheduling [  0.00s]
+22:01:51.797010 [info ]: Started building task graph
+22:01:51.800915 [info ]: Finished building task graph [  0.00s]
+22:01:52.666639 [debug]: Query executed on node unknown:
+show terse schemas in database analytics
+    limit 10000
+/* {"app":"dbt","dbt_version":"2.0.0","profile_name":"default","target_name":"dev","connection_name":""} */
+22:01:52.772275 [debug]: Query executed on node unknown:
+create schema if not exists analytics.dbt_ayajnik
+/* {"app":"dbt","dbt_version":"2.0.0","profile_name":"default","target_name":"dev","connection_name":""} */
+22:01:52.773814 [info ]: Started rendering (1 nodes)
+22:01:52.774196 [info ]: Started model dbt_ayajnik.customers
+22:01:52.774265 [debug]: Started rendering model dbt_ayajnik.customers
+22:01:52.781836 [debug]: Finished rendering [  0.01s] model dbt_ayajnik.customers [success]
+22:01:52.782421 [info ]: Finished rendering [  0.01s] (1 nodes, 0 skipped, 0 errors)
+22:01:52.783064 [info ]: Started analyzing (1 nodes)
+22:01:52.783398 [debug]: Started analyzing model dbt_ayajnik.customers
+22:01:53.222387 [debug]: Query executed on node model.jaffle_shop.customers:
+describe table "RAW"."JAFFLE_SHOP"."CUSTOMERS"
+22:01:53.343185 [debug]: Query executed on node model.jaffle_shop.customers:
+describe table "RAW"."JAFFLE_SHOP"."ORDERS"
+22:01:53.566913 [debug]: Finished analyzing [  0.78s] model dbt_ayajnik.customers [success]
+22:01:53.568787 [info ]: Finished analyzing [  0.79s] (1 nodes, 0 skipped, 0 errors)
+22:01:53.570283 [info ]: Started running (1 nodes)
+22:01:53.570436 [debug]: Started running model dbt_ayajnik.customers
+22:01:54.050398 [debug]: Query executed on node model.jaffle_shop.customers:
+SHOW OBJECTS IN SCHEMA "ANALYTICS"."DBT_AYAJNIK" LIMIT 10000
+22:01:54.071464 [debug]: Writing runtime sql for node "model.jaffle_shop.customers"
+22:01:54.506342 [debug]: Query executed on node model.jaffle_shop.customers:
+create or replace   view analytics.dbt_ayajnik.customers
+  
+   as (
+    with customers as (
+
+    select
+        id as customer_id,
+        first_name,
+        last_name
+
+    from raw.jaffle_shop.customers
+
+),
+
+orders as (
+
+    select
+        id as order_id,
+        user_id as customer_id,
+        order_date,
+        status
+
+    from raw.jaffle_shop.orders
+
+),
+
+customer_orders as (
+
+    select
+        customer_id,
+
+        min(order_date) as first_order_date,
+        max(order_date) as most_recent_order_date,
+        count(order_id) as number_of_orders
+
+    from orders
+
+    group by 1
+
+),
+
+
+final as (
+
+    select
+        customers.customer_id,
+        customers.first_name,
+        customers.last_name,
+        customer_orders.first_order_date,
+        customer_orders.most_recent_order_date,
+        coalesce(customer_orders.number_of_orders, 0) as number_of_orders
+
+    from customers
+
+    left join customer_orders using (customer_id)
+
+)
+
+select * from final
+  )
+/* {"app":"dbt","dbt_version":"2.0.0","profile_name":"default","target_name":"dev","node_id":"model.jaffle_shop.customers"} */
+22:01:54.530970 [info ]:  Succeeded [  1.75s] model dbt_ayajnik.customers (view)
+22:01:54.534340 [debug]: Finished running [  0.96s] model dbt_ayajnik.customers [success]
+22:01:54.535373 [info ]: Finished running [  0.97s] (1 nodes, 0 skipped, 0 errors)
+22:01:54.674031 [info ]: 
+==================== Execution Summary =====================
+Finished 'run' successfully for target 'dev' [3.4s]
+Processed: 1 model
+Summary: 1 total | 1 success
