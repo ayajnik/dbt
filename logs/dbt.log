@@ -569,3 +569,152 @@ select * from final
 Finished 'run' successfully for target 'dev' [5.0s]
 Processed: 3 models
 Summary: 3 total | 3 success
+==================== 2025-12-18T01:24:34.815408Z | 019b2f0f-0f72-79f0-ac02-d2590f4f2754 ====================
+dbt-fusion 2.0.0-preview.86
+01:24:34.817993 [info ]: Started loading project
+   Loading ~/.dbt/profiles.yml
+01:24:35.145318 [info ]: Finished loading project [  0.33s]
+01:24:35.147987 [info ]: Started parsing
+01:24:35.347870 [info ]: Finished parsing [  0.20s]
+01:24:35.409380 [info ]: Started scheduling
+01:24:35.417142 [info ]: Finished scheduling [  0.01s]
+01:24:35.721077 [info ]: Started building task graph
+01:24:35.731717 [info ]: Finished building task graph [  0.01s]
+01:24:36.569519 [debug]: Query executed on node unknown:
+show terse schemas in database analytics
+    limit 10000
+/* {"app":"dbt","dbt_version":"2.0.0","profile_name":"default","target_name":"dev","connection_name":""} */
+01:24:36.596481 [info ]: Started rendering (3 nodes)
+01:24:36.599715 [info ]: Started model dbt_ayajnik.stg_jaffle_shop__orders
+01:24:36.603020 [debug]: Started rendering model dbt_ayajnik.stg_jaffle_shop__orders
+01:24:36.603997 [info ]: Started model dbt_ayajnik.stg_jaffle_shop__customers
+01:24:36.604022 [debug]: Started rendering model dbt_ayajnik.stg_jaffle_shop__customers
+01:24:36.625879 [debug]: Finished rendering [  0.02s] model dbt_ayajnik.stg_jaffle_shop__orders [success]
+01:24:36.628588 [info ]: Started analyzing (3 nodes)
+01:24:36.628816 [debug]: Started analyzing model dbt_ayajnik.stg_jaffle_shop__orders
+01:24:36.629158 [debug]: Finished rendering [  0.03s] model dbt_ayajnik.stg_jaffle_shop__customers [success]
+01:24:36.629762 [debug]: Started analyzing model dbt_ayajnik.stg_jaffle_shop__customers
+01:24:37.059381 [debug]: Query executed on node model.jaffle_shop.stg_jaffle_shop__orders:
+describe table "RAW"."JAFFLE_SHOP"."ORDERS"
+01:24:37.338766 [debug]: Query executed on node model.jaffle_shop.stg_jaffle_shop__customers:
+describe table "RAW"."JAFFLE_SHOP"."CUSTOMERS"
+01:24:37.415986 [debug]: Finished analyzing [  0.79s] model dbt_ayajnik.stg_jaffle_shop__orders [success]
+01:24:37.416977 [info ]: Started running (3 nodes)
+01:24:37.417243 [debug]: Started running model dbt_ayajnik.stg_jaffle_shop__orders
+01:24:37.810466 [debug]: Query executed on node model.jaffle_shop.stg_jaffle_shop__orders:
+SHOW OBJECTS IN SCHEMA "ANALYTICS"."DBT_AYAJNIK" LIMIT 10000
+01:24:37.818921 [debug]: Finished analyzing [  1.19s] model dbt_ayajnik.stg_jaffle_shop__customers [success]
+01:24:37.820987 [info ]: Started model dbt_ayajnik.dim_customers
+01:24:37.821035 [debug]: Started rendering model dbt_ayajnik.dim_customers
+01:24:37.821098 [debug]: Started running model dbt_ayajnik.stg_jaffle_shop__customers
+01:24:37.826855 [debug]: Dropping relation ANALYTICS.DBT_AYAJNIK.STG_JAFFLE_SHOP__CUSTOMERS because it is of type table
+01:24:37.826904 [debug]: Dropping relation ANALYTICS.DBT_AYAJNIK.STG_JAFFLE_SHOP__ORDERS because it is of type table
+01:24:37.830607 [debug]: Applying DROP to: ANALYTICS.DBT_AYAJNIK.STG_JAFFLE_SHOP__CUSTOMERS
+01:24:37.831057 [debug]: Applying DROP to: ANALYTICS.DBT_AYAJNIK.STG_JAFFLE_SHOP__ORDERS
+01:24:37.831109 [debug]: Finished rendering [  0.01s] model dbt_ayajnik.dim_customers [success]
+01:24:37.831460 [info ]: Finished rendering [  1.23s] (3 nodes, 0 skipped, 0 errors)
+01:24:37.835127 [debug]: Started analyzing model dbt_ayajnik.dim_customers
+01:24:38.023805 [debug]: Finished analyzing [  0.19s] model dbt_ayajnik.dim_customers [success]
+01:24:38.024427 [info ]: Finished analyzing [  1.40s] (3 nodes, 0 skipped, 0 errors)
+01:24:38.040119 [debug]: Query executed on node model.jaffle_shop.stg_jaffle_shop__orders:
+drop table if exists ANALYTICS.DBT_AYAJNIK.STG_JAFFLE_SHOP__ORDERS cascade
+/* {"app":"dbt","dbt_version":"2.0.0","profile_name":"default","target_name":"dev","node_id":"model.jaffle_shop.stg_jaffle_shop__orders"} */
+01:24:38.048352 [debug]: Writing runtime sql for node "model.jaffle_shop.stg_jaffle_shop__orders"
+01:24:38.219461 [debug]: Query executed on node model.jaffle_shop.stg_jaffle_shop__orders:
+create or replace   view analytics.dbt_ayajnik.stg_jaffle_shop__orders
+  
+   as (
+    select
+        id as order_id,
+        user_id as customer_id,
+        order_date,
+        status
+
+    from raw.jaffle_shop.orders
+  )
+/* {"app":"dbt","dbt_version":"2.0.0","profile_name":"default","target_name":"dev","node_id":"model.jaffle_shop.stg_jaffle_shop__orders"} */
+01:24:38.243890 [info ]:  Succeeded [  1.63s] model dbt_ayajnik.stg_jaffle_shop__orders (view)
+01:24:38.248469 [debug]: Finished running [  0.83s] model dbt_ayajnik.stg_jaffle_shop__orders [success]
+01:24:38.258784 [debug]: Query executed on node model.jaffle_shop.stg_jaffle_shop__customers:
+drop table if exists ANALYTICS.DBT_AYAJNIK.STG_JAFFLE_SHOP__CUSTOMERS cascade
+/* {"app":"dbt","dbt_version":"2.0.0","profile_name":"default","target_name":"dev","node_id":"model.jaffle_shop.stg_jaffle_shop__customers"} */
+01:24:38.266856 [debug]: Writing runtime sql for node "model.jaffle_shop.stg_jaffle_shop__customers"
+01:24:38.594365 [debug]: Query executed on node model.jaffle_shop.stg_jaffle_shop__customers:
+create or replace   view analytics.dbt_ayajnik.stg_jaffle_shop__customers
+  
+   as (
+        select
+        id as customer_id,
+        first_name,
+        last_name
+
+    from raw.jaffle_shop.customers
+  )
+/* {"app":"dbt","dbt_version":"2.0.0","profile_name":"default","target_name":"dev","node_id":"model.jaffle_shop.stg_jaffle_shop__customers"} */
+01:24:38.598444 [info ]:  Succeeded [  1.99s] model dbt_ayajnik.stg_jaffle_shop__customers (view)
+01:24:38.605914 [debug]: Finished running [  0.78s] model dbt_ayajnik.stg_jaffle_shop__customers [success]
+01:24:38.606656 [debug]: Started running model dbt_ayajnik.dim_customers
+01:24:38.625080 [debug]: Writing runtime sql for node "model.jaffle_shop.dim_customers"
+01:24:40.284700 [debug]: Query executed on node model.jaffle_shop.dim_customers:
+create or replace transient  table analytics.dbt_ayajnik.dim_customers
+    
+    
+    
+    as (
+
+with customers as (
+
+select * from analytics.dbt_ayajnik.stg_jaffle_shop__customers
+
+),
+
+orders as (
+
+    select * from analytics.dbt_ayajnik.stg_jaffle_shop__orders
+
+),
+
+customer_orders as (
+
+    select
+        customer_id,
+
+        min(order_date) as first_order_date,
+        max(order_date) as most_recent_order_date,
+        count(order_id) as number_of_orders
+
+    from orders
+
+    group by 1
+
+),
+
+
+final as (
+
+    select
+        customers.customer_id,
+        customers.first_name,
+        customers.last_name,
+        customer_orders.first_order_date,
+        customer_orders.most_recent_order_date,
+        coalesce(customer_orders.number_of_orders, 0) as number_of_orders
+
+    from customers
+
+    left join customer_orders using (customer_id)
+
+)
+
+select * from final
+    )
+
+/* {"app":"dbt","dbt_version":"2.0.0","profile_name":"default","target_name":"dev","node_id":"model.jaffle_shop.dim_customers"} */
+01:24:40.285966 [info ]:  Succeeded [  1.88s] model dbt_ayajnik.dim_customers (table)
+01:24:40.286777 [debug]: Finished running [  1.68s] model dbt_ayajnik.dim_customers [success]
+01:24:40.286880 [info ]: Finished running [  2.87s] (3 nodes, 0 skipped, 0 errors)
+01:24:40.520609 [info ]: 
+==================== Execution Summary =====================
+Finished 'run' successfully for target 'dev' [5.7s]
+Processed: 3 models
+Summary: 3 total | 3 success
