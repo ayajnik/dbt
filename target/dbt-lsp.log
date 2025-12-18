@@ -402,3 +402,6 @@ describe table "RAW"."JAFFLE_SHOP"."ORDERS"
 01:11:17.602589 [info ]: Finished analyzing [  0.01s] (1 nodes, 0 skipped, 0 errors)
 01:11:17.602702 [debug]: Incremental compilation - 1 nodes selected: {"model.jaffle_shop.customers"}
 01:11:17.607346 [info ]: Cached model count updated: 3 models (accurate)
+01:15:20.284587 [info ]: Started loading project
+01:15:20.310066 [info ]: Cached model count updated: 3 models (accurate)
+01:15:20.310156 [info ]: Finished loading project [  0.03s]
