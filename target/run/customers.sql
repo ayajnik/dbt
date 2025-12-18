@@ -2,26 +2,17 @@
   create or replace   view analytics.dbt_ayajnik.customers
   
    as (
-    with customers as (
+    
 
-    select
-        id as customer_id,
-        first_name,
-        last_name
+with customers as (
 
-    from raw.jaffle_shop.customers
+select * from analytics.dbt_ayajnik.stg_jaffle_shop__customers
 
 ),
 
 orders as (
 
-    select
-        id as order_id,
-        user_id as customer_id,
-        order_date,
-        status
-
-    from raw.jaffle_shop.orders
+    select * from analytics.dbt_ayajnik.stg_jaffle_shop__orders
 
 ),
 

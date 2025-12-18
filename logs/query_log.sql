@@ -1,82 +1,115 @@
--- created_at: 2025-12-17T22:01:52.459741500+00:00
--- finished_at: 2025-12-17T22:01:52.666639700+00:00
--- elapsed: 206ms
+-- created_at: 2025-12-18T01:13:36.701285100+00:00
+-- finished_at: 2025-12-18T01:13:36.788620500+00:00
+-- elapsed: 87ms
 -- outcome: success
 -- dialect: snowflake
 -- node_id: not available
--- query_id: 01c11e89-0103-496b-0000-000495cb5319
+-- query_id: 01c11f49-0103-496b-0000-000495cb5829
 -- desc: execute adapter call
 show terse schemas in database analytics
     limit 10000
 /* {"app":"dbt","dbt_version":"2.0.0","profile_name":"default","target_name":"dev","connection_name":""} */;
--- created_at: 2025-12-17T22:01:52.680002700+00:00
--- finished_at: 2025-12-17T22:01:52.772275200+00:00
--- elapsed: 92ms
+-- created_at: 2025-12-18T01:13:37.396246500+00:00
+-- finished_at: 2025-12-18T01:13:37.488143400+00:00
+-- elapsed: 91ms
 -- outcome: success
 -- dialect: snowflake
--- node_id: not available
--- query_id: 01c11e89-0103-496b-0000-000495cb531d
--- desc: execute adapter call
-create schema if not exists analytics.dbt_ayajnik
-/* {"app":"dbt","dbt_version":"2.0.0","profile_name":"default","target_name":"dev","connection_name":""} */;
--- created_at: 2025-12-17T22:01:53.153656700+00:00
--- finished_at: 2025-12-17T22:01:53.222387+00:00
--- elapsed: 68ms
--- outcome: success
--- dialect: snowflake
--- node_id: model.jaffle_shop.customers
--- query_id: 01c11e89-0103-496b-0000-000495cb5321
+-- node_id: model.jaffle_shop.stg_jaffle_shop__customers
+-- query_id: 01c11f49-0103-496b-0000-000495cb582d
 -- desc: Get table schema
 describe table "RAW"."JAFFLE_SHOP"."CUSTOMERS";
--- created_at: 2025-12-17T22:01:53.257386700+00:00
--- finished_at: 2025-12-17T22:01:53.343185500+00:00
--- elapsed: 85ms
+-- created_at: 2025-12-18T01:13:37.659579100+00:00
+-- finished_at: 2025-12-18T01:13:37.940944500+00:00
+-- elapsed: 281ms
 -- outcome: success
 -- dialect: snowflake
--- node_id: model.jaffle_shop.customers
--- query_id: 01c11e89-0103-496b-0000-000495cb5325
+-- node_id: model.jaffle_shop.stg_jaffle_shop__orders
+-- query_id: 01c11f49-0103-496b-0000-000495cb5831
 -- desc: Get table schema
 describe table "RAW"."JAFFLE_SHOP"."ORDERS";
--- created_at: 2025-12-17T22:01:53.973513200+00:00
--- finished_at: 2025-12-17T22:01:54.050398100+00:00
--- elapsed: 76ms
+-- created_at: 2025-12-18T01:13:38.416569+00:00
+-- finished_at: 2025-12-18T01:13:38.507212400+00:00
+-- elapsed: 90ms
 -- outcome: success
 -- dialect: snowflake
--- node_id: model.jaffle_shop.customers
--- query_id: 01c11e89-0103-496b-0000-000495cb5329
+-- node_id: model.jaffle_shop.stg_jaffle_shop__customers
+-- query_id: 01c11f49-0103-496b-0000-000495cb5835
 -- desc: get_relation > list_relations call
 SHOW OBJECTS IN SCHEMA "ANALYTICS"."DBT_AYAJNIK" LIMIT 10000;
--- created_at: 2025-12-17T22:01:54.089679700+00:00
--- finished_at: 2025-12-17T22:01:54.506342700+00:00
--- elapsed: 416ms
+-- created_at: 2025-12-18T01:13:38.692168600+00:00
+-- finished_at: 2025-12-18T01:13:38.771652+00:00
+-- elapsed: 79ms
 -- outcome: success
 -- dialect: snowflake
--- node_id: model.jaffle_shop.customers
--- query_id: 01c11e89-0103-496b-0000-000495cb532d
+-- node_id: model.jaffle_shop.stg_jaffle_shop__orders
+-- query_id: 01c11f49-0103-496b-0000-000495cb583d
+-- desc: get_relation > list_relations call
+SHOW OBJECTS IN SCHEMA "ANALYTICS"."DBT_AYAJNIK" LIMIT 10000;
+-- created_at: 2025-12-18T01:13:38.523952600+00:00
+-- finished_at: 2025-12-18T01:13:40.094447300+00:00
+-- elapsed: 1.6s
+-- outcome: success
+-- dialect: snowflake
+-- node_id: model.jaffle_shop.stg_jaffle_shop__customers
+-- query_id: 01c11f49-0103-496b-0000-000495cb5839
 -- desc: execute adapter call
-create or replace   view analytics.dbt_ayajnik.customers
-  
-   as (
-    with customers as (
-
-    select
+create or replace transient  table analytics.dbt_ayajnik.stg_jaffle_shop__customers
+    
+    
+    
+    as (    select
         id as customer_id,
         first_name,
         last_name
 
     from raw.jaffle_shop.customers
+    )
 
-),
-
-orders as (
-
-    select
+/* {"app":"dbt","dbt_version":"2.0.0","profile_name":"default","target_name":"dev","node_id":"model.jaffle_shop.stg_jaffle_shop__customers"} */;
+-- created_at: 2025-12-18T01:13:38.785589100+00:00
+-- finished_at: 2025-12-18T01:13:40.280059700+00:00
+-- elapsed: 1.5s
+-- outcome: success
+-- dialect: snowflake
+-- node_id: model.jaffle_shop.stg_jaffle_shop__orders
+-- query_id: 01c11f49-0103-496b-0000-000495cb5841
+-- desc: execute adapter call
+create or replace transient  table analytics.dbt_ayajnik.stg_jaffle_shop__orders
+    
+    
+    
+    as (select
         id as order_id,
         user_id as customer_id,
         order_date,
         status
 
     from raw.jaffle_shop.orders
+    )
+
+/* {"app":"dbt","dbt_version":"2.0.0","profile_name":"default","target_name":"dev","node_id":"model.jaffle_shop.stg_jaffle_shop__orders"} */;
+-- created_at: 2025-12-18T01:13:40.329850800+00:00
+-- finished_at: 2025-12-18T01:13:40.515171300+00:00
+-- elapsed: 185ms
+-- outcome: success
+-- dialect: snowflake
+-- node_id: model.jaffle_shop.customers
+-- query_id: 01c11f49-0103-496b-0000-000495cb5845
+-- desc: execute adapter call
+create or replace   view analytics.dbt_ayajnik.customers
+  
+   as (
+    
+
+with customers as (
+
+select * from analytics.dbt_ayajnik.stg_jaffle_shop__customers
+
+),
+
+orders as (
+
+    select * from analytics.dbt_ayajnik.stg_jaffle_shop__orders
 
 ),
 

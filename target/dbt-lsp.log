@@ -9,3 +9,396 @@
 21:39:47.500477 [info ]: Finished loading project [  0.05s]
 21:43:12.935273 [info ]: Started loading project
 21:43:12.938196 [info ]: Finished loading project [  0.00s]
+==================== 2025-12-18T00:52:07.774672Z | 496aee6d-7129-4271-a104-512102c89bc4 ====================
+00:52:07.774780 [info ]: Starting dbt LSP server
+00:52:07.774836 [info ]: Connecting to LSP client on port 8000
+00:52:07.783307 [info ]: Successfully connected to LSP client
+00:52:07.783341 [info ]: Creating LSP service...
+00:52:08.248912 [info ]: Creating LSP server...
+00:52:08.248948 [info ]: Starting LSP server...
+00:52:08.721009 [info ]: Started loading project
+00:52:26.586684 [info ]: Started parsing
+00:52:26.738280 [info ]: Finished loading project [ 18.02s]
+00:52:26.870454 [info ]: Finished parsing [  0.28s]
+00:52:26.882888 [info ]: Cached model count updated: 1 models (estimate)
+00:52:26.882936 [info ]: Cached model count updated: 1 models (accurate)
+00:52:26.888431 [info ]: Started scheduling
+00:52:26.902908 [info ]: Finished scheduling [  0.01s]
+00:52:27.322545 [info ]: Started building task graph
+00:52:27.327892 [info ]: Finished building task graph [  0.01s]
+00:52:27.336828 [info ]: Started rendering (1 nodes)
+00:52:27.338121 [info ]: Started model dbt_ayajnik.customers
+00:52:27.339754 [debug]: Started rendering model dbt_ayajnik.customers
+00:52:27.510324 [debug]: Finished rendering [  0.17s] model dbt_ayajnik.customers [success]
+00:52:27.510383 [info ]: Finished rendering [  0.17s] (1 nodes, 0 skipped, 0 errors)
+00:52:27.510431 [info ]: Started analyzing (1 nodes)
+00:52:27.510451 [debug]: Started analyzing model dbt_ayajnik.customers
+00:52:28.869663 [debug]: Query executed on node model.jaffle_shop.customers:
+describe table "RAW"."JAFFLE_SHOP"."CUSTOMERS"
+00:52:28.973795 [debug]: Query executed on node model.jaffle_shop.customers:
+describe table "RAW"."JAFFLE_SHOP"."ORDERS"
+00:52:29.306406 [info ]:  Succeeded [  1.96s] model dbt_ayajnik.customers (view)
+00:52:29.306621 [debug]: Finished analyzing [  1.80s] model dbt_ayajnik.customers [success]
+00:52:29.306634 [info ]: Finished analyzing [  1.80s] (1 nodes, 0 skipped, 0 errors)
+00:52:29.319598 [info ]: Cached model count updated: 1 models (accurate)
+00:53:11.654081 [info ]: Started scheduling
+00:53:11.673917 [info ]: Finished scheduling [  0.02s]
+00:58:06.898954 [info ]: Started loading project
+00:58:07.052083 [info ]: Started parsing
+00:58:07.097901 [info ]: Finished loading project [  0.20s]
+00:58:07.167849 [error]: dbt1000: Failed to create template: syntax error: unexpected identifier, expected end of variable block
+(in models\customers.sql:3:5)
+00:58:07.170080 [error]: dbt1502: Failed to render SQL syntax error: unexpected identifier, expected end of variable block
+(in models\customers.sql:3:5)
+  --> models\customers.sql:3:5
+00:58:07.222131 [info ]: Finished parsing [  0.17s]
+00:58:07.284546 [info ]: Started loading project
+00:58:07.298363 [info ]: Started parsing
+00:58:07.324092 [info ]: Finished loading project [  0.04s]
+00:58:07.328012 [error]: dbt1000: Failed to create template: syntax error: unexpected identifier, expected end of variable block
+(in models\customers.sql:3:5)
+00:58:07.328116 [error]: dbt1502: Failed to render SQL syntax error: unexpected identifier, expected end of variable block
+(in models\customers.sql:3:5)
+  --> models\customers.sql:3:5
+00:58:07.330868 [info ]: Finished parsing [  0.03s]
+00:58:07.334292 [info ]: Cached model count updated: 1 models (estimate)
+00:58:07.334764 [info ]: Cached model count updated: 0 models (accurate)
+00:58:07.336042 [info ]: Started scheduling
+00:58:07.336353 [info ]: Finished scheduling [  0.00s]
+00:58:07.337603 [warn ]: dbt1000: The selection criterion '' does not match any enabled nodes
+00:58:07.337628 [warn ]: dbt1000: Nothing to do. Try checking your model configs and model specification args
+00:58:07.602374 [info ]: Started building task graph
+00:58:07.602910 [info ]: Finished building task graph [  0.00s]
+00:58:07.609867 [debug]: Incremental compilation - 0 nodes selected: {}
+00:58:07.621825 [info ]: Cached model count updated: 0 models (accurate)
+00:58:30.842924 [info ]: Started loading project
+00:58:30.894473 [info ]: Started parsing
+00:58:30.927067 [info ]: Finished loading project [  0.08s]
+00:58:31.029242 [error]: dbt1501: Failed to render SQL invalid operation: config requires all arguments to be defined
+(in models\customers.sql:1:1)
+  --> models\customers.sql:1:1
+00:58:31.035346 [info ]: Finished parsing [  0.14s]
+00:58:31.037467 [info ]: Cached model count updated: 1 models (estimate)
+00:58:31.037508 [info ]: Cached model count updated: 0 models (accurate)
+00:58:31.037552 [info ]: Started scheduling
+00:58:31.040450 [info ]: Finished scheduling [  0.00s]
+00:58:31.040511 [warn ]: dbt1000: The selection criterion '' does not match any enabled nodes
+00:58:31.040536 [warn ]: dbt1000: Nothing to do. Try checking your model configs and model specification args
+00:58:31.284347 [info ]: Started building task graph
+00:58:31.284408 [info ]: Finished building task graph [  0.00s]
+00:58:31.335583 [info ]: Started loading project
+00:58:31.346504 [info ]: Started parsing
+00:58:31.368380 [info ]: Finished loading project [  0.03s]
+00:58:31.372733 [error]: dbt1501: Failed to render SQL invalid operation: config requires all arguments to be defined
+(in models\customers.sql:1:1)
+  --> models\customers.sql:1:1
+00:58:31.375504 [info ]: Finished parsing [  0.03s]
+00:58:31.376947 [info ]: Cached model count updated: 1 models (estimate)
+00:58:31.376973 [info ]: Cached model count updated: 0 models (accurate)
+00:58:31.376993 [info ]: Started scheduling
+00:58:31.377024 [info ]: Finished scheduling [  0.00s]
+00:58:31.377046 [warn ]: dbt1000: The selection criterion '' does not match any enabled nodes
+00:58:31.377054 [warn ]: dbt1000: Nothing to do. Try checking your model configs and model specification args
+00:58:31.598864 [info ]: Started building task graph
+00:58:31.598924 [info ]: Finished building task graph [  0.00s]
+00:58:31.600299 [debug]: Incremental compilation - 0 nodes selected: {}
+00:58:31.604372 [info ]: Cached model count updated: 0 models (accurate)
+00:58:56.430962 [info ]: Started loading project
+00:58:56.455998 [info ]: Started parsing
+00:58:56.485813 [info ]: Finished loading project [  0.05s]
+00:58:56.522066 [info ]: Finished parsing [  0.07s]
+00:58:56.524552 [info ]: Cached model count updated: 1 models (estimate)
+00:58:56.524578 [info ]: Cached model count updated: 1 models (accurate)
+00:58:56.525060 [info ]: Started scheduling
+00:58:56.530916 [info ]: Finished scheduling [  0.01s]
+00:58:56.834496 [info ]: Started building task graph
+00:58:56.837145 [info ]: Finished building task graph [  0.00s]
+00:58:56.875488 [info ]: Started loading project
+00:58:56.887073 [info ]: Started parsing
+00:58:56.913546 [info ]: Finished loading project [  0.04s]
+00:58:56.919219 [info ]: Finished parsing [  0.03s]
+00:58:56.920462 [info ]: Cached model count updated: 1 models (estimate)
+00:58:56.920485 [info ]: Cached model count updated: 1 models (accurate)
+00:58:56.920512 [info ]: Started scheduling
+00:58:56.920559 [info ]: Finished scheduling [  0.00s]
+00:58:57.196955 [info ]: Started building task graph
+00:58:57.197044 [info ]: Finished building task graph [  0.00s]
+00:58:57.202766 [info ]: Started rendering (1 nodes)
+00:58:57.204724 [info ]: Started model dbt_ayajnik.customers
+00:58:57.206180 [debug]: Started rendering model dbt_ayajnik.customers
+00:58:57.239717 [debug]: Finished rendering [  0.03s] model dbt_ayajnik.customers [success]
+00:58:57.240445 [info ]: Finished rendering [  0.04s] (1 nodes, 0 skipped, 0 errors)
+00:58:57.240953 [info ]: Started analyzing (1 nodes)
+00:58:57.241032 [debug]: Started analyzing model dbt_ayajnik.customers
+00:58:57.638348 [info ]:  Succeeded [  0.43s] model dbt_ayajnik.customers (view)
+00:58:57.638596 [debug]: Finished analyzing [  0.40s] model dbt_ayajnik.customers [success]
+00:58:57.638606 [info ]: Finished analyzing [  0.40s] (1 nodes, 0 skipped, 0 errors)
+00:58:57.639286 [debug]: Incremental compilation - 1 nodes selected: {"model.jaffle_shop.customers"}
+00:58:57.651435 [info ]: Cached model count updated: 1 models (accurate)
+00:59:14.358856 [info ]: Started loading project
+00:59:14.429704 [info ]: Started loading project
+00:59:14.431529 [info ]: Finished loading project [  0.07s]
+00:59:15.386612 [info ]: Finished loading project [  0.96s]
+00:59:15.449682 [info ]: Started loading project
+00:59:15.460513 [info ]: Started loading project
+00:59:15.462293 [info ]: Finished loading project [  0.01s]
+00:59:15.808582 [info ]: Started parsing
+00:59:15.888726 [info ]: Finished loading project [  0.43s]
+00:59:15.897143 [info ]: Finished parsing [  0.09s]
+00:59:15.897870 [info ]: Cached model count updated: 1 models (estimate)
+00:59:15.897891 [info ]: Cached model count updated: 1 models (accurate)
+00:59:15.897926 [info ]: Started scheduling
+00:59:15.897972 [info ]: Finished scheduling [  0.00s]
+00:59:16.098598 [info ]: Started building task graph
+00:59:16.098683 [info ]: Finished building task graph [  0.00s]
+00:59:16.098840 [info ]: Started rendering (1 nodes)
+00:59:16.098866 [info ]: Started model dbt_ayajnik.customers
+00:59:16.098883 [debug]: Started rendering model dbt_ayajnik.customers
+00:59:16.120362 [debug]: Finished rendering [  0.02s] model dbt_ayajnik.customers [success]
+00:59:16.120399 [info ]: Finished rendering [  0.02s] (1 nodes, 0 skipped, 0 errors)
+00:59:16.120430 [info ]: Started analyzing (1 nodes)
+00:59:16.120452 [debug]: Started analyzing model dbt_ayajnik.customers
+00:59:16.956780 [debug]: Query executed on node model.jaffle_shop.customers:
+describe table "RAW"."JAFFLE_SHOP"."ORDERS"
+00:59:17.038460 [debug]: Query executed on node model.jaffle_shop.customers:
+describe table "RAW"."JAFFLE_SHOP"."CUSTOMERS"
+00:59:17.165315 [info ]:  Succeeded [  1.06s] model dbt_ayajnik.customers (view)
+00:59:17.165379 [debug]: Finished analyzing [  1.04s] model dbt_ayajnik.customers [success]
+00:59:17.165393 [info ]: Finished analyzing [  1.04s] (1 nodes, 0 skipped, 0 errors)
+00:59:17.170803 [info ]: Cached model count updated: 1 models (accurate)
+01:09:48.841775 [info ]: Started loading project
+01:09:49.091254 [info ]: Started loading project
+01:09:49.092448 [info ]: Finished loading project [  0.25s]
+01:09:49.479339 [info ]: Started parsing
+01:09:49.721837 [info ]: Finished loading project [  0.63s]
+01:09:49.901852 [info ]: Finished parsing [  0.42s]
+01:09:49.904594 [info ]: Cached model count updated: 2 models (estimate)
+01:09:49.905100 [info ]: Cached model count updated: 2 models (accurate)
+01:09:49.912355 [info ]: Started scheduling
+01:09:49.918392 [info ]: Finished scheduling [  0.01s]
+01:09:50.303941 [info ]: Started building task graph
+01:09:50.307814 [info ]: Finished building task graph [  0.00s]
+01:09:50.317028 [info ]: Started rendering (1 nodes)
+01:09:50.318114 [info ]: Started model dbt_ayajnik.customers
+01:09:50.319189 [debug]: Started rendering model dbt_ayajnik.customers
+01:09:50.347499 [debug]: Finished rendering [  0.03s] model dbt_ayajnik.customers [success]
+01:09:50.347549 [info ]: Finished rendering [  0.03s] (1 nodes, 0 skipped, 0 errors)
+01:09:50.347960 [info ]: Started analyzing (1 nodes)
+01:09:50.348019 [debug]: Started analyzing model dbt_ayajnik.customers
+01:09:51.311581 [debug]: Query executed on node model.jaffle_shop.customers:
+describe table "RAW"."JAFFLE_SHOP"."ORDERS"
+01:09:51.430042 [debug]: Query executed on node model.jaffle_shop.customers:
+describe table "RAW"."JAFFLE_SHOP"."CUSTOMERS"
+01:09:51.712385 [info ]:  Succeeded [  1.39s] model dbt_ayajnik.customers (view)
+01:09:51.713475 [debug]: Finished analyzing [  1.37s] model dbt_ayajnik.customers [success]
+01:09:51.713525 [info ]: Finished analyzing [  1.37s] (1 nodes, 0 skipped, 0 errors)
+01:09:51.734176 [info ]: Cached model count updated: 2 models (accurate)
+01:09:57.167111 [info ]: Started loading project
+01:09:57.203886 [info ]: Started parsing
+01:09:57.228341 [info ]: Finished loading project [  0.06s]
+01:09:57.263941 [info ]: Finished parsing [  0.06s]
+01:09:57.266483 [info ]: Cached model count updated: 2 models (estimate)
+01:09:57.266540 [info ]: Cached model count updated: 2 models (accurate)
+01:09:57.266600 [info ]: Started scheduling
+01:09:57.271053 [info ]: Finished scheduling [  0.00s]
+01:09:57.487514 [info ]: Started building task graph
+01:09:57.489917 [info ]: Finished building task graph [  0.00s]
+01:09:57.527438 [info ]: Started loading project
+01:09:57.546907 [info ]: Started parsing
+01:09:57.577588 [info ]: Finished loading project [  0.05s]
+01:09:57.582522 [info ]: Finished parsing [  0.04s]
+01:09:57.585369 [info ]: Cached model count updated: 2 models (estimate)
+01:09:57.585395 [info ]: Cached model count updated: 2 models (accurate)
+01:09:57.585426 [info ]: Started scheduling
+01:09:57.585490 [info ]: Finished scheduling [  0.00s]
+01:09:57.812637 [info ]: Started building task graph
+01:09:57.812730 [info ]: Finished building task graph [  0.00s]
+01:09:57.812923 [info ]: Started rendering (1 nodes)
+01:09:57.812944 [info ]: Started model dbt_ayajnik.stg_jaffle_shop__customers
+01:09:57.812958 [debug]: Started rendering model dbt_ayajnik.stg_jaffle_shop__customers
+01:09:57.819859 [debug]: Finished rendering [  0.01s] model dbt_ayajnik.stg_jaffle_shop__customers [success]
+01:09:57.819926 [info ]: Finished rendering [  0.01s] (1 nodes, 0 skipped, 0 errors)
+01:09:57.820014 [info ]: Started analyzing (1 nodes)
+01:09:57.820058 [debug]: Started analyzing model dbt_ayajnik.stg_jaffle_shop__customers
+01:09:57.876757 [info ]:  Succeeded [  0.06s] model dbt_ayajnik.stg_jaffle_shop__customers (table)
+01:09:57.876871 [debug]: Finished analyzing [  0.06s] model dbt_ayajnik.stg_jaffle_shop__customers [success]
+01:09:57.876898 [info ]: Finished analyzing [  0.06s] (1 nodes, 0 skipped, 0 errors)
+01:09:57.878908 [debug]: Incremental compilation - 1 nodes selected: {"model.jaffle_shop.stg_jaffle_shop__customers"}
+01:09:57.885943 [info ]: Cached model count updated: 2 models (accurate)
+01:10:18.124163 [info ]: Started loading project
+01:10:18.155691 [info ]: Started loading project
+01:10:18.157455 [info ]: Finished loading project [  0.03s]
+01:10:18.374385 [info ]: Started parsing
+01:10:18.429343 [info ]: Finished loading project [  0.27s]
+01:10:18.437989 [info ]: Finished parsing [  0.06s]
+01:10:18.438416 [info ]: Cached model count updated: 3 models (estimate)
+01:10:18.438434 [info ]: Cached model count updated: 3 models (accurate)
+01:10:18.438453 [info ]: Started scheduling
+01:10:18.438826 [info ]: Finished scheduling [  0.00s]
+01:10:18.655323 [info ]: Started building task graph
+01:10:18.657199 [info ]: Finished building task graph [  0.00s]
+01:10:18.657350 [info ]: Started rendering (2 nodes)
+01:10:18.657372 [info ]: Started model dbt_ayajnik.stg_jaffle_shop__customers
+01:10:18.657387 [debug]: Started rendering model dbt_ayajnik.stg_jaffle_shop__customers
+01:10:18.657409 [info ]: Started model dbt_ayajnik.customers
+01:10:18.657419 [debug]: Started rendering model dbt_ayajnik.customers
+01:10:18.660506 [info ]: Started analyzing (2 nodes)
+01:10:18.660529 [debug]: Started analyzing model dbt_ayajnik.customers
+01:10:18.660676 [debug]: Finished rendering [  0.00s] model dbt_ayajnik.customers [success]
+01:10:18.661548 [debug]: Started analyzing model dbt_ayajnik.stg_jaffle_shop__customers
+01:10:18.661583 [debug]: Finished rendering [  0.00s] model dbt_ayajnik.stg_jaffle_shop__customers [success]
+01:10:18.661603 [info ]: Finished rendering [  0.00s] (2 nodes, 0 skipped, 0 errors)
+01:10:19.292409 [debug]: Query executed on node model.jaffle_shop.stg_jaffle_shop__customers:
+describe table "RAW"."JAFFLE_SHOP"."CUSTOMERS"
+01:10:19.551360 [debug]: Query executed on node model.jaffle_shop.customers:
+describe table "RAW"."JAFFLE_SHOP"."CUSTOMERS"
+01:10:19.627502 [debug]: Query executed on node model.jaffle_shop.customers:
+describe table "RAW"."JAFFLE_SHOP"."ORDERS"
+01:10:19.791453 [info ]:  Succeeded [  1.13s] model dbt_ayajnik.customers (view)
+01:10:19.791511 [debug]: Finished analyzing [  1.13s] model dbt_ayajnik.customers [success]
+01:10:19.813923 [info ]:  Succeeded [  1.16s] model dbt_ayajnik.stg_jaffle_shop__customers (table)
+01:10:19.813982 [debug]: Finished analyzing [  1.15s] model dbt_ayajnik.stg_jaffle_shop__customers [success]
+01:10:19.813998 [info ]: Finished analyzing [  1.15s] (2 nodes, 0 skipped, 0 errors)
+01:10:19.821785 [info ]: Cached model count updated: 3 models (accurate)
+01:10:23.029693 [info ]: Started loading project
+01:10:23.055121 [info ]: Started parsing
+01:10:23.095423 [info ]: Finished loading project [  0.07s]
+01:10:23.150296 [info ]: Finished parsing [  0.10s]
+01:10:23.153365 [info ]: Cached model count updated: 3 models (estimate)
+01:10:23.153389 [info ]: Cached model count updated: 3 models (accurate)
+01:10:23.153446 [info ]: Started scheduling
+01:10:23.153522 [info ]: Finished scheduling [  0.00s]
+01:10:23.407188 [info ]: Started building task graph
+01:10:23.407284 [info ]: Finished building task graph [  0.00s]
+01:10:23.423073 [info ]: Started loading project
+01:10:23.436385 [info ]: Started parsing
+01:10:23.458052 [info ]: Finished loading project [  0.03s]
+01:10:23.463414 [info ]: Finished parsing [  0.03s]
+01:10:23.464731 [info ]: Cached model count updated: 3 models (estimate)
+01:10:23.464762 [info ]: Cached model count updated: 3 models (accurate)
+01:10:23.464789 [info ]: Started scheduling
+01:10:23.464841 [info ]: Finished scheduling [  0.00s]
+01:10:23.700844 [info ]: Started building task graph
+01:10:23.701042 [info ]: Finished building task graph [  0.00s]
+01:10:23.701179 [info ]: Started rendering (1 nodes)
+01:10:23.701204 [info ]: Started model dbt_ayajnik.customers
+01:10:23.701217 [debug]: Started rendering model dbt_ayajnik.customers
+01:10:23.704499 [debug]: Finished rendering [  0.00s] model dbt_ayajnik.customers [success]
+01:10:23.704534 [info ]: Finished rendering [  0.00s] (1 nodes, 0 skipped, 0 errors)
+01:10:23.705670 [info ]: Started analyzing (1 nodes)
+01:10:23.705723 [debug]: Started analyzing model dbt_ayajnik.customers
+01:10:23.726032 [info ]:     Failed [  0.02s] model dbt_ayajnik.customers (view)
+01:10:23.726079 [debug]: Finished analyzing [  0.02s] model dbt_ayajnik.customers [error]
+01:10:23.726089 [info ]: Finished analyzing [  0.02s] (1 nodes, 0 skipped, 1 errors)
+01:10:23.734840 [error]: dbt0101: mismatched input ')' expecting one of 'SELECT', 'TABLE', 'WITH', '('
+  --> models\customers.sql:12:1 (target\compiled\models\customers.sql:7:1)
+01:10:23.736060 [debug]: Incremental compilation - 1 nodes selected: {"model.jaffle_shop.customers"}
+01:10:23.739973 [info ]: Cached model count updated: 3 models (accurate)
+01:10:33.488058 [info ]: Started loading project
+01:10:33.508855 [info ]: Started parsing
+01:10:33.542149 [info ]: Finished loading project [  0.05s]
+01:10:33.592156 [info ]: Finished parsing [  0.08s]
+01:10:33.595359 [info ]: Cached model count updated: 3 models (estimate)
+01:10:33.595416 [info ]: Cached model count updated: 3 models (accurate)
+01:10:33.595483 [info ]: Started scheduling
+01:10:33.595608 [info ]: Finished scheduling [  0.00s]
+01:10:33.811624 [info ]: Started building task graph
+01:10:33.811724 [info ]: Finished building task graph [  0.00s]
+01:10:33.857710 [info ]: Started loading project
+01:10:33.869621 [info ]: Started parsing
+01:10:33.892588 [info ]: Finished loading project [  0.03s]
+01:10:33.896117 [info ]: Finished parsing [  0.03s]
+01:10:33.897391 [info ]: Cached model count updated: 3 models (estimate)
+01:10:33.897410 [info ]: Cached model count updated: 3 models (accurate)
+01:10:33.897438 [info ]: Started scheduling
+01:10:33.897499 [info ]: Finished scheduling [  0.00s]
+01:10:34.107336 [info ]: Started building task graph
+01:10:34.107421 [info ]: Finished building task graph [  0.00s]
+01:10:34.107564 [info ]: Started rendering (1 nodes)
+01:10:34.107585 [info ]: Started model dbt_ayajnik.stg_jaffle_shop__orders
+01:10:34.108787 [debug]: Started rendering model dbt_ayajnik.stg_jaffle_shop__orders
+01:10:34.113188 [info ]: Started analyzing (1 nodes)
+01:10:34.113225 [debug]: Started analyzing model dbt_ayajnik.stg_jaffle_shop__orders
+01:10:34.113285 [debug]: Finished rendering [  0.00s] model dbt_ayajnik.stg_jaffle_shop__orders [success]
+01:10:34.113329 [info ]: Finished rendering [  0.01s] (1 nodes, 0 skipped, 0 errors)
+01:10:34.127030 [info ]:  Succeeded [  0.02s] model dbt_ayajnik.stg_jaffle_shop__orders (table)
+01:10:34.127084 [debug]: Finished analyzing [  0.01s] model dbt_ayajnik.stg_jaffle_shop__orders [success]
+01:10:34.127097 [info ]: Finished analyzing [  0.01s] (1 nodes, 0 skipped, 0 errors)
+01:10:34.127319 [debug]: Incremental compilation - 1 nodes selected: {"model.jaffle_shop.stg_jaffle_shop__orders"}
+01:10:34.131126 [info ]: Cached model count updated: 3 models (accurate)
+01:10:58.491932 [info ]: Started loading project
+01:10:58.512535 [info ]: Started parsing
+01:10:58.533488 [info ]: Finished loading project [  0.04s]
+01:10:58.580205 [info ]: Finished parsing [  0.07s]
+01:10:58.582308 [info ]: Cached model count updated: 3 models (estimate)
+01:10:58.582342 [info ]: Cached model count updated: 3 models (accurate)
+01:10:58.582389 [info ]: Started scheduling
+01:10:58.582481 [info ]: Finished scheduling [  0.00s]
+01:10:58.820404 [info ]: Started building task graph
+01:10:58.820490 [info ]: Finished building task graph [  0.00s]
+01:10:58.854092 [info ]: Started loading project
+01:10:58.863743 [info ]: Started parsing
+01:10:58.883559 [info ]: Finished loading project [  0.03s]
+01:10:58.887783 [info ]: Finished parsing [  0.02s]
+01:10:58.889005 [info ]: Cached model count updated: 3 models (estimate)
+01:10:58.889027 [info ]: Cached model count updated: 3 models (accurate)
+01:10:58.889099 [info ]: Started scheduling
+01:10:58.889161 [info ]: Finished scheduling [  0.00s]
+01:10:59.106326 [info ]: Started building task graph
+01:10:59.106802 [info ]: Finished building task graph [  0.00s]
+01:10:59.106954 [info ]: Started rendering (1 nodes)
+01:10:59.107995 [info ]: Started model dbt_ayajnik.customers
+01:10:59.108017 [debug]: Started rendering model dbt_ayajnik.customers
+01:10:59.112916 [info ]: Started analyzing (1 nodes)
+01:10:59.112976 [debug]: Started analyzing model dbt_ayajnik.customers
+01:10:59.112990 [debug]: Finished rendering [  0.00s] model dbt_ayajnik.customers [success]
+01:10:59.113040 [info ]: Finished rendering [  0.01s] (1 nodes, 0 skipped, 0 errors)
+01:10:59.122043 [info ]:     Failed [  0.01s] model dbt_ayajnik.customers (view)
+01:10:59.122125 [debug]: Finished analyzing [  0.01s] model dbt_ayajnik.customers [error]
+01:10:59.122143 [info ]: Finished analyzing [  0.01s] (1 nodes, 0 skipped, 1 errors)
+01:10:59.123013 [error]: dbt0101: mismatched input ')' expecting one of 'SELECT', 'TABLE', 'WITH', '('
+  --> models\customers.sql:18:1 (target\compiled\models\customers.sql:13:1)
+01:10:59.123202 [debug]: Incremental compilation - 1 nodes selected: {"model.jaffle_shop.customers"}
+01:10:59.130634 [info ]: Cached model count updated: 3 models (accurate)
+01:11:16.991730 [info ]: Started loading project
+01:11:17.032166 [info ]: Started parsing
+01:11:17.049782 [info ]: Finished loading project [  0.06s]
+01:11:17.091429 [info ]: Finished parsing [  0.06s]
+01:11:17.093170 [info ]: Cached model count updated: 3 models (estimate)
+01:11:17.093199 [info ]: Cached model count updated: 3 models (accurate)
+01:11:17.093243 [info ]: Started scheduling
+01:11:17.093328 [info ]: Finished scheduling [  0.00s]
+01:11:17.272450 [info ]: Started building task graph
+01:11:17.272532 [info ]: Finished building task graph [  0.00s]
+01:11:17.277015 [info ]: Started rendering (1 nodes)
+01:11:17.277057 [info ]: Started model dbt_ayajnik.customers
+01:11:17.277161 [debug]: Started rendering model dbt_ayajnik.customers
+01:11:17.282706 [info ]: Started analyzing (1 nodes)
+01:11:17.282853 [debug]: Finished rendering [  0.01s] model dbt_ayajnik.customers [success]
+01:11:17.282879 [info ]: Finished rendering [  0.01s] (1 nodes, 0 skipped, 0 errors)
+01:11:17.284037 [debug]: Started analyzing model dbt_ayajnik.customers
+01:11:17.296344 [info ]:  Succeeded [  0.02s] model dbt_ayajnik.customers (view)
+01:11:17.296415 [debug]: Finished analyzing [  0.01s] model dbt_ayajnik.customers [success]
+01:11:17.296433 [info ]: Finished analyzing [  0.01s] (1 nodes, 0 skipped, 0 errors)
+01:11:17.341115 [info ]: Started loading project
+01:11:17.351636 [info ]: Started parsing
+01:11:17.371491 [info ]: Finished loading project [  0.03s]
+01:11:17.375658 [info ]: Finished parsing [  0.02s]
+01:11:17.376867 [info ]: Cached model count updated: 3 models (estimate)
+01:11:17.376885 [info ]: Cached model count updated: 3 models (accurate)
+01:11:17.376912 [info ]: Started scheduling
+01:11:17.376967 [info ]: Finished scheduling [  0.00s]
+01:11:17.584834 [info ]: Started building task graph
+01:11:17.584924 [info ]: Finished building task graph [  0.00s]
+01:11:17.585049 [info ]: Started rendering (1 nodes)
+01:11:17.585072 [info ]: Started model dbt_ayajnik.customers
+01:11:17.585084 [debug]: Started rendering model dbt_ayajnik.customers
+01:11:17.593782 [info ]: Started analyzing (1 nodes)
+01:11:17.593826 [debug]: Finished rendering [  0.01s] model dbt_ayajnik.customers [success]
+01:11:17.593855 [debug]: Started analyzing model dbt_ayajnik.customers
+01:11:17.593871 [info ]: Finished rendering [  0.01s] (1 nodes, 0 skipped, 0 errors)
+01:11:17.602521 [info ]:  Succeeded [  0.02s] model dbt_ayajnik.customers (view)
+01:11:17.602577 [debug]: Finished analyzing [  0.01s] model dbt_ayajnik.customers [success]
+01:11:17.602589 [info ]: Finished analyzing [  0.01s] (1 nodes, 0 skipped, 0 errors)
+01:11:17.602702 [debug]: Incremental compilation - 1 nodes selected: {"model.jaffle_shop.customers"}
+01:11:17.607346 [info ]: Cached model count updated: 3 models (accurate)
