@@ -1259,3 +1259,161 @@ New version available 2.0.0-preview.88 (run `dbt system update`)
 20:40:12.795539 [info ]: 
 ==================== Execution Summary =====================
 Finished 'freshness' with 1 warning and 1 error for target 'dev' [2.6s]
+==================== 2025-12-20T16:57:53.920053Z | 019b3cb2-41c7-74f3-8f0e-c8ce5ca2edc5 ====================
+dbt-fusion 2.0.0-preview.86
+16:57:53.978895 [info ]: Started loading project
+   Loading ~/.dbt/profiles.yml
+16:57:54.760821 [info ]: Finished loading project [  0.78s]
+New version available 2.0.0-preview.89 (run `dbt system update`)
+16:57:55.184195 [info ]: 
+==================== Execution Summary =====================
+Finished 'deps' successfully for target 'dev' [1.3s]
+==================== 2025-12-20T17:00:30.127843Z | 019b3cb4-a427-77c3-8331-5e0726482877 ====================
+dbt-fusion 2.0.0-preview.86
+17:00:30.129440 [info ]: Started loading project
+   Loading ~/.dbt/profiles.yml
+17:00:30.743358 [info ]: Finished loading project [  0.61s]
+17:00:30.747129 [info ]: Started parsing
+17:00:31.185972 [info ]: Finished parsing [  0.44s]
+17:00:31.288530 [info ]: Started scheduling
+17:00:31.296964 [info ]: Finished scheduling [  0.01s]
+17:00:31.421600 [error]: dbt1501: Template not found for macro 'generate_source'
+New version available 2.0.0-preview.89 (run `dbt system update`)
+17:00:31.467260 [info ]: 
+==================== Execution Summary =====================
+Finished 'run-operation' with 1 error for target 'dev' [1.3s]
+==================== 2025-12-20T17:01:22.681611Z | 019b3cb5-716c-7632-af80-428a632bce2f ====================
+dbt-fusion 2.0.0-preview.86
+17:01:22.683127 [info ]: Started loading project
+   Loading ~/.dbt/profiles.yml
+17:01:22.907173 [info ]: Finished loading project [  0.22s]
+New version available 2.0.0-preview.89 (run `dbt system update`)
+17:01:23.317102 [info ]: 
+==================== Execution Summary =====================
+Finished 'deps' successfully for target 'dev' [635ms]
+==================== 2025-12-20T17:01:39.300114Z | 019b3cb5-b25f-75c1-8f4c-eb68221051ed ====================
+==================== 2025-12-20T17:02:41.466923Z | 019b3cb6-a536-72a1-a36e-d8ed0b2240e2 ====================
+==================== 2025-12-20T17:03:32.553839Z | 019b3cb7-6cc6-7dc1-a83b-a362a8d25ca7 ====================
+17:03:32.553935 [info ]: dbt-fusion 2.0.0-preview.89
+17:03:32.554825 [info ]: Started loading project
+17:03:32.562007 [info ]: Loading ~/.dbt/profiles.yml
+17:03:32.792787 [info ]: Finished loading project [  0.24s]
+17:03:32.793868 [info ]: Started parsing
+17:03:32.884500 [info ]: Finished parsing [  0.09s]
+17:03:32.907272 [info ]: Started scheduling
+17:03:32.907837 [info ]: Finished scheduling [  0.00s]
+17:03:33.084590 [info ]: Started building task graph
+17:03:33.085248 [info ]: Finished building task graph [  0.00s]
+17:03:33.085825 [info ]: Started rendering (6 nodes)
+17:03:33.086414 [info ]: Started model dbt_ayajnik.fct_customers
+17:03:33.086506 [debug]: Started rendering model dbt_ayajnik.fct_customers
+17:03:33.086564 [info ]: Started model dbt_ayajnik.fact_orders
+17:03:33.086575 [debug]: Started rendering model dbt_ayajnik.fact_orders
+17:03:33.086601 [info ]: Started model dbt_ayajnik.stg_stripe__payments
+17:03:33.086611 [debug]: Started rendering model dbt_ayajnik.stg_stripe__payments
+17:03:33.086624 [info ]: Started model dbt_ayajnik.dim_customers
+17:03:33.086630 [debug]: Started rendering model dbt_ayajnik.dim_customers
+17:03:33.086647 [info ]: Started model dbt_ayajnik.stg_jaffle_shop__orders
+17:03:33.086652 [debug]: Started rendering model dbt_ayajnik.stg_jaffle_shop__orders
+17:03:33.086674 [info ]: Started model dbt_ayajnik.stg_jaffle_shop__customers
+17:03:33.086682 [debug]: Started rendering model dbt_ayajnik.stg_jaffle_shop__customers
+17:03:33.092511 [info ]:  Succeeded [  0.01s] model dbt_ayajnik.stg_jaffle_shop__customers (view)
+17:03:33.092621 [debug]: Finished rendering [  0.01s] model dbt_ayajnik.stg_jaffle_shop__customers [success]
+17:03:33.093877 [info ]:  Succeeded [  0.01s] model dbt_ayajnik.stg_stripe__payments (view)
+17:03:33.093914 [debug]: Finished rendering [  0.01s] model dbt_ayajnik.stg_stripe__payments [success]
+17:03:33.095401 [info ]:  Succeeded [  0.01s] model dbt_ayajnik.fact_orders (table)
+17:03:33.095434 [debug]: Finished rendering [  0.01s] model dbt_ayajnik.fact_orders [success]
+17:03:33.095855 [info ]:  Succeeded [  0.01s] model dbt_ayajnik.fct_customers (table)
+17:03:33.095882 [debug]: Finished rendering [  0.01s] model dbt_ayajnik.fct_customers [success]
+17:03:33.096138 [info ]:  Succeeded [  0.01s] model dbt_ayajnik.dim_customers (table)
+17:03:33.096157 [debug]: Finished rendering [  0.01s] model dbt_ayajnik.dim_customers [success]
+17:03:33.096409 [info ]:  Succeeded [  0.01s] model dbt_ayajnik.stg_jaffle_shop__orders (view)
+17:03:33.096429 [debug]: Finished rendering [  0.01s] model dbt_ayajnik.stg_jaffle_shop__orders [success]
+17:03:33.096653 [info ]: Finished rendering [  0.01s] (6 nodes, 0 skipped, 0 errors)
+17:03:33.208379 [info ]: 
+==================== Execution Summary =====================
+Finished 'compile' successfully for target 'dev' [654ms]
+Processed: 6 models
+Summary: 6 total | 6 success
+==================== 2025-12-20T17:03:34.569268Z | 019b3cb7-74a5-7bd2-9e9d-5f9e39a6bb4c ====================
+17:03:34.569409 [info ]: dbt-fusion 2.0.0-preview.89
+17:03:34.569936 [info ]: Started loading project
+17:03:34.576822 [info ]: Loading ~/.dbt/profiles.yml
+17:03:34.806362 [info ]: Finished loading project [  0.24s]
+17:03:34.807925 [info ]: Started parsing
+17:03:34.876551 [info ]: Finished parsing [  0.07s]
+17:03:34.899139 [info ]: Started scheduling
+17:03:34.899570 [info ]: Finished scheduling [  0.00s]
+17:03:35.083690 [info ]: Started building task graph
+17:03:35.084227 [info ]: Finished building task graph [  0.00s]
+17:03:35.084661 [info ]: Started rendering (6 nodes)
+17:03:35.084956 [info ]: Started model dbt_ayajnik.stg_stripe__payments
+17:03:35.084987 [debug]: Started rendering model dbt_ayajnik.stg_stripe__payments
+17:03:35.085064 [info ]: Started model dbt_ayajnik.stg_jaffle_shop__orders
+17:03:35.085074 [debug]: Started rendering model dbt_ayajnik.stg_jaffle_shop__orders
+17:03:35.085094 [info ]: Started model dbt_ayajnik.stg_jaffle_shop__customers
+17:03:35.085102 [debug]: Started rendering model dbt_ayajnik.stg_jaffle_shop__customers
+17:03:35.088131 [debug]: Finished rendering [  0.00s] model dbt_ayajnik.stg_stripe__payments [success]
+17:03:35.088779 [info ]: Started analyzing (6 nodes)
+17:03:35.089093 [debug]: Started analyzing model dbt_ayajnik.stg_stripe__payments
+17:03:35.089170 [debug]: Finished rendering [  0.00s] model dbt_ayajnik.stg_jaffle_shop__customers [success]
+17:03:35.089833 [debug]: Started analyzing model dbt_ayajnik.stg_jaffle_shop__customers
+17:03:35.089915 [debug]: Finished rendering [  0.00s] model dbt_ayajnik.stg_jaffle_shop__orders [success]
+17:03:35.090767 [debug]: Started analyzing model dbt_ayajnik.stg_jaffle_shop__orders
+17:03:35.200655 [info ]:  Succeeded [  0.11s] model dbt_ayajnik.stg_jaffle_shop__orders (view)
+17:03:35.200745 [debug]: Finished analyzing [  0.11s] model dbt_ayajnik.stg_jaffle_shop__orders [success]
+17:03:35.201465 [info ]:  Succeeded [  0.12s] model dbt_ayajnik.stg_jaffle_shop__customers (view)
+17:03:35.201503 [debug]: Finished analyzing [  0.11s] model dbt_ayajnik.stg_jaffle_shop__customers [success]
+17:03:35.202293 [info ]: Started model dbt_ayajnik.dim_customers
+17:03:35.202325 [debug]: Started rendering model dbt_ayajnik.dim_customers
+17:03:35.205487 [debug]: Finished rendering [  0.00s] model dbt_ayajnik.dim_customers [success]
+17:03:35.206114 [debug]: Started analyzing model dbt_ayajnik.dim_customers
+17:03:35.267630 [info ]:  Succeeded [  0.06s] model dbt_ayajnik.dim_customers (table)
+17:03:35.267675 [debug]: Finished analyzing [  0.06s] model dbt_ayajnik.dim_customers [success]
+17:03:35.933439 [debug]: Query executed on node model.jaffle_shop.stg_stripe__payments:
+describe table "RAW"."STRIPE"."PAYMENT"
+17:03:36.586220 [info ]:  Succeeded [  1.50s] model dbt_ayajnik.stg_stripe__payments (view)
+17:03:36.586269 [debug]: Finished analyzing [  1.50s] model dbt_ayajnik.stg_stripe__payments [success]
+17:03:36.587032 [info ]: Started model dbt_ayajnik.fact_orders
+17:03:36.587062 [debug]: Started rendering model dbt_ayajnik.fact_orders
+17:03:36.590285 [debug]: Finished rendering [  0.00s] model dbt_ayajnik.fact_orders [success]
+17:03:36.591357 [debug]: Started analyzing model dbt_ayajnik.fact_orders
+17:03:36.656977 [info ]:  Succeeded [  0.07s] model dbt_ayajnik.fact_orders (table)
+17:03:36.657069 [debug]: Finished analyzing [  0.07s] model dbt_ayajnik.fact_orders [success]
+17:03:36.657280 [info ]: Started model dbt_ayajnik.fct_customers
+17:03:36.657307 [debug]: Started rendering model dbt_ayajnik.fct_customers
+17:03:36.659881 [debug]: Finished rendering [  0.00s] model dbt_ayajnik.fct_customers [success]
+17:03:36.660386 [info ]: Finished rendering [  1.58s] (6 nodes, 0 skipped, 0 errors)
+17:03:36.661560 [debug]: Started analyzing model dbt_ayajnik.fct_customers
+17:03:36.680881 [info ]:  Succeeded [  0.02s] model dbt_ayajnik.fct_customers (table)
+17:03:36.680966 [debug]: Finished analyzing [  0.02s] model dbt_ayajnik.fct_customers [success]
+17:03:36.681506 [info ]: Finished analyzing [  1.59s] (6 nodes, 0 skipped, 0 errors)
+17:03:36.753594 [info ]: 
+==================== Execution Summary =====================
+Finished 'compile' successfully for target 'dev' [2.2s]
+Processed: 6 models
+Summary: 6 total | 6 success
+17:03:36.840280 [info ]: 
+==================== Execution Summary =====================
+Finished 'init' successfully [55.4s]
+==================== 2025-12-20T17:11:36.885329Z | 019b3cbe-d0aa-7331-b47b-94036f6f704b ====================
+17:11:36.885631 [info ]: dbt-fusion 2.0.0-preview.89
+17:11:36.886319 [info ]: Started loading project
+17:11:36.893715 [info ]: Loading ~/.dbt/profiles.yml
+17:11:37.136257 [info ]: Finished loading project [  0.25s]
+17:11:37.636221 [info ]: 
+==================== Execution Summary =====================
+Finished 'deps' successfully for target 'dev' [750ms]
+==================== 2025-12-20T17:12:41.260127Z | 019b3cbf-cc28-7c62-b5f6-b0a8d62313e7 ====================
+17:12:41.260238 [info ]: dbt-fusion 2.0.0-preview.89
+17:12:41.261136 [info ]: Started loading project
+17:12:41.267167 [info ]: Loading ~/.dbt/profiles.yml
+17:12:41.490810 [info ]: Finished loading project [  0.23s]
+17:12:41.491894 [info ]: Started parsing
+17:12:41.549670 [info ]: Finished parsing [  0.06s]
+17:12:41.572916 [info ]: Started scheduling
+17:12:41.573636 [info ]: Finished scheduling [  0.00s]
+17:12:41.587091 [error]: dbt1501: Template not found for macro 'generate_source'
+17:12:42.046583 [info ]: 
+==================== Execution Summary =====================
+Finished 'run-operation' with 1 error for target 'dev' [786ms]
