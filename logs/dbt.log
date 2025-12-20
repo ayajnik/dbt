@@ -2709,3 +2709,138 @@ HAVING total_amount < 0
 Finished 'test' successfully for target 'dev' [2.9s]
 Processed: 1 test
 Summary: 1 total | 1 success
+==================== 2025-12-20T18:07:15.942812Z | 019b3cf1-c3e1-7c21-92b9-4751ab0e1222 ====================
+18:07:15.942938 [info ]: dbt-fusion 2.0.0-preview.89
+18:07:15.943751 [info ]: Started loading project
+18:07:15.951829 [info ]: Loading ~/.dbt/profiles.yml
+18:07:16.280554 [info ]: Finished loading project [  0.34s]
+18:07:16.282022 [info ]: Started parsing
+18:07:16.436637 [info ]: Finished parsing [  0.15s]
+18:07:16.466969 [info ]: Started scheduling
+18:07:16.470743 [info ]: Finished scheduling [  0.00s]
+18:07:16.650198 [info ]: Started building task graph
+18:07:16.650701 [info ]: Finished building task graph [  0.00s]
+18:07:16.651144 [info ]: Started rendering (2 nodes)
+18:07:16.651347 [info ]: Started test dbt_ayajnik_dbt_test__audit.source_unique_jaffle_shop_customers_customer_id
+18:07:16.651375 [debug]: Started rendering test dbt_ayajnik_dbt_test__audit.source_unique_jaffle_shop_customers_customer_id
+18:07:16.651412 [info ]: Started test dbt_ayajnik_dbt_test__audit.source_not_null_jaffle_shop_customers_customer_id
+18:07:16.651422 [debug]: Started rendering test dbt_ayajnik_dbt_test__audit.source_not_null_jaffle_shop_customers_customer_id
+18:07:16.656643 [debug]: Finished rendering [  0.01s] test dbt_ayajnik_dbt_test__audit.source_not_null_jaffle_shop_customers_customer_id [success]
+18:07:16.657246 [info ]: Started analyzing (2 nodes)
+18:07:16.657565 [debug]: Started analyzing test dbt_ayajnik_dbt_test__audit.source_not_null_jaffle_shop_customers_customer_id
+18:07:16.657649 [debug]: Finished rendering [  0.01s] test dbt_ayajnik_dbt_test__audit.source_unique_jaffle_shop_customers_customer_id [success]
+18:07:16.658132 [info ]: Finished rendering [  0.01s] (2 nodes, 0 skipped, 0 errors)
+18:07:16.658694 [debug]: Started analyzing test dbt_ayajnik_dbt_test__audit.source_unique_jaffle_shop_customers_customer_id
+18:07:16.733698 [error]: dbt0227: No column CUSTOMER_ID found. Available are RAW.JAFFLE_SHOP.CUSTOMERS.ID, RAW.JAFFLE_SHOP.CUSTOMERS.LAST_NAME, RAW.JAFFLE_SHOP.CUSTOMERS.FIRST_NAME
+  --> target\generic_tests\source_not_null_jaffle_shop_customers_customer_id.sql:1:1 (target\compiled\generic_tests\source_not_null_jaffle_shop_customers_customer_id.sql:7:8)
+18:07:16.734243 [error]: dbt0227: No column CUSTOMER_ID found. Available are RAW.JAFFLE_SHOP.CUSTOMERS.ID, RAW.JAFFLE_SHOP.CUSTOMERS.LAST_NAME, RAW.JAFFLE_SHOP.CUSTOMERS.FIRST_NAME
+  --> target\generic_tests\source_unique_jaffle_shop_customers_customer_id.sql:1:1 (target\compiled\generic_tests\source_unique_jaffle_shop_customers_customer_id.sql:6:5)
+18:07:16.733902 [debug]: Finished analyzing [  0.08s] test dbt_ayajnik_dbt_test__audit.source_not_null_jaffle_shop_customers_customer_id [error]
+18:07:16.734407 [info ]: Started running (2 nodes)
+18:07:16.734538 [debug]: Started running test dbt_ayajnik_dbt_test__audit.source_not_null_jaffle_shop_customers_customer_id
+18:07:16.734578 [info ]:     Failed [  0.08s] test  dbt_ayajnik_dbt_test__audit.source_not_null_jaffle_shop_customers_customer_id (models\staging\_src_jaffle_shop.yml:16:17)
+18:07:16.735135 [debug]: Finished running [  0.00s] test dbt_ayajnik_dbt_test__audit.source_not_null_jaffle_shop_customers_customer_id [skipped]
+18:07:16.735542 [debug]: Finished analyzing [  0.08s] test dbt_ayajnik_dbt_test__audit.source_unique_jaffle_shop_customers_customer_id [error]
+18:07:16.735960 [info ]: Finished analyzing [  0.08s] (2 nodes, 0 skipped, 2 errors)
+18:07:16.736436 [debug]: Started running test dbt_ayajnik_dbt_test__audit.source_unique_jaffle_shop_customers_customer_id
+18:07:16.736468 [info ]:     Failed [  0.08s] test  dbt_ayajnik_dbt_test__audit.source_unique_jaffle_shop_customers_customer_id (models\staging\_src_jaffle_shop.yml:15:17)
+18:07:16.736780 [debug]: Finished running [  0.00s] test dbt_ayajnik_dbt_test__audit.source_unique_jaffle_shop_customers_customer_id [skipped]
+18:07:16.736967 [info ]: Finished running [  0.00s] (2 nodes, 2 skipped, 0 errors)
+18:07:16.836980 [info ]: 
+==================== Execution Summary =====================
+Finished 'test' with 2 errors for target 'dev' [894ms]
+Processed: 2 tests
+Summary: 2 total | 2 error
+==================== 2025-12-20T18:07:56.270312Z | 019b3cf2-6166-7660-91ea-cf6f5135fc84 ====================
+18:07:56.270595 [info ]: dbt-fusion 2.0.0-preview.89
+18:07:56.272773 [info ]: Started loading project
+18:07:56.280293 [info ]: Loading ~/.dbt/profiles.yml
+18:07:56.509450 [info ]: Finished loading project [  0.24s]
+18:07:56.510478 [info ]: Started parsing
+18:07:56.653603 [info ]: Finished parsing [  0.14s]
+18:07:56.683901 [info ]: Started scheduling
+18:07:56.684602 [info ]: Finished scheduling [  0.00s]
+18:07:56.852584 [info ]: Started building task graph
+18:07:56.853229 [info ]: Finished building task graph [  0.00s]
+18:07:56.853603 [info ]: Started rendering (2 nodes)
+18:07:56.853865 [info ]: Started test dbt_ayajnik_dbt_test__audit.source_unique_jaffle_shop_customers_id
+18:07:56.853893 [debug]: Started rendering test dbt_ayajnik_dbt_test__audit.source_unique_jaffle_shop_customers_id
+18:07:56.853930 [info ]: Started test dbt_ayajnik_dbt_test__audit.source_not_null_jaffle_shop_customers_id
+18:07:56.853939 [debug]: Started rendering test dbt_ayajnik_dbt_test__audit.source_not_null_jaffle_shop_customers_id
+18:07:56.861997 [debug]: Finished rendering [  0.01s] test dbt_ayajnik_dbt_test__audit.source_unique_jaffle_shop_customers_id [success]
+18:07:56.863394 [info ]: Started analyzing (2 nodes)
+18:07:56.863908 [debug]: Started analyzing test dbt_ayajnik_dbt_test__audit.source_unique_jaffle_shop_customers_id
+18:07:56.864008 [debug]: Finished rendering [  0.01s] test dbt_ayajnik_dbt_test__audit.source_not_null_jaffle_shop_customers_id [success]
+18:07:56.865057 [info ]: Finished rendering [  0.01s] (2 nodes, 0 skipped, 0 errors)
+18:07:56.865509 [debug]: Started analyzing test dbt_ayajnik_dbt_test__audit.source_not_null_jaffle_shop_customers_id
+18:07:56.966598 [debug]: Finished analyzing [  0.10s] test dbt_ayajnik_dbt_test__audit.source_not_null_jaffle_shop_customers_id [success]
+18:07:56.967426 [info ]: Started running (2 nodes)
+18:07:56.967757 [debug]: Started running test dbt_ayajnik_dbt_test__audit.source_not_null_jaffle_shop_customers_id
+18:07:56.970648 [debug]: Writing runtime sql for node "test.jaffle_shop.source_not_null_jaffle_shop_customers_id.2b0a5f29a9"
+18:07:56.972720 [debug]: Finished analyzing [  0.11s] test dbt_ayajnik_dbt_test__audit.source_unique_jaffle_shop_customers_id [success]
+18:07:56.973466 [info ]: Finished analyzing [  0.11s] (2 nodes, 0 skipped, 0 errors)
+18:07:56.974214 [debug]: Started running test dbt_ayajnik_dbt_test__audit.source_unique_jaffle_shop_customers_id
+18:07:56.978834 [debug]: Writing runtime sql for node "test.jaffle_shop.source_unique_jaffle_shop_customers_id.aaddf56471"
+18:07:58.810934 [debug]: Query executed on node test.jaffle_shop.source_not_null_jaffle_shop_customers_id.2b0a5f29a9:
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select id
+from raw.jaffle_shop.customers
+where id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "test.jaffle_shop.source_not_null_jaffle_shop_customers_id.2b0a5f29a9", "profile_name": "default", "target_name": "dev"} */
+18:07:58.812010 [info ]:     Passed [  1.96s] test  dbt_ayajnik_dbt_test__audit.source_not_null_jaffle_shop_customers_id
+18:07:58.812709 [debug]: Finished running [  1.84s] test dbt_ayajnik_dbt_test__audit.source_not_null_jaffle_shop_customers_id [pass]
+18:07:58.848688 [debug]: Query executed on node test.jaffle_shop.source_unique_jaffle_shop_customers_id.aaddf56471:
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+select
+    id as unique_field,
+    count(*) as n_records
+
+from raw.jaffle_shop.customers
+where id is not null
+group by id
+having count(*) > 1
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "test.jaffle_shop.source_unique_jaffle_shop_customers_id.aaddf56471", "profile_name": "default", "target_name": "dev"} */
+18:07:58.850185 [info ]:     Passed [  1.99s] test  dbt_ayajnik_dbt_test__audit.source_unique_jaffle_shop_customers_id
+18:07:58.851775 [debug]: Finished running [  1.88s] test dbt_ayajnik_dbt_test__audit.source_unique_jaffle_shop_customers_id [pass]
+18:07:58.852485 [info ]: Finished running [  1.89s] (2 nodes, 0 skipped, 0 errors)
+18:07:58.929842 [info ]: 
+==================== Execution Summary =====================
+Finished 'test' successfully for target 'dev' [2.7s]
+Processed: 2 tests
+Summary: 2 total | 2 success
