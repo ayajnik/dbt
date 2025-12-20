@@ -2844,3 +2844,591 @@ having count(*) > 1
 Finished 'test' successfully for target 'dev' [2.7s]
 Processed: 2 tests
 Summary: 2 total | 2 success
+==================== 2025-12-20T18:17:24.876589Z | 019b3cfb-0e86-73f2-90d2-30d5fe93fa24 ====================
+18:17:24.876726 [info ]: dbt-fusion 2.0.0-preview.89
+18:17:24.877357 [info ]: Started loading project
+18:17:24.886395 [info ]: Loading ~/.dbt/profiles.yml
+18:17:25.130039 [info ]: Finished loading project [  0.25s]
+18:17:25.131217 [info ]: Started parsing
+18:17:25.247079 [info ]: Finished parsing [  0.12s]
+18:17:25.290639 [info ]: Started scheduling
+18:17:25.293591 [info ]: Finished scheduling [  0.00s]
+18:17:25.473830 [info ]: Started building task graph
+18:17:25.476811 [info ]: Finished building task graph [  0.00s]
+18:17:26.320991 [debug]: Query executed on node unknown:
+show terse schemas in database analytics
+    limit 10000
+/* {"app": "dbt", "connection_name": "", "dbt_version": "2.0.0", "profile_name": "default", "target_name": "dev"} */
+18:17:26.324460 [info ]: Started rendering (15 nodes)
+18:17:26.325537 [info ]: Started test dbt_ayajnik_dbt_test__audit.source_unique_jaffle_shop_customers_id
+18:17:26.325610 [debug]: Started rendering test dbt_ayajnik_dbt_test__audit.source_unique_jaffle_shop_customers_id
+18:17:26.325731 [info ]: Started test dbt_ayajnik_dbt_test__audit.source_not_null_jaffle_shop_customers_id
+18:17:26.325759 [debug]: Started rendering test dbt_ayajnik_dbt_test__audit.source_not_null_jaffle_shop_customers_id
+18:17:26.325813 [info ]: Started model dbt_ayajnik.stg_stripe__payment
+18:17:26.325838 [debug]: Started rendering model dbt_ayajnik.stg_stripe__payment
+18:17:26.325878 [info ]: Started model dbt_ayajnik.stg_jaffle_shop__orders
+18:17:26.325896 [debug]: Started rendering model dbt_ayajnik.stg_jaffle_shop__orders
+18:17:26.325923 [info ]: Started model dbt_ayajnik.stg_jaffle_shop__customers
+18:17:26.325936 [debug]: Started rendering model dbt_ayajnik.stg_jaffle_shop__customers
+18:17:26.342410 [debug]: Finished rendering [  0.02s] model dbt_ayajnik.stg_jaffle_shop__orders [success]
+18:17:26.344501 [info ]: Started analyzing (15 nodes)
+18:17:26.344891 [debug]: Started analyzing model dbt_ayajnik.stg_jaffle_shop__orders
+18:17:26.345028 [debug]: Finished rendering [  0.02s] model dbt_ayajnik.stg_jaffle_shop__customers [success]
+18:17:26.347401 [debug]: Started analyzing model dbt_ayajnik.stg_jaffle_shop__customers
+18:17:26.347554 [debug]: Finished rendering [  0.02s] test dbt_ayajnik_dbt_test__audit.source_not_null_jaffle_shop_customers_id [success]
+18:17:26.348815 [debug]: Started analyzing test dbt_ayajnik_dbt_test__audit.source_not_null_jaffle_shop_customers_id
+18:17:26.348995 [debug]: Finished rendering [  0.02s] test dbt_ayajnik_dbt_test__audit.source_unique_jaffle_shop_customers_id [success]
+18:17:26.350516 [debug]: Started analyzing test dbt_ayajnik_dbt_test__audit.source_unique_jaffle_shop_customers_id
+18:17:26.350846 [debug]: Finished rendering [  0.03s] model dbt_ayajnik.stg_stripe__payment [success]
+18:17:26.352393 [debug]: Started analyzing model dbt_ayajnik.stg_stripe__payment
+18:17:26.458700 [debug]: Finished analyzing [  0.11s] test dbt_ayajnik_dbt_test__audit.source_not_null_jaffle_shop_customers_id [success]
+18:17:26.459458 [info ]: Started running (15 nodes)
+18:17:26.459906 [debug]: Started running test dbt_ayajnik_dbt_test__audit.source_not_null_jaffle_shop_customers_id
+18:17:26.459948 [debug]: Finished analyzing [  0.11s] model dbt_ayajnik.stg_jaffle_shop__customers [success]
+18:17:26.460629 [info ]: Started test dbt_ayajnik_dbt_test__audit.unique_stg_jaffle_shop__customers_customer_id
+18:17:26.460657 [debug]: Started rendering test dbt_ayajnik_dbt_test__audit.unique_stg_jaffle_shop__customers_customer_id
+18:17:26.460708 [info ]: Started test dbt_ayajnik_dbt_test__audit.not_null_stg_jaffle_shop__customers_customer_id
+18:17:26.460726 [debug]: Started rendering test dbt_ayajnik_dbt_test__audit.not_null_stg_jaffle_shop__customers_customer_id
+18:17:26.460761 [debug]: Finished analyzing [  0.11s] model dbt_ayajnik.stg_stripe__payment [success]
+18:17:26.461800 [info ]: Started test dbt_ayajnik_dbt_test__audit.assert_stg__stripe_payment
+18:17:26.461829 [debug]: Started rendering test dbt_ayajnik_dbt_test__audit.assert_stg__stripe_payment
+18:17:26.461871 [debug]: Started running model dbt_ayajnik.stg_stripe__payment
+18:17:26.461907 [debug]: Finished analyzing [  0.12s] model dbt_ayajnik.stg_jaffle_shop__orders [success]
+18:17:26.463105 [info ]: Started test dbt_ayajnik_dbt_test__audit.accepted_values_stg_jaffle_sho_8d0cd9c77228920edeb7f4a53788bf13
+18:17:26.463140 [debug]: Started rendering test dbt_ayajnik_dbt_test__audit.accepted_values_stg_jaffle_sho_8d0cd9c77228920edeb7f4a53788bf13
+18:17:26.463185 [info ]: Started model dbt_ayajnik.dim_customers
+18:17:26.463202 [debug]: Started rendering model dbt_ayajnik.dim_customers
+18:17:26.463227 [debug]: Started running model dbt_ayajnik.stg_jaffle_shop__orders
+18:17:26.463265 [info ]: Started model dbt_ayajnik.fact_orders
+18:17:26.463280 [debug]: Started rendering model dbt_ayajnik.fact_orders
+18:17:26.463304 [info ]: Started test dbt_ayajnik_dbt_test__audit.unique_stg_jaffle_shop__orders_order_id
+18:17:26.463319 [debug]: Started rendering test dbt_ayajnik_dbt_test__audit.unique_stg_jaffle_shop__orders_order_id
+18:17:26.463341 [info ]: Started test dbt_ayajnik_dbt_test__audit.relationships_stg_jaffle_shop__0dd647f89c34966822c5f4faca99b672
+18:17:26.464144 [debug]: Started rendering test dbt_ayajnik_dbt_test__audit.relationships_stg_jaffle_shop__0dd647f89c34966822c5f4faca99b672
+18:17:26.464229 [info ]: Started test dbt_ayajnik_dbt_test__audit.not_null_stg_jaffle_shop__orders_order_id
+18:17:26.464246 [debug]: Started rendering test dbt_ayajnik_dbt_test__audit.not_null_stg_jaffle_shop__orders_order_id
+18:17:26.464883 [debug]: Writing runtime sql for node "test.jaffle_shop.source_not_null_jaffle_shop_customers_id.2b0a5f29a9"
+18:17:26.464319 [debug]: Finished analyzing [  0.11s] test dbt_ayajnik_dbt_test__audit.source_unique_jaffle_shop_customers_id [success]
+18:17:26.465404 [debug]: Started running test dbt_ayajnik_dbt_test__audit.source_unique_jaffle_shop_customers_id
+18:17:26.467284 [debug]: Finished rendering [  0.01s] test dbt_ayajnik_dbt_test__audit.assert_stg__stripe_payment [success]
+18:17:26.469338 [debug]: Started analyzing test dbt_ayajnik_dbt_test__audit.assert_stg__stripe_payment
+18:17:26.469674 [debug]: Writing runtime sql for node "test.jaffle_shop.source_unique_jaffle_shop_customers_id.aaddf56471"
+18:17:26.469912 [debug]: Finished rendering [  0.01s] test dbt_ayajnik_dbt_test__audit.unique_stg_jaffle_shop__customers_customer_id [success]
+18:17:26.478128 [debug]: Started analyzing test dbt_ayajnik_dbt_test__audit.unique_stg_jaffle_shop__customers_customer_id
+18:17:26.478307 [debug]: Finished rendering [  0.02s] model dbt_ayajnik.dim_customers [success]
+18:17:26.480807 [debug]: Started analyzing model dbt_ayajnik.dim_customers
+18:17:26.480887 [debug]: Finished rendering [  0.02s] model dbt_ayajnik.fact_orders [success]
+18:17:26.482067 [debug]: Started analyzing model dbt_ayajnik.fact_orders
+18:17:26.482223 [debug]: Finished rendering [  0.02s] test dbt_ayajnik_dbt_test__audit.not_null_stg_jaffle_shop__customers_customer_id [success]
+18:17:26.482527 [debug]: Started analyzing test dbt_ayajnik_dbt_test__audit.not_null_stg_jaffle_shop__customers_customer_id
+18:17:26.482634 [debug]: Finished rendering [  0.02s] test dbt_ayajnik_dbt_test__audit.not_null_stg_jaffle_shop__orders_order_id [success]
+18:17:26.482973 [debug]: Started analyzing test dbt_ayajnik_dbt_test__audit.not_null_stg_jaffle_shop__orders_order_id
+18:17:26.483019 [debug]: Finished rendering [  0.02s] test dbt_ayajnik_dbt_test__audit.relationships_stg_jaffle_shop__0dd647f89c34966822c5f4faca99b672 [success]
+18:17:26.483310 [debug]: Started analyzing test dbt_ayajnik_dbt_test__audit.relationships_stg_jaffle_shop__0dd647f89c34966822c5f4faca99b672
+18:17:26.483372 [debug]: Finished rendering [  0.02s] test dbt_ayajnik_dbt_test__audit.unique_stg_jaffle_shop__orders_order_id [success]
+18:17:26.483599 [debug]: Started analyzing test dbt_ayajnik_dbt_test__audit.unique_stg_jaffle_shop__orders_order_id
+18:17:26.483647 [debug]: Finished rendering [  0.02s] test dbt_ayajnik_dbt_test__audit.accepted_values_stg_jaffle_sho_8d0cd9c77228920edeb7f4a53788bf13 [success]
+18:17:26.484668 [debug]: Started analyzing test dbt_ayajnik_dbt_test__audit.accepted_values_stg_jaffle_sho_8d0cd9c77228920edeb7f4a53788bf13
+18:17:26.489362 [debug]: Finished analyzing [  0.01s] test dbt_ayajnik_dbt_test__audit.not_null_stg_jaffle_shop__orders_order_id [success]
+18:17:26.497707 [debug]: Finished analyzing [  0.02s] test dbt_ayajnik_dbt_test__audit.not_null_stg_jaffle_shop__customers_customer_id [success]
+18:17:26.499184 [debug]: Finished analyzing [  0.02s] test dbt_ayajnik_dbt_test__audit.unique_stg_jaffle_shop__orders_order_id [success]
+18:17:26.520367 [debug]: Finished analyzing [  0.04s] test dbt_ayajnik_dbt_test__audit.unique_stg_jaffle_shop__customers_customer_id [success]
+18:17:26.547454 [debug]: Finished analyzing [  0.08s] test dbt_ayajnik_dbt_test__audit.assert_stg__stripe_payment [success]
+18:17:26.549792 [debug]: Finished analyzing [  0.07s] test dbt_ayajnik_dbt_test__audit.accepted_values_stg_jaffle_sho_8d0cd9c77228920edeb7f4a53788bf13 [success]
+18:17:26.561131 [debug]: Finished analyzing [  0.08s] test dbt_ayajnik_dbt_test__audit.relationships_stg_jaffle_shop__0dd647f89c34966822c5f4faca99b672 [success]
+18:17:26.604746 [debug]: Finished analyzing [  0.12s] model dbt_ayajnik.dim_customers [success]
+18:17:26.605839 [debug]: Finished analyzing [  0.12s] model dbt_ayajnik.fact_orders [success]
+18:17:26.606160 [info ]: Started model dbt_ayajnik.fct_customers
+18:17:26.606215 [debug]: Started rendering model dbt_ayajnik.fct_customers
+18:17:26.609939 [debug]: Finished rendering [  0.00s] model dbt_ayajnik.fct_customers [success]
+18:17:26.610228 [info ]: Finished rendering [  0.29s] (15 nodes, 0 skipped, 0 errors)
+18:17:26.612781 [debug]: Started analyzing model dbt_ayajnik.fct_customers
+18:17:26.621103 [debug]: Finished analyzing [  0.01s] model dbt_ayajnik.fct_customers [success]
+18:17:26.621353 [info ]: Finished analyzing [  0.28s] (15 nodes, 0 skipped, 0 errors)
+18:17:26.804688 [debug]: Query executed on node test.jaffle_shop.source_not_null_jaffle_shop_customers_id.2b0a5f29a9:
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select id
+from raw.jaffle_shop.customers
+where id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "test.jaffle_shop.source_not_null_jaffle_shop_customers_id.2b0a5f29a9", "profile_name": "default", "target_name": "dev"} */
+18:17:26.807091 [info ]:     Passed [  0.48s] test  dbt_ayajnik_dbt_test__audit.source_not_null_jaffle_shop_customers_id
+18:17:26.810422 [debug]: Finished running [  0.35s] test dbt_ayajnik_dbt_test__audit.source_not_null_jaffle_shop_customers_id [pass]
+18:17:27.068518 [debug]: Query executed on node model.jaffle_shop.stg_stripe__payment:
+SHOW OBJECTS IN SCHEMA "ANALYTICS"."DBT_AYAJNIK" LIMIT 10000
+18:17:27.073559 [debug]: Writing runtime sql for node "model.jaffle_shop.stg_stripe__payment"
+18:17:27.268281 [debug]: Query executed on node model.jaffle_shop.stg_stripe__payment:
+create or replace   view analytics.dbt_ayajnik.stg_stripe__payment
+  
+   as (
+    select
+    id as payment_id,
+    orderid as order_id,
+    paymentmethod as payment_method,
+    status,
+    -- amount is stored in cents, convert it to dollars
+    amount / 100 as amount,
+    created as created_at
+from raw.stripe.payment
+  )
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.jaffle_shop.stg_stripe__payment", "profile_name": "default", "target_name": "dev"} */
+18:17:27.270666 [info ]:  Succeeded [  0.94s] model dbt_ayajnik.stg_stripe__payment (view)
+18:17:27.272281 [debug]: Finished running [  0.81s] model dbt_ayajnik.stg_stripe__payment [success]
+18:17:27.272731 [debug]: Started running test dbt_ayajnik_dbt_test__audit.assert_stg__stripe_payment
+18:17:27.274675 [debug]: Writing runtime sql for node "test.jaffle_shop.assert_stg__stripe_payment.549adc1a87"
+18:17:27.313095 [debug]: Query executed on node test.jaffle_shop.source_unique_jaffle_shop_customers_id.aaddf56471:
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+select
+    id as unique_field,
+    count(*) as n_records
+
+from raw.jaffle_shop.customers
+where id is not null
+group by id
+having count(*) > 1
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "test.jaffle_shop.source_unique_jaffle_shop_customers_id.aaddf56471", "profile_name": "default", "target_name": "dev"} */
+18:17:27.318591 [info ]:     Passed [  0.99s] test  dbt_ayajnik_dbt_test__audit.source_unique_jaffle_shop_customers_id
+18:17:27.322575 [debug]: Finished running [  0.86s] test dbt_ayajnik_dbt_test__audit.source_unique_jaffle_shop_customers_id [pass]
+18:17:27.323041 [debug]: Started running model dbt_ayajnik.stg_jaffle_shop__customers
+18:17:27.328012 [debug]: Writing runtime sql for node "model.jaffle_shop.stg_jaffle_shop__customers"
+18:17:27.567818 [debug]: Query executed on node model.jaffle_shop.stg_jaffle_shop__orders:
+SHOW OBJECTS IN SCHEMA "ANALYTICS"."DBT_AYAJNIK" LIMIT 10000
+18:17:27.571816 [debug]: Writing runtime sql for node "model.jaffle_shop.stg_jaffle_shop__orders"
+18:17:27.875090 [debug]: Query executed on node model.jaffle_shop.stg_jaffle_shop__orders:
+create or replace   view analytics.dbt_ayajnik.stg_jaffle_shop__orders
+  
+   as (
+    select
+        id as order_id,
+        user_id as customer_id,
+        order_date,
+        status, 
+        _etl_loaded_at
+    from raw.jaffle_shop.orders
+  )
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.jaffle_shop.stg_jaffle_shop__orders", "profile_name": "default", "target_name": "dev"} */
+18:17:27.877845 [info ]:  Succeeded [  1.55s] model dbt_ayajnik.stg_jaffle_shop__orders (view)
+18:17:27.880686 [debug]: Finished running [  1.42s] model dbt_ayajnik.stg_jaffle_shop__orders [success]
+18:17:27.882686 [debug]: Started running test dbt_ayajnik_dbt_test__audit.accepted_values_stg_jaffle_sho_8d0cd9c77228920edeb7f4a53788bf13
+18:17:27.882760 [debug]: Started running test dbt_ayajnik_dbt_test__audit.not_null_stg_jaffle_shop__orders_order_id
+18:17:27.882807 [debug]: Started running test dbt_ayajnik_dbt_test__audit.unique_stg_jaffle_shop__orders_order_id
+18:17:27.882849 [debug]: Started running test dbt_ayajnik_dbt_test__audit.relationships_stg_jaffle_shop__0dd647f89c34966822c5f4faca99b672
+18:17:27.890620 [debug]: Writing runtime sql for node "test.jaffle_shop.accepted_values_stg_jaffle_sho_8d0cd9c77228920edeb7f4a53788bf13.94b499f2bd"
+18:17:27.890655 [debug]: Writing runtime sql for node "test.jaffle_shop.relationships_stg_jaffle_shop__0dd647f89c34966822c5f4faca99b672.4786670766"
+18:17:27.891853 [debug]: Writing runtime sql for node "test.jaffle_shop.unique_stg_jaffle_shop__orders_order_id.96447b5705"
+18:17:27.892235 [debug]: Writing runtime sql for node "test.jaffle_shop.not_null_stg_jaffle_shop__orders_order_id.f4fccc4c71"
+18:17:28.074849 [debug]: Query executed on node test.jaffle_shop.assert_stg__stripe_payment.549adc1a87:
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  SELECT
+  order_id,
+  sum(amount) AS total_amount
+FROM analytics.dbt_ayajnik.stg_stripe__payment
+GROUP BY order_id
+HAVING total_amount < 0
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "test.jaffle_shop.assert_stg__stripe_payment.549adc1a87", "profile_name": "default", "target_name": "dev"} */
+18:17:28.079683 [info ]:     Passed [  0.89s] test  dbt_ayajnik_dbt_test__audit.assert_stg__stripe_payment
+18:17:28.083526 [debug]: Finished running [  0.81s] test dbt_ayajnik_dbt_test__audit.assert_stg__stripe_payment [pass]
+18:17:28.195959 [debug]: Query executed on node model.jaffle_shop.stg_jaffle_shop__customers:
+create or replace   view analytics.dbt_ayajnik.stg_jaffle_shop__customers
+  
+   as (
+        select
+        id as customer_id,
+        first_name,
+        last_name
+
+    from raw.jaffle_shop.customers
+  )
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.jaffle_shop.stg_jaffle_shop__customers", "profile_name": "default", "target_name": "dev"} */
+18:17:28.204115 [info ]:  Succeeded [  1.01s] model dbt_ayajnik.stg_jaffle_shop__customers (view)
+18:17:28.208868 [debug]: Finished running [  0.89s] model dbt_ayajnik.stg_jaffle_shop__customers [success]
+18:17:28.211060 [debug]: Started running test dbt_ayajnik_dbt_test__audit.not_null_stg_jaffle_shop__customers_customer_id
+18:17:28.211156 [debug]: Started running test dbt_ayajnik_dbt_test__audit.unique_stg_jaffle_shop__customers_customer_id
+18:17:28.218909 [debug]: Writing runtime sql for node "test.jaffle_shop.unique_stg_jaffle_shop__customers_customer_id.bbddff99e3"
+18:17:28.218947 [debug]: Writing runtime sql for node "test.jaffle_shop.not_null_stg_jaffle_shop__customers_customer_id.4705beb1d4"
+18:17:28.639679 [debug]: Query executed on node test.jaffle_shop.not_null_stg_jaffle_shop__orders_order_id.f4fccc4c71:
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select order_id
+from analytics.dbt_ayajnik.stg_jaffle_shop__orders
+where order_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "test.jaffle_shop.not_null_stg_jaffle_shop__orders_order_id.f4fccc4c71", "profile_name": "default", "target_name": "dev"} */
+18:17:28.643137 [info ]:     Passed [  0.78s] test  dbt_ayajnik_dbt_test__audit.not_null_stg_jaffle_shop__orders_order_id
+18:17:28.647736 [debug]: Finished running [  0.76s] test dbt_ayajnik_dbt_test__audit.not_null_stg_jaffle_shop__orders_order_id [pass]
+18:17:28.726342 [debug]: Query executed on node test.jaffle_shop.accepted_values_stg_jaffle_sho_8d0cd9c77228920edeb7f4a53788bf13.94b499f2bd:
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+with all_values as (
+
+    select
+        status as value_field,
+        count(*) as n_records
+
+    from analytics.dbt_ayajnik.stg_jaffle_shop__orders
+    group by status
+
+)
+
+select *
+from all_values
+where value_field not in (
+    'placed','shipped','completed','returned','return_pending'
+)
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "test.jaffle_shop.accepted_values_stg_jaffle_sho_8d0cd9c77228920edeb7f4a53788bf13.94b499f2bd", "profile_name": "default", "target_name": "dev"} */
+18:17:28.728417 [info ]:     Passed [  0.93s] test  dbt_ayajnik_dbt_test__audit.accepted_values_stg_jaffle_sho_8d0cd9c77228920edeb7f4a53788bf13
+18:17:28.732956 [debug]: Finished running [  0.85s] test dbt_ayajnik_dbt_test__audit.accepted_values_stg_jaffle_sho_8d0cd9c77228920edeb7f4a53788bf13 [pass]
+18:17:28.902337 [debug]: Query executed on node test.jaffle_shop.unique_stg_jaffle_shop__orders_order_id.96447b5705:
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+select
+    order_id as unique_field,
+    count(*) as n_records
+
+from analytics.dbt_ayajnik.stg_jaffle_shop__orders
+where order_id is not null
+group by order_id
+having count(*) > 1
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "test.jaffle_shop.unique_stg_jaffle_shop__orders_order_id.96447b5705", "profile_name": "default", "target_name": "dev"} */
+18:17:28.909013 [info ]:     Passed [  1.06s] test  dbt_ayajnik_dbt_test__audit.unique_stg_jaffle_shop__orders_order_id
+18:17:28.911716 [debug]: Finished running [  1.03s] test dbt_ayajnik_dbt_test__audit.unique_stg_jaffle_shop__orders_order_id [pass]
+18:17:29.548868 [debug]: Query executed on node test.jaffle_shop.relationships_stg_jaffle_shop__0dd647f89c34966822c5f4faca99b672.4786670766:
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+with child as (
+    select customer_id as from_field
+    from analytics.dbt_ayajnik.stg_jaffle_shop__orders
+    where customer_id is not null
+),
+
+parent as (
+    select customer_id as to_field
+    from analytics.dbt_ayajnik.stg_jaffle_shop__orders
+)
+
+select
+    from_field
+
+from child
+left join parent
+    on child.from_field = parent.to_field
+
+where parent.to_field is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "test.jaffle_shop.relationships_stg_jaffle_shop__0dd647f89c34966822c5f4faca99b672.4786670766", "profile_name": "default", "target_name": "dev"} */
+18:17:29.550033 [info ]:     Passed [  1.76s] test  dbt_ayajnik_dbt_test__audit.relationships_stg_jaffle_shop__0dd647f89c34966822c5f4faca99b672
+18:17:29.551045 [debug]: Finished running [  1.67s] test dbt_ayajnik_dbt_test__audit.relationships_stg_jaffle_shop__0dd647f89c34966822c5f4faca99b672 [pass]
+18:17:29.551337 [debug]: Started running model dbt_ayajnik.fact_orders
+18:17:29.564112 [debug]: Writing runtime sql for node "model.jaffle_shop.fact_orders"
+18:17:29.820422 [debug]: Query executed on node test.jaffle_shop.unique_stg_jaffle_shop__customers_customer_id.bbddff99e3:
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+select
+    customer_id as unique_field,
+    count(*) as n_records
+
+from analytics.dbt_ayajnik.stg_jaffle_shop__customers
+where customer_id is not null
+group by customer_id
+having count(*) > 1
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "test.jaffle_shop.unique_stg_jaffle_shop__customers_customer_id.bbddff99e3", "profile_name": "default", "target_name": "dev"} */
+18:17:29.822217 [info ]:     Passed [  1.66s] test  dbt_ayajnik_dbt_test__audit.unique_stg_jaffle_shop__customers_customer_id
+18:17:29.824003 [debug]: Finished running [  1.61s] test dbt_ayajnik_dbt_test__audit.unique_stg_jaffle_shop__customers_customer_id [pass]
+18:17:30.045330 [debug]: Query executed on node test.jaffle_shop.not_null_stg_jaffle_shop__customers_customer_id.4705beb1d4:
+select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select customer_id
+from analytics.dbt_ayajnik.stg_jaffle_shop__customers
+where customer_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "test.jaffle_shop.not_null_stg_jaffle_shop__customers_customer_id.4705beb1d4", "profile_name": "default", "target_name": "dev"} */
+18:17:30.047247 [info ]:     Passed [  1.87s] test  dbt_ayajnik_dbt_test__audit.not_null_stg_jaffle_shop__customers_customer_id
+18:17:30.049139 [debug]: Finished running [  1.84s] test dbt_ayajnik_dbt_test__audit.not_null_stg_jaffle_shop__customers_customer_id [pass]
+18:17:30.050090 [debug]: Started running model dbt_ayajnik.dim_customers
+18:17:30.053564 [debug]: Writing runtime sql for node "model.jaffle_shop.dim_customers"
+18:17:31.606371 [debug]: Query executed on node model.jaffle_shop.dim_customers:
+create or replace transient  table analytics.dbt_ayajnik.dim_customers
+    
+    
+    
+    as (
+
+with customers as (
+
+select * from analytics.dbt_ayajnik.stg_jaffle_shop__customers
+
+),
+
+orders as (
+
+    select * from analytics.dbt_ayajnik.stg_jaffle_shop__orders
+
+),
+
+customer_orders as (
+
+    select
+        customer_id,
+
+        min(order_date) as first_order_date,
+        max(order_date) as most_recent_order_date,
+        count(order_id) as number_of_orders
+
+    from orders
+
+    group by 1
+
+),
+
+
+final as (
+
+    select
+        customers.customer_id,
+        customers.first_name,
+        customers.last_name,
+        customer_orders.first_order_date,
+        customer_orders.most_recent_order_date,
+        coalesce(customer_orders.number_of_orders, 0) as number_of_orders
+
+    from customers
+
+    left join customer_orders using (customer_id)
+
+)
+
+select * from final
+    )
+
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.jaffle_shop.dim_customers", "profile_name": "default", "target_name": "dev"} */
+18:17:31.610030 [info ]:  Succeeded [  1.70s] model dbt_ayajnik.dim_customers (table)
+18:17:31.613213 [debug]: Finished running [  1.56s] model dbt_ayajnik.dim_customers [success]
+18:17:31.613825 [debug]: Query executed on node model.jaffle_shop.fact_orders:
+create or replace transient  table analytics.dbt_ayajnik.fact_orders
+    
+    
+    
+    as (with orders as  (
+    select * from analytics.dbt_ayajnik.stg_jaffle_shop__orders
+),
+
+payments as (
+    select * from analytics.dbt_ayajnik.stg_stripe__payment
+),
+
+order_payments as (
+    select
+        order_id,
+        sum (case when status = 'success' then amount end) as amount
+
+    from payments
+    group by 1
+),
+
+ final as (
+
+    select
+        orders.order_id,
+        orders.customer_id,
+        orders.order_date,
+        coalesce (order_payments.amount, 0) as amount
+
+    from orders
+    left join order_payments using (order_id)
+)
+
+select * from final
+    )
+
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.jaffle_shop.fact_orders", "profile_name": "default", "target_name": "dev"} */
+18:17:31.617793 [info ]:  Succeeded [  2.21s] model dbt_ayajnik.fact_orders (table)
+18:17:31.621220 [debug]: Finished running [  2.07s] model dbt_ayajnik.fact_orders [success]
+18:17:31.622040 [debug]: Started running model dbt_ayajnik.fct_customers
+18:17:31.631404 [debug]: Writing runtime sql for node "model.jaffle_shop.fct_customers"
+18:17:32.909006 [debug]: Query executed on node model.jaffle_shop.fct_customers:
+create or replace transient  table analytics.dbt_ayajnik.fct_customers
+    
+    
+    
+    as (with customers as (
+    select * from analytics.dbt_ayajnik.stg_jaffle_shop__customers
+),
+orders as (
+    select * from analytics.dbt_ayajnik.fact_orders
+),
+customer_orders as (
+    select
+        customer_id,
+        min (order_date) as first_order_date,
+        max (order_date) as most_recent_order_date,
+        count(order_id) as number_of_orders,
+        sum(amount) as lifetime_value
+    from orders
+    group by 1
+),
+ final as (
+    select
+        customers.customer_id,
+        customers.first_name,
+        customers.last_name,
+        customer_orders.first_order_date,
+        customer_orders.most_recent_order_date,
+        coalesce (customer_orders.number_of_orders, 0) as number_of_orders,
+        customer_orders.lifetime_value
+    from customers
+    left join customer_orders using (customer_id)
+)
+select * from final
+    )
+
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.jaffle_shop.fct_customers", "profile_name": "default", "target_name": "dev"} */
+18:17:32.912514 [info ]:  Succeeded [  1.30s] model dbt_ayajnik.fct_customers (table)
+18:17:32.915991 [debug]: Finished running [  1.29s] model dbt_ayajnik.fct_customers [success]
+18:17:32.916539 [info ]: Finished running [  6.46s] (15 nodes, 0 skipped, 0 errors)
+18:17:33.036563 [info ]: 
+==================== Execution Summary =====================
+Finished 'build' successfully for target 'dev' [8.2s]
+Processed: 6 models | 9 tests
+Summary: 15 total | 15 success

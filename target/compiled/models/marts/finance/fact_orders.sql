@@ -3,7 +3,7 @@ with orders as  (
 ),
 
 payments as (
-    select * from analytics.dbt_ayajnik.stg_stripe__payments
+    select * from analytics.dbt_ayajnik.stg_stripe__payment
 ),
 
 order_payments as (
