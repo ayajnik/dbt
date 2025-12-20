@@ -52,5 +52,5 @@ dbt test --models <model_name>
 2. Keep YAML tests in model `*.yml` files valid — follow dbt schema for tests.
 
 ---
-Generated README — edit as needed for your environment and workflow.
+
 
