@@ -3432,3 +3432,121 @@ select * from final
 Finished 'build' successfully for target 'dev' [8.2s]
 Processed: 6 models | 9 tests
 Summary: 15 total | 15 success
+==================== 2025-12-20T20:13:56.760857Z | 019b3d65-be93-7023-879a-fbef6285eee5 ====================
+20:13:56.760990 [info ]: dbt-fusion 2.0.0-preview.89
+20:13:56.762497 [info ]: Started loading project
+20:13:56.769132 [info ]: Loading ~/.dbt/profiles.yml
+20:13:57.259206 [info ]: Finished loading project [  0.50s]
+20:13:57.260223 [info ]: Started parsing
+20:13:57.459411 [info ]: Finished parsing [  0.20s]
+20:13:57.504322 [info ]: Started scheduling
+20:13:57.505391 [info ]: Finished scheduling [  0.00s]
+20:13:57.674720 [info ]: Started building task graph
+20:13:57.677275 [info ]: Finished building task graph [  0.00s]
+20:13:57.678423 [info ]: Started rendering (16 nodes)
+20:13:57.679329 [info ]: Started test dbt_ayajnik_dbt_test__audit.source_unique_jaffle_shop_customers_id
+20:13:57.679381 [debug]: Started rendering test dbt_ayajnik_dbt_test__audit.source_unique_jaffle_shop_customers_id
+20:13:57.680149 [info ]: Started test dbt_ayajnik_dbt_test__audit.source_not_null_jaffle_shop_customers_id
+20:13:57.680195 [debug]: Started rendering test dbt_ayajnik_dbt_test__audit.source_not_null_jaffle_shop_customers_id
+20:13:57.680262 [info ]: Started model dbt_ayajnik.jinja_practice
+20:13:57.680275 [debug]: Started rendering model dbt_ayajnik.jinja_practice
+20:13:57.680296 [info ]: Started model dbt_ayajnik.stg_stripe__payment
+20:13:57.680310 [debug]: Started rendering model dbt_ayajnik.stg_stripe__payment
+20:13:57.680329 [info ]: Started model dbt_ayajnik.stg_jaffle_shop__orders
+20:13:57.680338 [debug]: Started rendering model dbt_ayajnik.stg_jaffle_shop__orders
+20:13:57.680435 [info ]: Started model dbt_ayajnik.stg_jaffle_shop__customers
+20:13:57.680450 [debug]: Started rendering model dbt_ayajnik.stg_jaffle_shop__customers
+20:13:57.690994 [debug]: Finished rendering [  0.01s] model dbt_ayajnik.jinja_practice [success]
+20:13:57.691584 [info ]: Started analyzing (16 nodes)
+20:13:57.693543 [debug]: Started analyzing model dbt_ayajnik.jinja_practice
+20:13:57.693642 [debug]: Finished rendering [  0.01s] model dbt_ayajnik.stg_jaffle_shop__customers [success]
+20:13:57.695147 [debug]: Started analyzing model dbt_ayajnik.stg_jaffle_shop__customers
+20:13:57.695234 [debug]: Finished rendering [  0.01s] model dbt_ayajnik.stg_jaffle_shop__orders [success]
+20:13:57.695571 [debug]: Started analyzing model dbt_ayajnik.stg_jaffle_shop__orders
+20:13:57.695685 [debug]: Finished rendering [  0.02s] model dbt_ayajnik.stg_stripe__payment [success]
+20:13:57.695916 [debug]: Started analyzing model dbt_ayajnik.stg_stripe__payment
+20:13:57.695956 [debug]: Finished rendering [  0.02s] test dbt_ayajnik_dbt_test__audit.source_not_null_jaffle_shop_customers_id [success]
+20:13:57.696156 [debug]: Started analyzing test dbt_ayajnik_dbt_test__audit.source_not_null_jaffle_shop_customers_id
+20:13:57.696194 [debug]: Finished rendering [  0.02s] test dbt_ayajnik_dbt_test__audit.source_unique_jaffle_shop_customers_id [success]
+20:13:57.696414 [debug]: Started analyzing test dbt_ayajnik_dbt_test__audit.source_unique_jaffle_shop_customers_id
+20:13:57.727401 [info ]:     Failed [  0.04s] model dbt_ayajnik.jinja_practice (view)
+20:13:57.728932 [debug]: Finished analyzing [  0.04s] model dbt_ayajnik.jinja_practice [error]
+20:13:57.733950 [error]: dbt0101: mismatched input 'Wow' expecting one of <EOF>, 'ALTER', 'ANALYZE', 'BEGIN', 'CALL', 'COMMENT', 'COMMIT' ...
+  --> models\jinja_practice.sql:5:1 (target\compiled\models\jinja_practice.sql:5:1)
+20:13:57.773216 [info ]:  Succeeded [  0.09s] model dbt_ayajnik.stg_jaffle_shop__customers (view)
+20:13:57.773277 [debug]: Finished analyzing [  0.08s] model dbt_ayajnik.stg_jaffle_shop__customers [success]
+20:13:57.774691 [info ]: Started test dbt_ayajnik_dbt_test__audit.unique_stg_jaffle_shop__customers_customer_id
+20:13:57.774752 [debug]: Started rendering test dbt_ayajnik_dbt_test__audit.unique_stg_jaffle_shop__customers_customer_id
+20:13:57.774907 [info ]: Started test dbt_ayajnik_dbt_test__audit.not_null_stg_jaffle_shop__customers_customer_id
+20:13:57.774932 [debug]: Started rendering test dbt_ayajnik_dbt_test__audit.not_null_stg_jaffle_shop__customers_customer_id
+20:13:57.774984 [info ]:  Succeeded [  0.09s] model dbt_ayajnik.stg_jaffle_shop__orders (view)
+20:13:57.775015 [debug]: Finished analyzing [  0.08s] model dbt_ayajnik.stg_jaffle_shop__orders [success]
+20:13:57.775955 [info ]: Started test dbt_ayajnik_dbt_test__audit.unique_stg_jaffle_shop__orders_order_id
+20:13:57.776022 [debug]: Started rendering test dbt_ayajnik_dbt_test__audit.unique_stg_jaffle_shop__orders_order_id
+20:13:57.776090 [info ]: Started test dbt_ayajnik_dbt_test__audit.relationships_stg_jaffle_shop__0dd647f89c34966822c5f4faca99b672
+20:13:57.776109 [debug]: Started rendering test dbt_ayajnik_dbt_test__audit.relationships_stg_jaffle_shop__0dd647f89c34966822c5f4faca99b672
+20:13:57.776160 [info ]: Started test dbt_ayajnik_dbt_test__audit.not_null_stg_jaffle_shop__orders_order_id
+20:13:57.776199 [debug]: Started rendering test dbt_ayajnik_dbt_test__audit.not_null_stg_jaffle_shop__orders_order_id
+20:13:57.776253 [info ]: Started test dbt_ayajnik_dbt_test__audit.accepted_values_stg_jaffle_sho_8d0cd9c77228920edeb7f4a53788bf13
+20:13:57.776273 [debug]: Started rendering test dbt_ayajnik_dbt_test__audit.accepted_values_stg_jaffle_sho_8d0cd9c77228920edeb7f4a53788bf13
+20:13:57.776304 [info ]: Started model dbt_ayajnik.dim_customers
+20:13:57.776317 [debug]: Started rendering model dbt_ayajnik.dim_customers
+20:13:57.776363 [info ]:  Succeeded [  0.10s] test  dbt_ayajnik_dbt_test__audit.source_not_null_jaffle_shop_customers_id (models\staging\_src_jaffle_shop.yml:18:17)
+20:13:57.776420 [debug]: Finished analyzing [  0.08s] test dbt_ayajnik_dbt_test__audit.source_not_null_jaffle_shop_customers_id [success]
+20:13:57.778167 [info ]:  Succeeded [  0.10s] model dbt_ayajnik.stg_stripe__payment (view)
+20:13:57.778217 [debug]: Finished analyzing [  0.08s] model dbt_ayajnik.stg_stripe__payment [success]
+20:13:57.778998 [info ]: Started test dbt_ayajnik_dbt_test__audit.assert_stg__stripe_payment
+20:13:57.779040 [debug]: Started rendering test dbt_ayajnik_dbt_test__audit.assert_stg__stripe_payment
+20:13:57.779101 [info ]: Started model dbt_ayajnik.fact_orders
+20:13:57.779120 [debug]: Started rendering model dbt_ayajnik.fact_orders
+20:13:57.783319 [debug]: Finished rendering [  0.01s] test dbt_ayajnik_dbt_test__audit.not_null_stg_jaffle_shop__customers_customer_id [success]
+20:13:57.789977 [debug]: Started analyzing test dbt_ayajnik_dbt_test__audit.not_null_stg_jaffle_shop__customers_customer_id
+20:13:57.790077 [debug]: Finished rendering [  0.01s] model dbt_ayajnik.fact_orders [success]
+20:13:57.791063 [debug]: Started analyzing model dbt_ayajnik.fact_orders
+20:13:57.791138 [debug]: Finished rendering [  0.01s] test dbt_ayajnik_dbt_test__audit.not_null_stg_jaffle_shop__orders_order_id [success]
+20:13:57.792704 [debug]: Started analyzing test dbt_ayajnik_dbt_test__audit.not_null_stg_jaffle_shop__orders_order_id
+20:13:57.792780 [debug]: Finished rendering [  0.01s] test dbt_ayajnik_dbt_test__audit.assert_stg__stripe_payment [success]
+20:13:57.793567 [debug]: Started analyzing test dbt_ayajnik_dbt_test__audit.assert_stg__stripe_payment
+20:13:57.793644 [debug]: Finished rendering [  0.02s] test dbt_ayajnik_dbt_test__audit.relationships_stg_jaffle_shop__0dd647f89c34966822c5f4faca99b672 [success]
+20:13:57.794652 [debug]: Started analyzing test dbt_ayajnik_dbt_test__audit.relationships_stg_jaffle_shop__0dd647f89c34966822c5f4faca99b672
+20:13:57.794746 [debug]: Finished rendering [  0.02s] test dbt_ayajnik_dbt_test__audit.unique_stg_jaffle_shop__orders_order_id [success]
+20:13:57.795605 [debug]: Started analyzing test dbt_ayajnik_dbt_test__audit.unique_stg_jaffle_shop__orders_order_id
+20:13:57.795673 [debug]: Finished rendering [  0.02s] test dbt_ayajnik_dbt_test__audit.accepted_values_stg_jaffle_sho_8d0cd9c77228920edeb7f4a53788bf13 [success]
+20:13:57.796539 [debug]: Started analyzing test dbt_ayajnik_dbt_test__audit.accepted_values_stg_jaffle_sho_8d0cd9c77228920edeb7f4a53788bf13
+20:13:57.796618 [debug]: Finished rendering [  0.02s] test dbt_ayajnik_dbt_test__audit.unique_stg_jaffle_shop__customers_customer_id [success]
+20:13:57.797435 [debug]: Started analyzing test dbt_ayajnik_dbt_test__audit.unique_stg_jaffle_shop__customers_customer_id
+20:13:57.797533 [debug]: Finished rendering [  0.02s] model dbt_ayajnik.dim_customers [success]
+20:13:57.797758 [debug]: Started analyzing model dbt_ayajnik.dim_customers
+20:13:57.797831 [info ]:  Succeeded [  0.12s] test  dbt_ayajnik_dbt_test__audit.source_unique_jaffle_shop_customers_id (models\staging\_src_jaffle_shop.yml:17:17)
+20:13:57.797872 [debug]: Finished analyzing [  0.10s] test dbt_ayajnik_dbt_test__audit.source_unique_jaffle_shop_customers_id [success]
+20:13:57.799148 [info ]:  Succeeded [  0.02s] test  dbt_ayajnik_dbt_test__audit.not_null_stg_jaffle_shop__orders_order_id (models\staging\_stg_jaffle_shop.yml:16:13)
+20:13:57.800224 [debug]: Finished analyzing [  0.01s] test dbt_ayajnik_dbt_test__audit.not_null_stg_jaffle_shop__orders_order_id [success]
+20:13:57.832233 [info ]:  Succeeded [  0.05s] test  dbt_ayajnik_dbt_test__audit.not_null_stg_jaffle_shop__customers_customer_id (models\staging\_stg_jaffle_shop.yml:9:13)
+20:13:57.832305 [debug]: Finished analyzing [  0.04s] test dbt_ayajnik_dbt_test__audit.not_null_stg_jaffle_shop__customers_customer_id [success]
+20:13:57.836089 [info ]:  Succeeded [  0.06s] test  dbt_ayajnik_dbt_test__audit.accepted_values_stg_jaffle_sho_8d0cd9c77228920edeb7f4a53788bf13 (models\staging\_stg_jaffle_shop.yml:21:13)
+20:13:57.836155 [debug]: Finished analyzing [  0.04s] test dbt_ayajnik_dbt_test__audit.accepted_values_stg_jaffle_sho_8d0cd9c77228920edeb7f4a53788bf13 [success]
+20:13:57.851345 [info ]:  Succeeded [  0.07s] test  dbt_ayajnik_dbt_test__audit.relationships_stg_jaffle_shop__0dd647f89c34966822c5f4faca99b672 (models\staging\_stg_jaffle_shop.yml:27:13)
+20:13:57.851415 [debug]: Finished analyzing [  0.06s] test dbt_ayajnik_dbt_test__audit.relationships_stg_jaffle_shop__0dd647f89c34966822c5f4faca99b672 [success]
+20:13:57.863339 [info ]:  Succeeded [  0.09s] test  dbt_ayajnik_dbt_test__audit.unique_stg_jaffle_shop__orders_order_id (models\staging\_stg_jaffle_shop.yml:15:13)
+20:13:57.863393 [debug]: Finished analyzing [  0.07s] test dbt_ayajnik_dbt_test__audit.unique_stg_jaffle_shop__orders_order_id [success]
+20:13:57.867210 [info ]:  Succeeded [  0.09s] test  dbt_ayajnik_dbt_test__audit.unique_stg_jaffle_shop__customers_customer_id (models\staging\_stg_jaffle_shop.yml:8:13)
+20:13:57.867278 [debug]: Finished analyzing [  0.07s] test dbt_ayajnik_dbt_test__audit.unique_stg_jaffle_shop__customers_customer_id [success]
+20:13:57.876673 [info ]:  Succeeded [  0.10s] test  dbt_ayajnik_dbt_test__audit.assert_stg__stripe_payment (tests\assert_stg__stripe_payment.sql)
+20:13:57.876800 [debug]: Finished analyzing [  0.08s] test dbt_ayajnik_dbt_test__audit.assert_stg__stripe_payment [success]
+20:13:57.887700 [info ]:  Succeeded [  0.11s] model dbt_ayajnik.dim_customers (table)
+20:13:57.887760 [debug]: Finished analyzing [  0.09s] model dbt_ayajnik.dim_customers [success]
+20:13:57.893956 [info ]:  Succeeded [  0.11s] model dbt_ayajnik.fact_orders (table)
+20:13:57.894006 [debug]: Finished analyzing [  0.10s] model dbt_ayajnik.fact_orders [success]
+20:13:57.894197 [info ]: Started model dbt_ayajnik.fct_customers
+20:13:57.894218 [debug]: Started rendering model dbt_ayajnik.fct_customers
+20:13:57.897827 [debug]: Finished rendering [  0.00s] model dbt_ayajnik.fct_customers [success]
+20:13:57.898107 [info ]: Finished rendering [  0.22s] (16 nodes, 0 skipped, 0 errors)
+20:13:57.899267 [debug]: Started analyzing model dbt_ayajnik.fct_customers
+20:13:57.907293 [info ]:  Succeeded [  0.01s] model dbt_ayajnik.fct_customers (table)
+20:13:57.907346 [debug]: Finished analyzing [  0.01s] model dbt_ayajnik.fct_customers [success]
+20:13:57.907560 [info ]: Finished analyzing [  0.22s] (16 nodes, 0 skipped, 1 errors)
+20:13:58.011873 [info ]: 
+==================== Execution Summary =====================
+Finished 'compile' with 1 error for target 'dev' [1.3s]
+Processed: 7 models | 9 tests
+Summary: 16 total | 15 success | 1 error
