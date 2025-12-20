@@ -911,3 +911,690 @@ describe table "RAW"."STRIPE"."PAYMENT"
 01:33:16.965672 [debug]: Finished analyzing [  0.11s] model dbt_ayajnik.fact_orders [success]
 01:33:16.965686 [info ]: Finished analyzing [  2.27s] (6 nodes, 1 skipped, 0 errors)
 01:33:16.975565 [info ]: Cached model count updated: 6 models (accurate)
+==================== 2025-12-20T16:40:08.271695Z | 36c3c6c9-5bc8-4108-ac73-f6e65db9f199 ====================
+16:40:08.276258 [info ]: Starting dbt LSP server
+16:40:08.278917 [info ]: Connecting to LSP client on port 8000
+16:40:08.284860 [info ]: Successfully connected to LSP client
+16:40:08.284905 [info ]: Creating LSP service...
+16:40:08.454467 [info ]: Creating LSP server...
+16:40:08.454500 [info ]: Starting LSP server...
+16:40:08.826340 [info ]: Started loading project
+16:40:09.381491 [info ]: Started parsing
+16:40:09.557244 [info ]: Finished loading project [  0.73s]
+16:40:09.824145 [info ]: Finished parsing [  0.44s]
+16:40:09.827348 [info ]: Cached model count updated: 6 models (estimate)
+16:40:09.827368 [info ]: Cached model count updated: 6 models (accurate)
+16:40:09.829579 [info ]: Started scheduling
+16:40:09.833901 [info ]: Finished scheduling [  0.00s]
+16:40:10.227816 [info ]: Started building task graph
+16:40:10.233929 [info ]: Finished building task graph [  0.01s]
+16:40:10.243432 [info ]: Started rendering (6 nodes)
+16:40:10.244593 [info ]: Started model dbt_ayajnik.stg_stripe__payments
+16:40:10.248133 [debug]: Started rendering model dbt_ayajnik.stg_stripe__payments
+16:40:10.248389 [info ]: Started model dbt_ayajnik.stg_jaffle_shop__orders
+16:40:10.248408 [debug]: Started rendering model dbt_ayajnik.stg_jaffle_shop__orders
+16:40:10.248429 [info ]: Started model dbt_ayajnik.stg_jaffle_shop__customers
+16:40:10.248436 [debug]: Started rendering model dbt_ayajnik.stg_jaffle_shop__customers
+16:40:10.265323 [debug]: Finished rendering [  0.02s] model dbt_ayajnik.stg_stripe__payments [success]
+16:40:10.265407 [info ]: Started analyzing (6 nodes)
+16:40:10.265636 [debug]: Started analyzing model dbt_ayajnik.stg_stripe__payments
+16:40:10.265675 [debug]: Finished rendering [  0.02s] model dbt_ayajnik.stg_jaffle_shop__orders [success]
+16:40:10.265695 [debug]: Started analyzing model dbt_ayajnik.stg_jaffle_shop__orders
+16:40:10.265715 [debug]: Finished rendering [  0.02s] model dbt_ayajnik.stg_jaffle_shop__customers [success]
+16:40:10.265727 [debug]: Started analyzing model dbt_ayajnik.stg_jaffle_shop__customers
+16:40:10.479353 [info ]:  Succeeded [  0.23s] model dbt_ayajnik.stg_jaffle_shop__customers (view)
+16:40:10.479422 [debug]: Finished analyzing [  0.21s] model dbt_ayajnik.stg_jaffle_shop__customers [success]
+16:40:10.479670 [info ]:  Succeeded [  0.23s] model dbt_ayajnik.stg_jaffle_shop__orders (view)
+16:40:10.479701 [debug]: Finished analyzing [  0.21s] model dbt_ayajnik.stg_jaffle_shop__orders [success]
+16:40:10.479741 [info ]: Started model dbt_ayajnik.dim_customers
+16:40:10.479762 [debug]: Started rendering model dbt_ayajnik.dim_customers
+16:40:10.484583 [debug]: Finished rendering [  0.00s] model dbt_ayajnik.dim_customers [success]
+16:40:10.484654 [debug]: Started analyzing model dbt_ayajnik.dim_customers
+16:40:10.644546 [info ]:  Succeeded [  0.16s] model dbt_ayajnik.dim_customers (table)
+16:40:10.644599 [debug]: Finished analyzing [  0.16s] model dbt_ayajnik.dim_customers [success]
+16:40:13.057367 [debug]: Query executed on node model.jaffle_shop.stg_stripe__payments:
+describe table "RAW"."STRIPE"."PAYMENT"
+16:40:14.000158 [info ]:  Succeeded [  3.75s] model dbt_ayajnik.stg_stripe__payments (view)
+16:40:14.000216 [debug]: Finished analyzing [  3.73s] model dbt_ayajnik.stg_stripe__payments [success]
+16:40:14.000266 [info ]: Started model dbt_ayajnik.fact_orders
+16:40:14.000287 [debug]: Started rendering model dbt_ayajnik.fact_orders
+16:40:14.006293 [debug]: Started analyzing model dbt_ayajnik.fact_orders
+16:40:14.007059 [debug]: Finished rendering [  0.01s] model dbt_ayajnik.fact_orders [success]
+16:40:14.140860 [info ]:  Succeeded [  0.14s] model dbt_ayajnik.fact_orders (table)
+16:40:14.140920 [debug]: Finished analyzing [  0.13s] model dbt_ayajnik.fact_orders [success]
+16:40:14.140958 [info ]: Started model dbt_ayajnik.fct_customers
+16:40:14.141046 [debug]: Started rendering model dbt_ayajnik.fct_customers
+16:40:14.146099 [debug]: Finished rendering [  0.01s] model dbt_ayajnik.fct_customers [success]
+16:40:14.146141 [info ]: Finished rendering [  3.90s] (6 nodes, 0 skipped, 0 errors)
+16:40:14.146175 [debug]: Started analyzing model dbt_ayajnik.fct_customers
+16:40:14.177178 [info ]:  Succeeded [  0.04s] model dbt_ayajnik.fct_customers (table)
+16:40:14.177238 [debug]: Finished analyzing [  0.03s] model dbt_ayajnik.fct_customers [success]
+16:40:14.177253 [info ]: Finished analyzing [  3.91s] (6 nodes, 0 skipped, 0 errors)
+16:40:14.209258 [info ]: Cached model count updated: 6 models (accurate)
+17:16:17.545505 [info ]: Started loading project
+17:16:17.660831 [info ]: Started loading project
+17:16:17.662690 [info ]: Finished loading project [  0.12s]
+17:16:18.278883 [info ]: Started parsing
+17:16:18.377376 [info ]: Finished loading project [  0.72s]
+17:16:18.447755 [info ]: Finished parsing [  0.17s]
+17:16:18.450759 [info ]: Cached model count updated: 6 models (estimate)
+17:16:18.450786 [info ]: Cached model count updated: 6 models (accurate)
+17:16:18.455010 [info ]: Started scheduling
+17:16:18.457280 [info ]: Finished scheduling [  0.00s]
+17:16:18.757438 [info ]: Started building task graph
+17:16:18.761228 [info ]: Finished building task graph [  0.00s]
+17:16:18.767575 [info ]: Started rendering (6 nodes)
+17:16:18.770489 [info ]: Started model dbt_ayajnik.stg_stripe__payments
+17:16:18.772503 [debug]: Started rendering model dbt_ayajnik.stg_stripe__payments
+17:16:18.773350 [info ]: Started model dbt_ayajnik.stg_jaffle_shop__orders
+17:16:18.773398 [debug]: Started rendering model dbt_ayajnik.stg_jaffle_shop__orders
+17:16:18.773449 [info ]: Started model dbt_ayajnik.stg_jaffle_shop__customers
+17:16:18.773473 [debug]: Started rendering model dbt_ayajnik.stg_jaffle_shop__customers
+17:16:18.797547 [debug]: Finished rendering [  0.02s] model dbt_ayajnik.stg_jaffle_shop__orders [success]
+17:16:18.797754 [info ]: Started analyzing (6 nodes)
+17:16:18.797803 [debug]: Started analyzing model dbt_ayajnik.stg_jaffle_shop__orders
+17:16:18.797871 [debug]: Finished rendering [  0.03s] model dbt_ayajnik.stg_stripe__payments [success]
+17:16:18.797916 [debug]: Started analyzing model dbt_ayajnik.stg_stripe__payments
+17:16:18.797966 [debug]: Finished rendering [  0.02s] model dbt_ayajnik.stg_jaffle_shop__customers [success]
+17:16:18.797992 [debug]: Started analyzing model dbt_ayajnik.stg_jaffle_shop__customers
+17:16:18.850168 [info ]:  Succeeded [  0.07s] model dbt_ayajnik.stg_jaffle_shop__orders (view)
+17:16:18.850457 [debug]: Finished analyzing [  0.05s] model dbt_ayajnik.stg_jaffle_shop__orders [success]
+17:16:18.850539 [info ]:  Succeeded [  0.08s] model dbt_ayajnik.stg_jaffle_shop__customers (view)
+17:16:18.850573 [debug]: Finished analyzing [  0.05s] model dbt_ayajnik.stg_jaffle_shop__customers [success]
+17:16:18.850608 [info ]: Started model dbt_ayajnik.dim_customers
+17:16:18.850671 [debug]: Started rendering model dbt_ayajnik.dim_customers
+17:16:18.855774 [debug]: Started analyzing model dbt_ayajnik.dim_customers
+17:16:18.855806 [debug]: Finished rendering [  0.01s] model dbt_ayajnik.dim_customers [success]
+17:16:18.894200 [info ]:  Succeeded [  0.04s] model dbt_ayajnik.dim_customers (table)
+17:16:18.894284 [debug]: Finished analyzing [  0.04s] model dbt_ayajnik.dim_customers [success]
+17:16:19.549178 [debug]: Query executed on node model.jaffle_shop.stg_stripe__payments:
+describe table "RAW"."STRIPE"."PAYMENT"
+17:16:20.094020 [info ]:  Succeeded [  1.32s] model dbt_ayajnik.stg_stripe__payments (view)
+17:16:20.094127 [debug]: Finished analyzing [  1.30s] model dbt_ayajnik.stg_stripe__payments [success]
+17:16:20.095574 [info ]: Started model dbt_ayajnik.fact_orders
+17:16:20.095861 [debug]: Started rendering model dbt_ayajnik.fact_orders
+17:16:20.103512 [debug]: Started analyzing model dbt_ayajnik.fact_orders
+17:16:20.103584 [debug]: Finished rendering [  0.01s] model dbt_ayajnik.fact_orders [success]
+17:16:20.223450 [info ]:  Succeeded [  0.13s] model dbt_ayajnik.fact_orders (table)
+17:16:20.223562 [debug]: Finished analyzing [  0.12s] model dbt_ayajnik.fact_orders [success]
+17:16:20.223647 [info ]: Started model dbt_ayajnik.fct_customers
+17:16:20.224477 [debug]: Started rendering model dbt_ayajnik.fct_customers
+17:16:20.234086 [debug]: Started analyzing model dbt_ayajnik.fct_customers
+17:16:20.235859 [debug]: Finished rendering [  0.01s] model dbt_ayajnik.fct_customers [success]
+17:16:20.235934 [info ]: Finished rendering [  1.47s] (6 nodes, 0 skipped, 0 errors)
+17:16:20.358368 [info ]:  Succeeded [  0.13s] model dbt_ayajnik.fct_customers (table)
+17:16:20.358491 [debug]: Finished analyzing [  0.12s] model dbt_ayajnik.fct_customers [success]
+17:16:20.358519 [info ]: Finished analyzing [  1.56s] (6 nodes, 0 skipped, 0 errors)
+17:16:20.390922 [info ]: Cached model count updated: 6 models (accurate)
+17:16:24.084008 [info ]: Started loading project
+17:16:24.176967 [info ]: Started parsing
+17:16:24.213065 [info ]: Finished loading project [  0.13s]
+17:16:24.222581 [info ]: Finished parsing [  0.05s]
+17:16:24.225499 [info ]: Cached model count updated: 6 models (estimate)
+17:16:24.225522 [info ]: Cached model count updated: 6 models (accurate)
+17:16:24.225568 [info ]: Started scheduling
+17:16:24.228014 [info ]: Finished scheduling [  0.00s]
+17:16:24.228519 [warn ]: dbt1000: The selection criterion 'fqn:source.jaffle_shop.stripe.payment+' does not match any enabled nodes
+17:16:24.228676 [warn ]: dbt1000: Nothing to do. Try checking your model configs and model specification args
+17:16:24.433512 [info ]: Started building task graph
+17:16:24.435120 [info ]: Finished building task graph [  0.00s]
+17:16:24.458347 [info ]: Started loading project
+17:16:24.474439 [info ]: Started parsing
+17:16:24.495717 [info ]: Finished loading project [  0.04s]
+17:16:24.503239 [info ]: Finished parsing [  0.03s]
+17:16:24.509853 [info ]: Cached model count updated: 6 models (estimate)
+17:16:24.509891 [info ]: Cached model count updated: 6 models (accurate)
+17:16:24.509954 [info ]: Started scheduling
+17:16:24.510073 [info ]: Finished scheduling [  0.00s]
+17:16:24.510115 [warn ]: dbt1000: The selection criterion 'fqn:source.jaffle_shop.stripe.payment+' does not match any enabled nodes
+17:16:24.510126 [warn ]: dbt1000: Nothing to do. Try checking your model configs and model specification args
+17:16:24.717661 [info ]: Started building task graph
+17:16:24.717725 [info ]: Finished building task graph [  0.00s]
+17:16:24.718076 [debug]: Incremental compilation - 0 nodes selected: {}
+17:16:24.722845 [info ]: Cached model count updated: 6 models (accurate)
+17:16:53.400814 [info ]: Started loading project
+17:16:53.414929 [info ]: Started loading project
+17:16:53.416390 [info ]: Finished loading project [  0.02s]
+17:16:53.656418 [info ]: Started parsing
+17:16:53.703195 [info ]: Finished loading project [  0.29s]
+17:16:53.717916 [info ]: Finished parsing [  0.06s]
+17:16:53.719109 [info ]: Cached model count updated: 7 models (estimate)
+17:16:53.719130 [info ]: Cached model count updated: 7 models (accurate)
+17:16:53.719160 [info ]: Started scheduling
+17:16:53.719244 [info ]: Finished scheduling [  0.00s]
+17:16:53.915684 [info ]: Started building task graph
+17:16:53.915830 [info ]: Finished building task graph [  0.00s]
+17:16:53.915989 [info ]: Started rendering (6 nodes)
+17:16:53.916014 [info ]: Started model dbt_ayajnik.stg_stripe__payments
+17:16:53.916025 [debug]: Started rendering model dbt_ayajnik.stg_stripe__payments
+17:16:53.916045 [info ]: Started model dbt_ayajnik.stg_jaffle_shop__orders
+17:16:53.916052 [debug]: Started rendering model dbt_ayajnik.stg_jaffle_shop__orders
+17:16:53.916070 [info ]: Started model dbt_ayajnik.stg_jaffle_shop__customers
+17:16:53.916076 [debug]: Started rendering model dbt_ayajnik.stg_jaffle_shop__customers
+17:16:53.919539 [info ]: Started analyzing (6 nodes)
+17:16:53.919577 [debug]: Started analyzing model dbt_ayajnik.stg_jaffle_shop__orders
+17:16:53.919557 [debug]: Finished rendering [  0.00s] model dbt_ayajnik.stg_jaffle_shop__orders [success]
+17:16:53.919615 [debug]: Finished rendering [  0.00s] model dbt_ayajnik.stg_stripe__payments [success]
+17:16:53.921277 [debug]: Started analyzing model dbt_ayajnik.stg_stripe__payments
+17:16:53.921390 [debug]: Finished rendering [  0.01s] model dbt_ayajnik.stg_jaffle_shop__customers [success]
+17:16:53.921421 [debug]: Started analyzing model dbt_ayajnik.stg_jaffle_shop__customers
+17:16:53.947902 [info ]:  Succeeded [  0.03s] model dbt_ayajnik.stg_jaffle_shop__customers (view)
+17:16:53.947961 [debug]: Finished analyzing [  0.03s] model dbt_ayajnik.stg_jaffle_shop__customers [success]
+17:16:53.949937 [info ]:  Succeeded [  0.03s] model dbt_ayajnik.stg_jaffle_shop__orders (view)
+17:16:53.949989 [debug]: Finished analyzing [  0.03s] model dbt_ayajnik.stg_jaffle_shop__orders [success]
+17:16:53.950023 [info ]: Started model dbt_ayajnik.dim_customers
+17:16:53.950038 [debug]: Started rendering model dbt_ayajnik.dim_customers
+17:16:53.953025 [debug]: Started analyzing model dbt_ayajnik.dim_customers
+17:16:53.953055 [debug]: Finished rendering [  0.00s] model dbt_ayajnik.dim_customers [success]
+17:16:53.993280 [info ]:  Succeeded [  0.04s] model dbt_ayajnik.dim_customers (table)
+17:16:53.993323 [debug]: Finished analyzing [  0.04s] model dbt_ayajnik.dim_customers [success]
+17:16:54.510234 [debug]: Query executed on node model.jaffle_shop.stg_stripe__payments:
+describe table "RAW"."STRIPE"."PAYMENT"
+17:16:54.976233 [info ]:  Succeeded [  1.06s] model dbt_ayajnik.stg_stripe__payments (view)
+17:16:54.976295 [debug]: Finished analyzing [  1.06s] model dbt_ayajnik.stg_stripe__payments [success]
+17:16:54.976392 [info ]: Started model dbt_ayajnik.fact_orders
+17:16:54.976421 [debug]: Started rendering model dbt_ayajnik.fact_orders
+17:16:54.980198 [debug]: Started analyzing model dbt_ayajnik.fact_orders
+17:16:54.980189 [debug]: Finished rendering [  0.00s] model dbt_ayajnik.fact_orders [success]
+17:16:55.006660 [info ]:  Succeeded [  0.03s] model dbt_ayajnik.fact_orders (table)
+17:16:55.006751 [debug]: Finished analyzing [  0.03s] model dbt_ayajnik.fact_orders [success]
+17:16:55.006781 [info ]: Started model dbt_ayajnik.fct_customers
+17:16:55.006797 [debug]: Started rendering model dbt_ayajnik.fct_customers
+17:16:55.009503 [debug]: Finished rendering [  0.00s] model dbt_ayajnik.fct_customers [success]
+17:16:55.009542 [info ]: Finished rendering [  1.09s] (6 nodes, 0 skipped, 0 errors)
+17:16:55.009576 [debug]: Started analyzing model dbt_ayajnik.fct_customers
+17:16:55.015965 [info ]:  Succeeded [  0.01s] model dbt_ayajnik.fct_customers (table)
+17:16:55.016008 [debug]: Finished analyzing [  0.01s] model dbt_ayajnik.fct_customers [success]
+17:16:55.016017 [info ]: Finished analyzing [  1.10s] (6 nodes, 0 skipped, 0 errors)
+17:16:55.021739 [info ]: Cached model count updated: 7 models (accurate)
+17:16:56.072485 [info ]: Started loading project
+17:16:56.094597 [info ]: Started parsing
+17:16:56.118916 [info ]: Finished loading project [  0.05s]
+17:16:56.143684 [info ]: Finished parsing [  0.05s]
+17:16:56.148054 [info ]: Cached model count updated: 7 models (estimate)
+17:16:56.148089 [info ]: Cached model count updated: 7 models (accurate)
+17:16:56.148151 [info ]: Started scheduling
+17:16:56.148277 [info ]: Finished scheduling [  0.00s]
+17:16:56.483175 [info ]: Started building task graph
+17:16:56.483288 [info ]: Finished building task graph [  0.00s]
+17:16:56.509164 [info ]: Started loading project
+17:16:56.530986 [info ]: Started parsing
+17:16:56.568292 [info ]: Finished loading project [  0.06s]
+17:16:56.577434 [info ]: Finished parsing [  0.05s]
+17:16:56.582257 [info ]: Cached model count updated: 7 models (estimate)
+17:16:56.582293 [info ]: Cached model count updated: 7 models (accurate)
+17:16:56.582359 [info ]: Started scheduling
+17:16:56.582490 [info ]: Finished scheduling [  0.00s]
+17:16:56.953255 [info ]: Started building task graph
+17:16:56.953398 [info ]: Finished building task graph [  0.00s]
+17:16:56.953685 [info ]: Started rendering (1 nodes)
+17:16:56.953720 [info ]: Started model dbt_ayajnik.stg_stripe__payment
+17:16:56.953736 [debug]: Started rendering model dbt_ayajnik.stg_stripe__payment
+17:16:56.965106 [info ]: Started analyzing (1 nodes)
+17:16:56.965143 [debug]: Started analyzing model dbt_ayajnik.stg_stripe__payment
+17:16:56.966804 [debug]: Finished rendering [  0.01s] model dbt_ayajnik.stg_stripe__payment [success]
+17:16:56.966839 [info ]: Finished rendering [  0.01s] (1 nodes, 0 skipped, 0 errors)
+17:16:56.977015 [info ]:  Succeeded [  0.02s] model dbt_ayajnik.stg_stripe__payment (view)
+17:16:56.977076 [debug]: Finished analyzing [  0.01s] model dbt_ayajnik.stg_stripe__payment [success]
+17:16:56.977091 [info ]: Finished analyzing [  0.01s] (1 nodes, 0 skipped, 0 errors)
+17:16:56.977254 [debug]: Incremental compilation - 1 nodes selected: {"model.jaffle_shop.stg_stripe__payment"}
+17:16:56.985093 [info ]: Cached model count updated: 7 models (accurate)
+17:26:16.858273 [info ]: Started loading project
+17:26:16.869956 [info ]: Started loading project
+17:26:16.870837 [info ]: Finished loading project [  0.01s]
+17:26:17.141489 [info ]: Started parsing
+17:26:17.182559 [info ]: Finished loading project [  0.31s]
+17:26:17.200473 [info ]: Finished parsing [  0.06s]
+17:26:17.203032 [info ]: Cached model count updated: 7 models (estimate)
+17:26:17.203335 [info ]: Cached model count updated: 7 models (accurate)
+17:26:17.203389 [info ]: Started scheduling
+17:26:17.203505 [info ]: Finished scheduling [  0.00s]
+17:26:17.868440 [debug]: Query executed on node unknown:
+describe table "RAW"."STRIPE"."PAYMENT"
+17:26:18.542427 [info ]: Started building task graph
+17:26:18.542610 [info ]: Finished building task graph [  0.00s]
+17:26:18.542839 [info ]: Started rendering (7 nodes)
+17:26:18.542898 [info ]: Started model dbt_ayajnik.stg_stripe__payment
+17:26:18.542922 [debug]: Started rendering model dbt_ayajnik.stg_stripe__payment
+17:26:18.542954 [info ]: Started model dbt_ayajnik.stg_stripe__payments
+17:26:18.542963 [debug]: Started rendering model dbt_ayajnik.stg_stripe__payments
+17:26:18.542973 [info ]: Started model dbt_ayajnik.stg_jaffle_shop__orders
+17:26:18.542979 [debug]: Started rendering model dbt_ayajnik.stg_jaffle_shop__orders
+17:26:18.542988 [info ]: Started model dbt_ayajnik.stg_jaffle_shop__customers
+17:26:18.542993 [debug]: Started rendering model dbt_ayajnik.stg_jaffle_shop__customers
+17:26:18.545978 [info ]: Started analyzing (7 nodes)
+17:26:18.546042 [debug]: Finished rendering [  0.00s] model dbt_ayajnik.stg_jaffle_shop__orders [success]
+17:26:18.546063 [debug]: Started analyzing model dbt_ayajnik.stg_jaffle_shop__orders
+17:26:18.546147 [debug]: Started analyzing model dbt_ayajnik.stg_stripe__payments
+17:26:18.546155 [debug]: Finished rendering [  0.00s] model dbt_ayajnik.stg_stripe__payments [success]
+17:26:18.547510 [debug]: Started analyzing model dbt_ayajnik.stg_stripe__payment
+17:26:18.547591 [debug]: Finished rendering [  0.00s] model dbt_ayajnik.stg_stripe__payment [success]
+17:26:18.548361 [debug]: Started analyzing model dbt_ayajnik.stg_jaffle_shop__customers
+17:26:18.549112 [debug]: Finished rendering [  0.01s] model dbt_ayajnik.stg_jaffle_shop__customers [success]
+17:26:18.549838 [info ]:  Succeeded [  0.01s] model dbt_ayajnik.stg_stripe__payments (view)
+17:26:18.549912 [debug]: Finished analyzing [  0.00s] model dbt_ayajnik.stg_stripe__payments [success]
+17:26:18.552218 [info ]:  Succeeded [  0.01s] model dbt_ayajnik.stg_jaffle_shop__orders (view)
+17:26:18.552293 [debug]: Finished analyzing [  0.01s] model dbt_ayajnik.stg_jaffle_shop__orders [success]
+17:26:18.552337 [info ]: Started model dbt_ayajnik.fact_orders
+17:26:18.552357 [debug]: Started rendering model dbt_ayajnik.fact_orders
+17:26:18.553862 [info ]:  Succeeded [  0.01s] model dbt_ayajnik.stg_jaffle_shop__customers (view)
+17:26:18.553916 [debug]: Finished analyzing [  0.01s] model dbt_ayajnik.stg_jaffle_shop__customers [success]
+17:26:18.553969 [info ]: Started model dbt_ayajnik.dim_customers
+17:26:18.553990 [debug]: Started rendering model dbt_ayajnik.dim_customers
+17:26:18.555706 [debug]: Started analyzing model dbt_ayajnik.fact_orders
+17:26:18.556102 [debug]: Finished rendering [  0.00s] model dbt_ayajnik.fact_orders [success]
+17:26:18.558228 [debug]: Started analyzing model dbt_ayajnik.dim_customers
+17:26:18.558829 [debug]: Finished rendering [  0.00s] model dbt_ayajnik.dim_customers [success]
+17:26:18.559089 [info ]:  Succeeded [  0.01s] model dbt_ayajnik.stg_stripe__payment (view)
+17:26:18.559124 [debug]: Finished analyzing [  0.01s] model dbt_ayajnik.stg_stripe__payment [success]
+17:26:18.607773 [info ]:  Succeeded [  0.06s] model dbt_ayajnik.fact_orders (table)
+17:26:18.607833 [debug]: Finished analyzing [  0.05s] model dbt_ayajnik.fact_orders [success]
+17:26:18.607870 [info ]: Started model dbt_ayajnik.fct_customers
+17:26:18.607896 [debug]: Started rendering model dbt_ayajnik.fct_customers
+17:26:18.611277 [info ]:  Succeeded [  0.06s] model dbt_ayajnik.dim_customers (table)
+17:26:18.611431 [debug]: Finished analyzing [  0.05s] model dbt_ayajnik.dim_customers [success]
+17:26:18.612113 [debug]: Started analyzing model dbt_ayajnik.fct_customers
+17:26:18.613595 [debug]: Finished rendering [  0.01s] model dbt_ayajnik.fct_customers [success]
+17:26:18.613635 [info ]: Finished rendering [  0.07s] (7 nodes, 0 skipped, 0 errors)
+17:26:18.622556 [info ]:  Succeeded [  0.01s] model dbt_ayajnik.fct_customers (table)
+17:26:18.622616 [debug]: Finished analyzing [  0.01s] model dbt_ayajnik.fct_customers [success]
+17:26:18.622630 [info ]: Finished analyzing [  0.08s] (7 nodes, 0 skipped, 0 errors)
+17:26:18.626851 [info ]: Cached model count updated: 7 models (accurate)
+17:27:08.815927 [info ]: Started loading project
+17:27:08.897609 [info ]: Started parsing
+17:27:08.942522 [info ]: Finished loading project [  0.13s]
+17:27:08.966990 [info ]: Finished parsing [  0.07s]
+17:27:09.127229 [info ]: Started loading project
+17:27:09.151163 [info ]: Started parsing
+17:27:09.194642 [info ]: Finished loading project [  0.07s]
+17:27:09.202209 [info ]: Finished parsing [  0.05s]
+17:28:51.230381 [info ]: Started loading project
+17:28:51.264405 [info ]: Started parsing
+17:28:51.284949 [info ]: Finished loading project [  0.05s]
+17:28:51.376925 [info ]: Finished parsing [  0.11s]
+17:28:51.382250 [info ]: Cached model count updated: 7 models (estimate)
+17:28:51.382284 [info ]: Cached model count updated: 7 models (accurate)
+17:28:51.382342 [info ]: Started scheduling
+17:28:51.383625 [info ]: Finished scheduling [  0.00s]
+17:28:51.383710 [warn ]: dbt1000: The selection criterion '' does not match any enabled nodes
+17:28:51.383721 [warn ]: dbt1000: Nothing to do. Try checking your model configs and model specification args
+17:28:51.594713 [info ]: Started building task graph
+17:28:51.594774 [info ]: Finished building task graph [  0.00s]
+17:28:51.595032 [debug]: Incremental compilation - 0 nodes selected: {}
+17:28:51.599314 [info ]: Cached model count updated: 7 models (accurate)
+17:28:51.721615 [info ]: Started loading project
+17:28:51.734457 [info ]: Cached model count updated: 7 models (accurate)
+17:28:51.734493 [info ]: Finished loading project [  0.01s]
+17:31:12.839222 [info ]: Started loading project
+17:31:12.877642 [info ]: Cached model count updated: 7 models (accurate)
+17:31:12.877675 [info ]: Finished loading project [  0.04s]
+17:36:49.488085 [info ]: Started loading project
+17:36:49.567003 [info ]: Started parsing
+17:36:49.593157 [info ]: Finished loading project [  0.11s]
+17:36:49.608738 [info ]: Finished parsing [  0.04s]
+17:36:49.805204 [info ]: Started loading project
+17:36:49.828846 [info ]: Started parsing
+17:36:49.854734 [info ]: Finished loading project [  0.05s]
+17:36:49.858342 [info ]: Finished parsing [  0.03s]
+17:37:15.179717 [info ]: Started loading project
+17:37:15.206214 [info ]: Started parsing
+17:37:15.227856 [info ]: Finished loading project [  0.05s]
+17:37:15.232174 [info ]: Finished parsing [  0.03s]
+17:37:15.514346 [info ]: Started loading project
+17:37:15.531241 [info ]: Started parsing
+17:37:15.553538 [info ]: Finished loading project [  0.04s]
+17:37:15.556947 [info ]: Finished parsing [  0.03s]
+17:38:13.764105 [info ]: Started loading project
+17:38:13.822132 [info ]: Started parsing
+17:38:13.861069 [info ]: Finished loading project [  0.10s]
+17:38:13.883781 [error]: dbt0102: Deprecated test arguments: ["values"] at top-level detected. Please migrate to the new format under the 'arguments' field: https://docs.getdbt.com/reference/deprecations#missingargumentspropertyingenerictestdeprecation.
+  --> models\staging\_stg_jaffle_shop.yml:19:23
+17:38:13.931971 [info ]: Finished parsing [  0.11s]
+17:38:13.936698 [info ]: Cached model count updated: 7 models (estimate)
+17:38:13.936730 [info ]: Cached model count updated: 7 models (accurate)
+17:38:13.936787 [info ]: Started scheduling
+17:38:13.936882 [info ]: Finished scheduling [  0.00s]
+17:38:13.936912 [warn ]: dbt1000: The selection criterion '' does not match any enabled nodes
+17:38:13.936921 [warn ]: dbt1000: Nothing to do. Try checking your model configs and model specification args
+17:38:14.177537 [error]: dbt1000: Failed to create template: syntax error: unknown statement endtest
+(in dbt_internal_packages\dbt-adapters\tests\generic\builtin.sql:3:1)
+17:38:14.179103 [error]: dbt1000: Failed to create template: syntax error: unexpected end of string
+(in dbt_internal_packages\dbt-adapters\tests\generic\builtin.sql:3:56)
+17:38:14.179234 [error]: dbt1000: Failed to create template: syntax error: unknown statement endtest
+(in dbt_internal_packages\dbt-adapters\tests\generic\builtin.sql:3:1)
+17:38:14.187526 [error]: dbt1000: Failed to create template: syntax error: unexpected end of input, expected end of block
+17:38:14.187797 [error]: dbt1000: Failed to create template: syntax error: unknown statement endfor
+(in dbt_internal_packages\dbt-snowflake\macros\adapters.sql:2:9)
+17:38:14.249714 [info ]: Started building task graph
+17:38:14.249789 [info ]: Finished building task graph [  0.00s]
+17:38:14.250006 [debug]: Incremental compilation - 0 nodes selected: {}
+17:38:14.252639 [info ]: Cached model count updated: 7 models (accurate)
+17:38:14.294046 [info ]: Started loading project
+17:38:14.305465 [info ]: Cached model count updated: 7 models (accurate)
+17:38:14.305524 [info ]: Finished loading project [  0.01s]
+17:38:17.933455 [info ]: Started loading project
+17:38:17.955519 [info ]: Started parsing
+17:38:17.981597 [info ]: Finished loading project [  0.05s]
+17:38:17.992587 [error]: dbt0102: Deprecated test arguments: ["values"] at top-level detected. Please migrate to the new format under the 'arguments' field: https://docs.getdbt.com/reference/deprecations#missingargumentspropertyingenerictestdeprecation.
+  --> models\staging\_stg_jaffle_shop.yml:19:23
+17:38:18.007295 [info ]: Finished parsing [  0.05s]
+17:38:18.012834 [info ]: Cached model count updated: 7 models (estimate)
+17:38:18.012862 [info ]: Cached model count updated: 7 models (accurate)
+17:38:18.012916 [info ]: Started scheduling
+17:38:18.012998 [info ]: Finished scheduling [  0.00s]
+17:38:18.013020 [warn ]: dbt1000: The selection criterion '' does not match any enabled nodes
+17:38:18.013027 [warn ]: dbt1000: Nothing to do. Try checking your model configs and model specification args
+17:38:18.166490 [error]: dbt1000: Failed to create template: syntax error: unknown statement endtest
+(in dbt_internal_packages\dbt-adapters\tests\generic\builtin.sql:3:1)
+17:38:18.166585 [error]: dbt1000: Failed to create template: syntax error: unexpected end of string
+(in dbt_internal_packages\dbt-adapters\tests\generic\builtin.sql:3:56)
+17:38:18.166645 [error]: dbt1000: Failed to create template: syntax error: unknown statement endtest
+(in dbt_internal_packages\dbt-adapters\tests\generic\builtin.sql:3:1)
+17:38:18.171516 [error]: dbt1000: Failed to create template: syntax error: unexpected end of input, expected end of block
+17:38:18.171596 [error]: dbt1000: Failed to create template: syntax error: unknown statement endfor
+(in dbt_internal_packages\dbt-snowflake\macros\adapters.sql:2:9)
+17:38:18.220611 [info ]: Started building task graph
+17:38:18.220673 [info ]: Finished building task graph [  0.00s]
+17:38:18.220831 [debug]: Incremental compilation - 0 nodes selected: {}
+17:38:18.225014 [info ]: Cached model count updated: 7 models (accurate)
+17:38:18.397976 [info ]: Started loading project
+17:38:18.409200 [info ]: Finished loading project [  0.01s]
+17:38:18.409258 [info ]: Cached model count updated: 7 models (accurate)
+17:38:20.303677 [info ]: Started loading project
+17:38:20.328197 [info ]: Started parsing
+17:38:20.362998 [info ]: Finished loading project [  0.06s]
+17:38:20.378999 [error]: dbt0102: Deprecated test arguments: ["values"] at top-level detected. Please migrate to the new format under the 'arguments' field: https://docs.getdbt.com/reference/deprecations#missingargumentspropertyingenerictestdeprecation.
+  --> models\staging\_stg_jaffle_shop.yml:19:23
+17:38:20.396244 [info ]: Finished parsing [  0.07s]
+17:38:20.400459 [info ]: Cached model count updated: 7 models (estimate)
+17:38:20.400487 [info ]: Cached model count updated: 7 models (accurate)
+17:38:20.400535 [info ]: Started scheduling
+17:38:20.400598 [info ]: Finished scheduling [  0.00s]
+17:38:20.400619 [warn ]: dbt1000: The selection criterion '' does not match any enabled nodes
+17:38:20.400631 [warn ]: dbt1000: Nothing to do. Try checking your model configs and model specification args
+17:38:20.605166 [error]: dbt1000: Failed to create template: syntax error: unknown statement endtest
+(in dbt_internal_packages\dbt-adapters\tests\generic\builtin.sql:3:1)
+17:38:20.605276 [error]: dbt1000: Failed to create template: syntax error: unexpected end of string
+(in dbt_internal_packages\dbt-adapters\tests\generic\builtin.sql:3:56)
+17:38:20.605341 [error]: dbt1000: Failed to create template: syntax error: unknown statement endtest
+(in dbt_internal_packages\dbt-adapters\tests\generic\builtin.sql:3:1)
+17:38:20.614186 [error]: dbt1000: Failed to create template: syntax error: unexpected end of input, expected end of block
+17:38:20.614274 [error]: dbt1000: Failed to create template: syntax error: unknown statement endfor
+(in dbt_internal_packages\dbt-snowflake\macros\adapters.sql:2:9)
+17:38:20.671168 [info ]: Started building task graph
+17:38:20.671234 [info ]: Finished building task graph [  0.00s]
+17:38:20.671455 [debug]: Incremental compilation - 0 nodes selected: {}
+17:38:20.674346 [info ]: Cached model count updated: 7 models (accurate)
+17:38:20.805138 [info ]: Started loading project
+17:38:20.819031 [info ]: Cached model count updated: 7 models (accurate)
+17:38:20.819030 [info ]: Finished loading project [  0.01s]
+17:40:12.188561 [info ]: Started loading project
+17:40:12.256356 [info ]: Started parsing
+17:40:12.278312 [info ]: Finished loading project [  0.09s]
+17:40:12.288339 [error]: dbt0102: Deprecated test arguments: ["argument"] at top-level detected. Please migrate to the new format under the 'arguments' field: https://docs.getdbt.com/reference/deprecations#missingargumentspropertyingenerictestdeprecation.
+  --> models\staging\_stg_jaffle_shop.yml:20:17
+17:40:12.336365 [info ]: Finished parsing [  0.08s]
+17:40:12.339625 [info ]: Cached model count updated: 7 models (estimate)
+17:40:12.339650 [info ]: Cached model count updated: 7 models (accurate)
+17:40:12.339690 [info ]: Started scheduling
+17:40:12.339752 [info ]: Finished scheduling [  0.00s]
+17:40:12.339772 [warn ]: dbt1000: The selection criterion '' does not match any enabled nodes
+17:40:12.339778 [warn ]: dbt1000: Nothing to do. Try checking your model configs and model specification args
+17:40:12.483262 [error]: dbt1000: Failed to create template: syntax error: unknown statement endtest
+(in dbt_internal_packages\dbt-adapters\tests\generic\builtin.sql:3:1)
+17:40:12.483364 [error]: dbt1000: Failed to create template: syntax error: unexpected end of string
+(in dbt_internal_packages\dbt-adapters\tests\generic\builtin.sql:3:56)
+17:40:12.483426 [error]: dbt1000: Failed to create template: syntax error: unknown statement endtest
+(in dbt_internal_packages\dbt-adapters\tests\generic\builtin.sql:3:1)
+17:40:12.489810 [error]: dbt1000: Failed to create template: syntax error: unexpected end of input, expected end of block
+17:40:12.489891 [error]: dbt1000: Failed to create template: syntax error: unknown statement endfor
+(in dbt_internal_packages\dbt-snowflake\macros\adapters.sql:2:9)
+17:40:12.535139 [info ]: Started building task graph
+17:40:12.535203 [info ]: Finished building task graph [  0.00s]
+17:40:12.535477 [debug]: Incremental compilation - 0 nodes selected: {}
+17:40:12.538362 [info ]: Cached model count updated: 7 models (accurate)
+17:40:12.698666 [info ]: Started loading project
+17:40:12.713203 [info ]: Finished loading project [  0.01s]
+17:40:12.713211 [info ]: Cached model count updated: 7 models (accurate)
+17:40:16.742123 [info ]: Started loading project
+17:40:16.818816 [info ]: Started parsing
+17:40:16.857926 [info ]: Finished loading project [  0.12s]
+17:40:16.898204 [info ]: Finished parsing [  0.08s]
+17:40:16.904129 [info ]: Cached model count updated: 7 models (estimate)
+17:40:16.904158 [info ]: Cached model count updated: 7 models (accurate)
+17:40:16.904202 [info ]: Started scheduling
+17:40:16.904262 [info ]: Finished scheduling [  0.00s]
+17:40:16.904283 [warn ]: dbt1000: The selection criterion '' does not match any enabled nodes
+17:40:16.904289 [warn ]: dbt1000: Nothing to do. Try checking your model configs and model specification args
+17:40:17.060648 [error]: dbt1000: Failed to create template: syntax error: unknown statement endtest
+(in dbt_internal_packages\dbt-adapters\tests\generic\builtin.sql:3:1)
+17:40:17.060766 [error]: dbt1000: Failed to create template: syntax error: unexpected end of string
+(in dbt_internal_packages\dbt-adapters\tests\generic\builtin.sql:3:56)
+17:40:17.060854 [error]: dbt1000: Failed to create template: syntax error: unknown statement endtest
+(in dbt_internal_packages\dbt-adapters\tests\generic\builtin.sql:3:1)
+17:40:17.070781 [error]: dbt1000: Failed to create template: syntax error: unexpected end of input, expected end of block
+17:40:17.070916 [error]: dbt1000: Failed to create template: syntax error: unknown statement endfor
+(in dbt_internal_packages\dbt-snowflake\macros\adapters.sql:2:9)
+17:40:17.136959 [info ]: Started building task graph
+17:40:17.137023 [info ]: Finished building task graph [  0.00s]
+17:40:17.139564 [debug]: Incremental compilation - 0 nodes selected: {}
+17:40:17.142295 [info ]: Cached model count updated: 7 models (accurate)
+17:40:17.293519 [info ]: Started loading project
+17:40:17.311450 [info ]: Cached model count updated: 7 models (accurate)
+17:40:17.311422 [info ]: Finished loading project [  0.02s]
+17:41:25.524550 [info ]: Started loading project
+17:41:25.578244 [info ]: Started parsing
+17:41:25.599095 [info ]: Finished loading project [  0.07s]
+17:41:25.637828 [info ]: Finished parsing [  0.06s]
+17:41:25.641110 [info ]: Cached model count updated: 7 models (estimate)
+17:41:25.641140 [info ]: Cached model count updated: 7 models (accurate)
+17:41:25.641192 [info ]: Started scheduling
+17:41:25.641278 [info ]: Finished scheduling [  0.00s]
+17:41:25.641304 [warn ]: dbt1000: The selection criterion '' does not match any enabled nodes
+17:41:25.641313 [warn ]: dbt1000: Nothing to do. Try checking your model configs and model specification args
+17:41:26.026728 [info ]: Started loading project
+17:41:26.042888 [info ]: Started parsing
+17:41:26.062873 [info ]: Finished loading project [  0.04s]
+17:41:26.083913 [info ]: Finished parsing [  0.04s]
+17:41:26.086049 [info ]: Cached model count updated: 7 models (estimate)
+17:41:26.086076 [info ]: Cached model count updated: 7 models (accurate)
+17:41:26.086116 [info ]: Started scheduling
+17:41:26.086174 [info ]: Finished scheduling [  0.00s]
+17:41:26.086195 [warn ]: dbt1000: The selection criterion '' does not match any enabled nodes
+17:41:26.086203 [warn ]: dbt1000: Nothing to do. Try checking your model configs and model specification args
+17:41:26.247241 [error]: dbt1000: Failed to create template: syntax error: unknown statement endtest
+(in dbt_internal_packages\dbt-adapters\tests\generic\builtin.sql:3:1)
+17:41:26.247831 [error]: dbt1000: Failed to create template: syntax error: unexpected end of string
+(in dbt_internal_packages\dbt-adapters\tests\generic\builtin.sql:3:56)
+17:41:26.247960 [error]: dbt1000: Failed to create template: syntax error: unknown statement endtest
+(in dbt_internal_packages\dbt-adapters\tests\generic\builtin.sql:3:1)
+17:41:26.255023 [error]: dbt1000: Failed to create template: syntax error: unexpected end of input, expected end of block
+17:41:26.255216 [error]: dbt1000: Failed to create template: syntax error: unknown statement endfor
+(in dbt_internal_packages\dbt-snowflake\macros\adapters.sql:2:9)
+17:41:26.307643 [info ]: Started building task graph
+17:41:26.307810 [info ]: Finished building task graph [  0.00s]
+17:41:26.308114 [debug]: Incremental compilation - 0 nodes selected: {}
+17:41:26.311079 [info ]: Cached model count updated: 7 models (accurate)
+17:44:13.676879 [info ]: Started loading project
+17:44:13.755946 [info ]: Started parsing
+17:44:13.773341 [info ]: Finished loading project [  0.10s]
+17:44:13.825268 [warn ]: dbt1005: Ref '' not found in project. Searched for 'jaffle_shop., '
+  --> generic_tests\relationships_stg_jaffle_shop__0dd647f89c34966822c5f4faca99b672.sql:1:132
+17:44:13.828609 [info ]: Cached model count updated: 7 models (estimate)
+17:44:13.828630 [info ]: Cached model count updated: 7 models (accurate)
+17:44:13.828671 [info ]: Started scheduling
+17:44:13.828729 [info ]: Finished scheduling [  0.00s]
+17:44:13.828750 [warn ]: dbt1000: The selection criterion '' does not match any enabled nodes
+17:44:13.828756 [warn ]: dbt1000: Nothing to do. Try checking your model configs and model specification args
+17:44:13.973185 [error]: dbt1000: Failed to create template: syntax error: unknown statement endtest
+(in dbt_internal_packages\dbt-adapters\tests\generic\builtin.sql:3:1)
+17:44:13.973275 [error]: dbt1000: Failed to create template: syntax error: unexpected end of string
+(in dbt_internal_packages\dbt-adapters\tests\generic\builtin.sql:3:56)
+17:44:13.973329 [error]: dbt1000: Failed to create template: syntax error: unknown statement endtest
+(in dbt_internal_packages\dbt-adapters\tests\generic\builtin.sql:3:1)
+17:44:13.973373 [info ]: Finished parsing [  0.22s]
+17:44:13.978792 [error]: dbt1000: Failed to create template: syntax error: unexpected end of input, expected end of block
+17:44:13.978922 [error]: dbt1000: Failed to create template: syntax error: unknown statement endfor
+(in dbt_internal_packages\dbt-snowflake\macros\adapters.sql:2:9)
+17:44:14.033219 [info ]: Started building task graph
+17:44:14.033321 [info ]: Finished building task graph [  0.00s]
+17:44:14.033600 [debug]: Incremental compilation - 0 nodes selected: {}
+17:44:14.039276 [info ]: Cached model count updated: 7 models (accurate)
+17:44:14.200288 [info ]: Started loading project
+17:44:14.218309 [info ]: Cached model count updated: 7 models (accurate)
+17:44:14.218367 [info ]: Finished loading project [  0.02s]
+17:45:15.944201 [info ]: Started loading project
+17:45:16.029544 [info ]: Started parsing
+17:45:16.059017 [info ]: Finished loading project [  0.11s]
+17:45:16.103694 [info ]: Finished parsing [  0.07s]
+17:45:16.108730 [info ]: Cached model count updated: 7 models (estimate)
+17:45:16.108771 [info ]: Cached model count updated: 7 models (accurate)
+17:45:16.108846 [info ]: Started scheduling
+17:45:16.108955 [info ]: Finished scheduling [  0.00s]
+17:45:16.108988 [warn ]: dbt1000: The selection criterion '' does not match any enabled nodes
+17:45:16.109007 [warn ]: dbt1000: Nothing to do. Try checking your model configs and model specification args
+17:45:16.278972 [error]: dbt1000: Failed to create template: syntax error: unknown statement endtest
+(in dbt_internal_packages\dbt-adapters\tests\generic\builtin.sql:3:1)
+17:45:16.279271 [error]: dbt1000: Failed to create template: syntax error: unexpected end of string
+(in dbt_internal_packages\dbt-adapters\tests\generic\builtin.sql:3:56)
+17:45:16.279445 [error]: dbt1000: Failed to create template: syntax error: unknown statement endtest
+(in dbt_internal_packages\dbt-adapters\tests\generic\builtin.sql:3:1)
+17:45:16.292071 [error]: dbt1000: Failed to create template: syntax error: unexpected end of input, expected end of block
+17:45:16.292440 [error]: dbt1000: Failed to create template: syntax error: unknown statement endfor
+(in dbt_internal_packages\dbt-snowflake\macros\adapters.sql:2:9)
+17:45:16.341682 [info ]: Started building task graph
+17:45:16.341743 [info ]: Finished building task graph [  0.00s]
+17:45:16.341926 [debug]: Incremental compilation - 0 nodes selected: {}
+17:45:16.345515 [info ]: Cached model count updated: 7 models (accurate)
+17:45:16.472310 [info ]: Started loading project
+17:45:16.486196 [info ]: Cached model count updated: 7 models (accurate)
+17:45:16.486252 [info ]: Finished loading project [  0.01s]
+17:46:21.189709 [info ]: Started loading project
+17:46:21.201794 [info ]: Cached model count updated: 7 models (accurate)
+17:46:21.201819 [info ]: Finished loading project [  0.01s]
+17:47:47.145227 [info ]: Started loading project
+17:47:47.156955 [info ]: Started loading project
+17:47:47.157868 [info ]: Finished loading project [  0.01s]
+17:47:47.378417 [info ]: Started parsing
+17:47:47.418462 [info ]: Finished loading project [  0.26s]
+17:47:47.483698 [info ]: Finished parsing [  0.11s]
+17:47:47.491149 [info ]: Cached model count updated: 7 models (estimate)
+17:47:47.491202 [info ]: Cached model count updated: 7 models (accurate)
+17:47:47.491297 [info ]: Started scheduling
+17:47:47.491687 [info ]: Finished scheduling [  0.00s]
+17:47:47.698897 [info ]: Started building task graph
+17:47:47.699149 [info ]: Finished building task graph [  0.00s]
+17:47:47.699340 [info ]: Started rendering (7 nodes)
+17:47:47.699368 [info ]: Started model dbt_ayajnik.stg_stripe__payment
+17:47:47.699417 [debug]: Started rendering model dbt_ayajnik.stg_stripe__payment
+17:47:47.699445 [info ]: Started model dbt_ayajnik.stg_stripe__payments
+17:47:47.699452 [debug]: Started rendering model dbt_ayajnik.stg_stripe__payments
+17:47:47.699469 [info ]: Started model dbt_ayajnik.stg_jaffle_shop__orders
+17:47:47.699475 [debug]: Started rendering model dbt_ayajnik.stg_jaffle_shop__orders
+17:47:47.699483 [info ]: Started model dbt_ayajnik.stg_jaffle_shop__customers
+17:47:47.699488 [debug]: Started rendering model dbt_ayajnik.stg_jaffle_shop__customers
+17:47:47.710559 [info ]: Started analyzing (7 nodes)
+17:47:47.710593 [debug]: Started analyzing model dbt_ayajnik.stg_jaffle_shop__customers
+17:47:47.710555 [debug]: Finished rendering [  0.01s] model dbt_ayajnik.stg_jaffle_shop__customers [success]
+17:47:47.710713 [debug]: Finished rendering [  0.01s] model dbt_ayajnik.stg_jaffle_shop__orders [success]
+17:47:47.710749 [debug]: Started analyzing model dbt_ayajnik.stg_jaffle_shop__orders
+17:47:47.714015 [debug]: Finished rendering [  0.01s] model dbt_ayajnik.stg_stripe__payments [success]
+17:47:47.714007 [debug]: Started analyzing model dbt_ayajnik.stg_stripe__payments
+17:47:47.716148 [debug]: Started analyzing model dbt_ayajnik.stg_stripe__payment
+17:47:47.716143 [debug]: Finished rendering [  0.02s] model dbt_ayajnik.stg_stripe__payment [success]
+17:47:47.716726 [info ]:  Succeeded [  0.02s] model dbt_ayajnik.stg_jaffle_shop__customers (view)
+17:47:47.716777 [debug]: Finished analyzing [  0.01s] model dbt_ayajnik.stg_jaffle_shop__customers [success]
+17:47:47.716804 [info ]:  Succeeded [  0.02s] model dbt_ayajnik.stg_jaffle_shop__orders (view)
+17:47:47.716817 [debug]: Finished analyzing [  0.01s] model dbt_ayajnik.stg_jaffle_shop__orders [success]
+17:47:47.716847 [info ]: Started model dbt_ayajnik.dim_customers
+17:47:47.716868 [debug]: Started rendering model dbt_ayajnik.dim_customers
+17:47:47.721075 [info ]:  Succeeded [  0.02s] model dbt_ayajnik.stg_stripe__payments (view)
+17:47:47.721137 [debug]: Finished analyzing [  0.01s] model dbt_ayajnik.stg_stripe__payments [success]
+17:47:47.721182 [info ]: Started model dbt_ayajnik.fact_orders
+17:47:47.721201 [debug]: Started rendering model dbt_ayajnik.fact_orders
+17:47:47.721870 [info ]:  Succeeded [  0.02s] model dbt_ayajnik.stg_stripe__payment (view)
+17:47:47.721923 [debug]: Finished analyzing [  0.01s] model dbt_ayajnik.stg_stripe__payment [success]
+17:47:47.722476 [debug]: Finished rendering [  0.01s] model dbt_ayajnik.dim_customers [success]
+17:47:47.722856 [debug]: Started analyzing model dbt_ayajnik.dim_customers
+17:47:47.726577 [debug]: Started analyzing model dbt_ayajnik.fact_orders
+17:47:47.726570 [debug]: Finished rendering [  0.01s] model dbt_ayajnik.fact_orders [success]
+17:47:47.731736 [info ]:  Succeeded [  0.01s] model dbt_ayajnik.dim_customers (table)
+17:47:47.731787 [debug]: Finished analyzing [  0.01s] model dbt_ayajnik.dim_customers [success]
+17:47:47.758238 [info ]:  Succeeded [  0.04s] model dbt_ayajnik.fact_orders (table)
+17:47:47.758296 [debug]: Finished analyzing [  0.03s] model dbt_ayajnik.fact_orders [success]
+17:47:47.758333 [info ]: Started model dbt_ayajnik.fct_customers
+17:47:47.758350 [debug]: Started rendering model dbt_ayajnik.fct_customers
+17:47:47.762743 [debug]: Finished rendering [  0.00s] model dbt_ayajnik.fct_customers [success]
+17:47:47.762790 [info ]: Finished rendering [  0.06s] (7 nodes, 0 skipped, 0 errors)
+17:47:47.762834 [debug]: Started analyzing model dbt_ayajnik.fct_customers
+17:47:47.776670 [info ]:  Succeeded [  0.02s] model dbt_ayajnik.fct_customers (table)
+17:47:47.776766 [debug]: Finished analyzing [  0.01s] model dbt_ayajnik.fct_customers [success]
+17:47:47.776888 [info ]: Finished analyzing [  0.07s] (7 nodes, 0 skipped, 0 errors)
+17:47:47.781340 [info ]: Cached model count updated: 7 models (accurate)
+17:47:56.859849 [info ]: Started loading project
+17:47:56.887629 [info ]: Started loading project
+17:47:56.889647 [info ]: Finished loading project [  0.03s]
+17:47:57.198469 [info ]: Started parsing
+17:47:57.247808 [info ]: Finished loading project [  0.36s]
+17:47:57.302420 [info ]: Finished parsing [  0.10s]
+17:47:57.305512 [info ]: Cached model count updated: 7 models (estimate)
+17:47:57.305552 [info ]: Cached model count updated: 7 models (accurate)
+17:47:57.305670 [info ]: Started scheduling
+17:47:57.305828 [info ]: Finished scheduling [  0.00s]
+17:47:57.507206 [info ]: Started building task graph
+17:47:57.507353 [info ]: Finished building task graph [  0.00s]
+17:47:57.507524 [info ]: Started rendering (7 nodes)
+17:47:57.507546 [info ]: Started model dbt_ayajnik.stg_stripe__payment
+17:47:57.507602 [debug]: Started rendering model dbt_ayajnik.stg_stripe__payment
+17:47:57.507623 [info ]: Started model dbt_ayajnik.stg_stripe__payments
+17:47:57.507630 [debug]: Started rendering model dbt_ayajnik.stg_stripe__payments
+17:47:57.507651 [info ]: Started model dbt_ayajnik.stg_jaffle_shop__orders
+17:47:57.507661 [debug]: Started rendering model dbt_ayajnik.stg_jaffle_shop__orders
+17:47:57.507671 [info ]: Started model dbt_ayajnik.stg_jaffle_shop__customers
+17:47:57.507676 [debug]: Started rendering model dbt_ayajnik.stg_jaffle_shop__customers
+17:47:57.510936 [debug]: Finished rendering [  0.00s] model dbt_ayajnik.stg_stripe__payment [success]
+17:47:57.510942 [info ]: Started analyzing (7 nodes)
+17:47:57.510974 [debug]: Started analyzing model dbt_ayajnik.stg_stripe__payment
+17:47:57.511258 [debug]: Started analyzing model dbt_ayajnik.stg_stripe__payments
+17:47:57.511834 [debug]: Started analyzing model dbt_ayajnik.stg_jaffle_shop__orders
+17:47:57.511844 [debug]: Finished rendering [  0.00s] model dbt_ayajnik.stg_stripe__payments [success]
+17:47:57.511879 [debug]: Finished rendering [  0.00s] model dbt_ayajnik.stg_jaffle_shop__orders [success]
+17:47:57.511877 [debug]: Finished rendering [  0.00s] model dbt_ayajnik.stg_jaffle_shop__customers [success]
+17:47:57.511902 [debug]: Started analyzing model dbt_ayajnik.stg_jaffle_shop__customers
+17:47:57.515654 [info ]:  Succeeded [  0.01s] model dbt_ayajnik.stg_stripe__payments (view)
+17:47:57.515701 [debug]: Finished analyzing [  0.00s] model dbt_ayajnik.stg_stripe__payments [success]
+17:47:57.515878 [info ]:  Succeeded [  0.01s] model dbt_ayajnik.stg_stripe__payment (view)
+17:47:57.515902 [debug]: Finished analyzing [  0.00s] model dbt_ayajnik.stg_stripe__payment [success]
+17:47:57.516214 [info ]:  Succeeded [  0.01s] model dbt_ayajnik.stg_jaffle_shop__orders (view)
+17:47:57.516241 [debug]: Finished analyzing [  0.00s] model dbt_ayajnik.stg_jaffle_shop__orders [success]
+17:47:57.516267 [info ]: Started model dbt_ayajnik.fact_orders
+17:47:57.516281 [debug]: Started rendering model dbt_ayajnik.fact_orders
+17:47:57.519370 [debug]: Started analyzing model dbt_ayajnik.fact_orders
+17:47:57.519364 [debug]: Finished rendering [  0.00s] model dbt_ayajnik.fact_orders [success]
+17:47:57.524641 [info ]:  Succeeded [  0.02s] model dbt_ayajnik.stg_jaffle_shop__customers (view)
+17:47:57.524697 [debug]: Finished analyzing [  0.01s] model dbt_ayajnik.stg_jaffle_shop__customers [success]
+17:47:57.524925 [info ]: Started model dbt_ayajnik.dim_customers
+17:47:57.526768 [debug]: Started rendering model dbt_ayajnik.dim_customers
+17:47:57.531004 [debug]: Started analyzing model dbt_ayajnik.dim_customers
+17:47:57.530995 [debug]: Finished rendering [  0.00s] model dbt_ayajnik.dim_customers [success]
+17:47:57.542046 [info ]:  Succeeded [  0.01s] model dbt_ayajnik.dim_customers (table)
+17:47:57.542100 [debug]: Finished analyzing [  0.01s] model dbt_ayajnik.dim_customers [success]
+17:47:57.553267 [info ]:  Succeeded [  0.04s] model dbt_ayajnik.fact_orders (table)
+17:47:57.553318 [debug]: Finished analyzing [  0.03s] model dbt_ayajnik.fact_orders [success]
+17:47:57.553356 [info ]: Started model dbt_ayajnik.fct_customers
+17:47:57.553394 [debug]: Started rendering model dbt_ayajnik.fct_customers
+17:47:57.559590 [debug]: Finished rendering [  0.01s] model dbt_ayajnik.fct_customers [success]
+17:47:57.559626 [info ]: Finished rendering [  0.05s] (7 nodes, 0 skipped, 0 errors)
+17:47:57.559661 [debug]: Started analyzing model dbt_ayajnik.fct_customers
+17:47:57.569309 [info ]:  Succeeded [  0.01s] model dbt_ayajnik.fct_customers (table)
+17:47:57.569367 [debug]: Finished analyzing [  0.01s] model dbt_ayajnik.fct_customers [success]
+17:47:57.569381 [info ]: Finished analyzing [  0.06s] (7 nodes, 0 skipped, 0 errors)
+17:47:57.575562 [info ]: Cached model count updated: 7 models (accurate)
+17:50:55.791873 [info ]: Started loading project
+17:50:55.827686 [info ]: Started loading project
+17:50:55.829398 [info ]: Finished loading project [  0.04s]
+17:50:56.133700 [info ]: Finished loading project [  0.31s]
+17:50:56.156612 [info ]: Started loading project
+17:50:56.168473 [info ]: Started loading project
+17:50:56.170319 [info ]: Finished loading project [  0.01s]
+17:50:56.182463 [info ]: Finished loading project [  0.01s]
