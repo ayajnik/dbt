@@ -9,8 +9,10 @@ sources:
 
     tables:
       - name: customers
+        description: "Raw customers data"
         columns:
           - name: "id"
+            description: "Primary key for the customer table"
             tests:
               - unique
               - not_null
