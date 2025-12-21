@@ -1598,3 +1598,70 @@ describe table "RAW"."STRIPE"."PAYMENT"
 17:50:56.168473 [info ]: Started loading project
 17:50:56.170319 [info ]: Finished loading project [  0.01s]
 17:50:56.182463 [info ]: Finished loading project [  0.01s]
+==================== 2025-12-21T17:07:49.152370Z | be3d67c9-ca04-48e2-b212-cc8f6cb99d97 ====================
+17:07:49.159192 [info ]: Starting dbt LSP server
+17:07:49.160187 [info ]: Connecting to LSP client on port 8000
+17:07:49.166196 [info ]: Successfully connected to LSP client
+17:07:49.166258 [info ]: Creating LSP service...
+17:07:49.301939 [info ]: Creating LSP server...
+17:07:49.301966 [info ]: Starting LSP server...
+17:07:49.612682 [info ]: Started loading project
+17:07:50.238707 [info ]: Started parsing
+17:07:50.539955 [info ]: Finished loading project [  0.93s]
+17:07:51.473318 [info ]: Finished parsing [  1.23s]
+17:07:51.482250 [info ]: Cached model count updated: 7 models (estimate)
+17:07:51.482356 [info ]: Cached model count updated: 7 models (accurate)
+17:07:51.488074 [info ]: Started scheduling
+17:07:51.495218 [info ]: Finished scheduling [  0.01s]
+17:07:51.851233 [info ]: Started building task graph
+17:07:51.893783 [info ]: Finished building task graph [  0.04s]
+17:07:51.903587 [info ]: Started rendering (7 nodes)
+17:07:51.906144 [info ]: Started model dbt_ayajnik.jinja_practice
+17:07:51.907890 [debug]: Started rendering model dbt_ayajnik.jinja_practice
+17:07:51.908276 [info ]: Started model dbt_ayajnik.stg_stripe__payment
+17:07:51.908294 [debug]: Started rendering model dbt_ayajnik.stg_stripe__payment
+17:07:51.908320 [info ]: Started model dbt_ayajnik.stg_jaffle_shop__orders
+17:07:51.908333 [debug]: Started rendering model dbt_ayajnik.stg_jaffle_shop__orders
+17:07:51.908349 [info ]: Started model dbt_ayajnik.stg_jaffle_shop__customers
+17:07:51.908362 [debug]: Started rendering model dbt_ayajnik.stg_jaffle_shop__customers
+17:07:51.927040 [debug]: Finished rendering [  0.02s] model dbt_ayajnik.jinja_practice [success]
+17:07:51.927936 [info ]: Started analyzing (7 nodes)
+17:07:51.927979 [debug]: Started analyzing model dbt_ayajnik.jinja_practice
+17:07:51.928033 [debug]: Finished rendering [  0.02s] model dbt_ayajnik.stg_jaffle_shop__customers [success]
+17:07:51.928068 [debug]: Started analyzing model dbt_ayajnik.stg_jaffle_shop__customers
+17:07:51.928101 [debug]: Finished rendering [  0.02s] model dbt_ayajnik.stg_jaffle_shop__orders [success]
+17:07:51.928118 [debug]: Started analyzing model dbt_ayajnik.stg_jaffle_shop__orders
+17:07:51.928144 [debug]: Finished rendering [  0.02s] model dbt_ayajnik.stg_stripe__payment [success]
+17:07:51.928160 [debug]: Started analyzing model dbt_ayajnik.stg_stripe__payment
+17:07:51.964262 [info ]:     Failed [  0.05s] model dbt_ayajnik.jinja_practice (view)
+17:07:51.964824 [debug]: Finished analyzing [  0.04s] model dbt_ayajnik.jinja_practice [error]
+17:07:51.969486 [error]: dbt0101: mismatched input 'Wow' expecting one of <EOF>, 'ALTER', 'ANALYZE', 'BEGIN', 'CALL', 'COMMENT', 'COMMIT' ...
+  --> models\jinja_practice.sql:5:1 (target\compiled\models\jinja_practice.sql:5:1)
+17:07:52.159551 [info ]:  Succeeded [  0.25s] model dbt_ayajnik.stg_jaffle_shop__orders (view)
+17:07:52.159597 [debug]: Finished analyzing [  0.23s] model dbt_ayajnik.stg_jaffle_shop__orders [success]
+17:07:52.159642 [info ]:  Succeeded [  0.25s] model dbt_ayajnik.stg_stripe__payment (view)
+17:07:52.159662 [debug]: Finished analyzing [  0.23s] model dbt_ayajnik.stg_stripe__payment [success]
+17:07:52.159730 [info ]: Started model dbt_ayajnik.fact_orders
+17:07:52.159750 [debug]: Started rendering model dbt_ayajnik.fact_orders
+17:07:52.159788 [info ]:  Succeeded [  0.25s] model dbt_ayajnik.stg_jaffle_shop__customers (view)
+17:07:52.159808 [debug]: Finished analyzing [  0.23s] model dbt_ayajnik.stg_jaffle_shop__customers [success]
+17:07:52.160057 [info ]: Started model dbt_ayajnik.dim_customers
+17:07:52.160121 [debug]: Started rendering model dbt_ayajnik.dim_customers
+17:07:52.163533 [debug]: Started analyzing model dbt_ayajnik.fact_orders
+17:07:52.163527 [debug]: Finished rendering [  0.00s] model dbt_ayajnik.fact_orders [success]
+17:07:52.164413 [debug]: Started analyzing model dbt_ayajnik.dim_customers
+17:07:52.164447 [debug]: Finished rendering [  0.00s] model dbt_ayajnik.dim_customers [success]
+17:07:52.308921 [info ]:  Succeeded [  0.15s] model dbt_ayajnik.dim_customers (table)
+17:07:52.309309 [debug]: Finished analyzing [  0.14s] model dbt_ayajnik.dim_customers [success]
+17:07:52.309358 [info ]:  Succeeded [  0.15s] model dbt_ayajnik.fact_orders (table)
+17:07:52.309382 [debug]: Finished analyzing [  0.15s] model dbt_ayajnik.fact_orders [success]
+17:07:52.309414 [info ]: Started model dbt_ayajnik.fct_customers
+17:07:52.309435 [debug]: Started rendering model dbt_ayajnik.fct_customers
+17:07:52.314817 [debug]: Started analyzing model dbt_ayajnik.fct_customers
+17:07:52.314813 [debug]: Finished rendering [  0.01s] model dbt_ayajnik.fct_customers [success]
+17:07:52.314852 [info ]: Finished rendering [  0.41s] (7 nodes, 0 skipped, 0 errors)
+17:07:52.330629 [info ]:  Succeeded [  0.02s] model dbt_ayajnik.fct_customers (table)
+17:07:52.330691 [debug]: Finished analyzing [  0.02s] model dbt_ayajnik.fct_customers [success]
+17:07:52.330706 [info ]: Finished analyzing [  0.40s] (7 nodes, 0 skipped, 1 errors)
+17:07:52.344628 [info ]: Cached model count updated: 7 models (accurate)
+18:14:20.830659 [info ]: Started loading project
