@@ -1,0 +1,13 @@
+{% macro grant_select(schema=target.schema, role = target.role) %}
+
+{% set sql %}
+    grant usage on {{ schema }} to role {{ role }};
+    grant select on all tables in schema {{ schema }} to role {{ role }};
+    grant select on all views in schema {{ schema }} to role {{ role }}
+{% endset %}
+
+{% do run_query(sql) %}
+
+{% endmacro %}
+
+-- target variables contains information about database warehouse connection
