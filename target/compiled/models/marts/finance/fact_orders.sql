@@ -1,3 +1,5 @@
+
+
 with orders as  (
     select * from analytics.dbt_ayajnik.stg_jaffle_shop__orders
 ),
@@ -28,3 +30,7 @@ order_payments as (
 )
 
 select * from final
+
+  where order_date > (select max(order_date) from analytics.dbt_ayajnik.fact_orders)
+
+order by order_date desc
