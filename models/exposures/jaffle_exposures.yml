@@ -1,0 +1,10 @@
+exposures:
+  - name: orders_data
+    label: orders_data
+    maturity: high
+    type: notebook
+    depends_on: 
+      - ref('fact_orders')
+    owner:
+      name: Ayush Yajnik
+      email: abc@abc.com

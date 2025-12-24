@@ -4230,3 +4230,165 @@ from (
 Finished 'snapshot' successfully for target 'dev' [3.2s]
 Processed: 1 snapshot
 Summary: 1 total | 1 success
+==================== 2025-12-24T17:20:46.069312Z | 019b5160-a1ed-7a93-930e-6e4580921806 ====================
+17:20:46.069451 [info ]: dbt-fusion 2.0.0-preview.89
+17:20:46.071816 [info ]: Started loading project
+17:20:46.081839 [info ]: Loading ~/.dbt/profiles.yml
+17:20:46.319800 [info ]: Finished loading project [  0.25s]
+17:20:46.321173 [info ]: Started parsing
+17:20:46.511652 [info ]: Finished parsing [  0.19s]
+17:20:46.556396 [info ]: Started scheduling
+17:20:46.562148 [info ]: Finished scheduling [  0.01s]
+17:20:47.520167 [debug]: Query executed on node unknown:
+SHOW OBJECTS IN SCHEMA "ANALYTICS"."DBT_AYAJNIK" LIMIT 10000
+17:20:48.333264 [info ]: Started building task graph
+17:20:48.347450 [info ]: Finished building task graph [  0.01s]
+17:20:48.703784 [debug]: Query executed on node unknown:
+show terse schemas in database analytics
+    limit 10000
+/* {"app": "dbt", "connection_name": "", "dbt_version": "2.0.0", "profile_name": "default", "target_name": "dev"} */
+17:20:48.718405 [info ]: Started rendering (3 nodes)
+17:20:48.720484 [info ]: Started model dbt_ayajnik.stg_stripe__payment
+17:20:48.721929 [debug]: Started rendering model dbt_ayajnik.stg_stripe__payment
+17:20:48.722313 [info ]: Started model dbt_ayajnik.stg_jaffle_shop__orders
+17:20:48.722356 [debug]: Started rendering model dbt_ayajnik.stg_jaffle_shop__orders
+17:20:48.740679 [debug]: Finished rendering [  0.02s] model dbt_ayajnik.stg_jaffle_shop__orders [success]
+17:20:48.742220 [info ]: Started analyzing (3 nodes)
+17:20:48.742524 [debug]: Started analyzing model dbt_ayajnik.stg_jaffle_shop__orders
+17:20:48.742605 [debug]: Finished rendering [  0.02s] model dbt_ayajnik.stg_stripe__payment [success]
+17:20:48.743043 [debug]: Started analyzing model dbt_ayajnik.stg_stripe__payment
+17:20:48.925308 [debug]: Finished analyzing [  0.18s] model dbt_ayajnik.stg_jaffle_shop__orders [success]
+17:20:48.925957 [info ]: Started running (3 nodes)
+17:20:48.926348 [debug]: Started running model dbt_ayajnik.stg_jaffle_shop__orders
+17:20:48.947059 [debug]: Finished analyzing [  0.20s] model dbt_ayajnik.stg_stripe__payment [success]
+17:20:48.947728 [info ]: Started model dbt_ayajnik.fact_orders
+17:20:48.947761 [debug]: Started rendering model dbt_ayajnik.fact_orders
+17:20:48.947809 [debug]: Started running model dbt_ayajnik.stg_stripe__payment
+17:20:48.955933 [debug]: Finished rendering [  0.01s] model dbt_ayajnik.fact_orders [success]
+17:20:48.958190 [info ]: Finished rendering [  0.24s] (3 nodes, 0 skipped, 0 errors)
+17:20:48.961080 [debug]: Started analyzing model dbt_ayajnik.fact_orders
+17:20:48.962844 [debug]: Writing runtime sql for node "model.jaffle_shop.stg_stripe__payment"
+17:20:48.962907 [debug]: Writing runtime sql for node "model.jaffle_shop.stg_jaffle_shop__orders"
+17:20:49.445679 [debug]: Query executed on node model.jaffle_shop.stg_stripe__payment:
+create or replace   view analytics.dbt_ayajnik.stg_stripe__payment
+  
+   as (
+    select
+    id as payment_id,
+    orderid as order_id,
+    paymentmethod as payment_method,
+    status,
+    -- amount is stored in cents, convert it to dollars
+    round( amount * 1.0 /100, 2 ) as amount,
+    --
+    -- 
+    created as created_at
+from raw.stripe.payment
+  )
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.jaffle_shop.stg_stripe__payment", "profile_name": "default", "target_name": "dev"} */
+17:20:49.458497 [info ]:  Succeeded [  0.73s] model dbt_ayajnik.stg_stripe__payment (view)
+17:20:49.459907 [debug]: Finished running [  0.51s] model dbt_ayajnik.stg_stripe__payment [success]
+17:20:49.651857 [debug]: Query executed on node model.jaffle_shop.stg_jaffle_shop__orders:
+create or replace   view analytics.dbt_ayajnik.stg_jaffle_shop__orders
+  
+   as (
+    select
+        id as order_id,
+        user_id as customer_id,
+        order_date,
+        status, 
+        _etl_loaded_at
+    from raw.jaffle_shop.orders
+  )
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.jaffle_shop.stg_jaffle_shop__orders", "profile_name": "default", "target_name": "dev"} */
+17:20:49.655793 [info ]:  Succeeded [  0.93s] model dbt_ayajnik.stg_jaffle_shop__orders (view)
+17:20:49.659979 [debug]: Finished running [  0.73s] model dbt_ayajnik.stg_jaffle_shop__orders [success]
+17:20:49.777846 [debug]: Query executed on node model.jaffle_shop.fact_orders:
+describe table "ANALYTICS"."DBT_AYAJNIK"."FACT_ORDERS"
+17:20:50.527840 [debug]: Finished analyzing [  1.57s] model dbt_ayajnik.fact_orders [success]
+17:20:50.528291 [info ]: Finished analyzing [  1.79s] (3 nodes, 0 skipped, 0 errors)
+17:20:50.528889 [debug]: Started running model dbt_ayajnik.fact_orders
+17:20:50.533153 [debug]: Invalid value for on_schema_change (none) specified. Setting default value of ignore.
+17:20:51.110494 [debug]: Query executed on node model.jaffle_shop.fact_orders:
+create or replace  temporary view analytics.dbt_ayajnik.fact_orders__dbt_tmp
+  
+   as (
+    
+
+with orders as  (
+    select * from analytics.dbt_ayajnik.stg_jaffle_shop__orders
+),
+
+payments as (
+    select * from analytics.dbt_ayajnik.stg_stripe__payment
+),
+
+order_payments as (
+    select
+        order_id,
+        sum (case when status = 'success' then amount end) as amount
+
+    from payments
+    group by 1
+),
+
+ final as (
+
+    select
+        orders.order_id,
+        orders.customer_id,
+        orders.order_date,
+        coalesce (order_payments.amount, 0) as amount
+
+    from orders
+    left join order_payments using (order_id)
+)
+
+select * from final
+
+  where order_date > (select max(order_date) from analytics.dbt_ayajnik.fact_orders)
+
+order by order_date desc
+  )
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.jaffle_shop.fact_orders", "profile_name": "default", "target_name": "dev"} */
+17:20:51.278500 [debug]: Query executed on node model.jaffle_shop.fact_orders:
+describe table analytics.dbt_ayajnik.fact_orders__dbt_tmp
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.jaffle_shop.fact_orders", "profile_name": "default", "target_name": "dev"} */
+17:20:51.416074 [debug]: Query executed on node model.jaffle_shop.fact_orders:
+describe table analytics.dbt_ayajnik.fact_orders
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.jaffle_shop.fact_orders", "profile_name": "default", "target_name": "dev"} */
+17:20:51.490079 [debug]: Query executed on node model.jaffle_shop.fact_orders:
+describe table ANALYTICS.DBT_AYAJNIK.FACT_ORDERS
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.jaffle_shop.fact_orders", "profile_name": "default", "target_name": "dev"} */
+17:20:51.497960 [debug]: Writing runtime sql for node "model.jaffle_shop.fact_orders"
+17:20:51.596054 [debug]: Query executed on node model.jaffle_shop.fact_orders:
+-- back compat for old kwarg name
+  
+  begin
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.jaffle_shop.fact_orders", "profile_name": "default", "target_name": "dev"} */
+17:20:53.207892 [debug]: Query executed on node model.jaffle_shop.fact_orders:
+
+    
+
+        insert into analytics.dbt_ayajnik.fact_orders ("ORDER_ID", "CUSTOMER_ID", "ORDER_DATE", "AMOUNT")
+        (
+            select "ORDER_ID", "CUSTOMER_ID", "ORDER_DATE", "AMOUNT"
+            from analytics.dbt_ayajnik.fact_orders__dbt_tmp
+        )
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.jaffle_shop.fact_orders", "profile_name": "default", "target_name": "dev"} */
+17:20:53.463164 [debug]: Query executed on node model.jaffle_shop.fact_orders:
+
+    commit
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.jaffle_shop.fact_orders", "profile_name": "default", "target_name": "dev"} */
+17:20:53.464335 [debug]: Applying DROP to: analytics.dbt_ayajnik.fact_orders__dbt_tmp
+17:20:53.782667 [debug]: Query executed on node model.jaffle_shop.fact_orders:
+drop view if exists analytics.dbt_ayajnik.fact_orders__dbt_tmp cascade
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.jaffle_shop.fact_orders", "profile_name": "default", "target_name": "dev"} */
+17:20:53.787132 [info ]:  Succeeded [  4.83s] model dbt_ayajnik.fact_orders (incremental)
+17:20:53.789388 [debug]: Finished running [  3.26s] model dbt_ayajnik.fact_orders [success]
+17:20:53.791719 [info ]: Finished running [  4.87s] (3 nodes, 0 skipped, 0 errors)
+17:20:54.021919 [info ]: 
+==================== Execution Summary =====================
+Finished 'run' successfully for target 'dev' [8.0s]
+Processed: 3 models
+Summary: 3 total | 3 success
