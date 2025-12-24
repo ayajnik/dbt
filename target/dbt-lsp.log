@@ -3967,3 +3967,6 @@ describe table "ANALYTICS"."DBT_AYAJNIK"."FACT_ORDERS"
 16:05:53.775097 [debug]: Finished analyzing [  0.01s] model dbt_ayajnik.fct_customers [success]
 16:05:53.775140 [info ]: Finished analyzing [  0.62s] (8 nodes, 0 skipped, 1 errors)
 16:05:53.782805 [info ]: Cached model count updated: 7 models (accurate)
+16:25:14.344941 [info ]: Started loading project
+16:25:14.388815 [info ]: Cached model count updated: 7 models (accurate)
+16:25:14.388907 [info ]: Finished loading project [  0.04s]
