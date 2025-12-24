@@ -3800,3 +3800,433 @@ Summary: 3 total | 3 success
 {"data":{"execution_time":1.3754174709320068,"node_info":{"materialized":"incremental","node_checksum":"0ea6762c38c61d74cde3692e78e707338e839fbd8a7e8501ebbdf07276b5f0c2","node_finished_at":"2025-12-23T18:24:13.923070Z","node_name":"fact_orders","node_path":"models\\marts\\finance\\fact_orders.sql","node_relation":{"alias":"fact_orders","database":"analytics","relation_name":"analytics.dbt_ayajnik.fact_orders","schema":"dbt_ayajnik"},"node_started_at":"2025-12-23T18:24:12.547653Z","node_status":"success","resource_type":"model","unique_id":"model.jaffle_shop.fact_orders"},"status":"success"},"info":{"category":"","code":"Q012","extra":{},"invocation_id":"019b4c74-54fe-7b43-86e1-7af0770430f6","level":"info","msg":" Succeeded [  1.38s] model dbt_ayajnik.fact_orders (incremental)","name":"LogModelResult","pid":13204,"thread":"tokio-runtime-worker","ts":"2025-12-23T18:24:13.923295Z"}}
 {"data":{"node_info":{"materialized":"incremental","node_checksum":"0ea6762c38c61d74cde3692e78e707338e839fbd8a7e8501ebbdf07276b5f0c2","node_finished_at":"2025-12-23T18:24:13.923070Z","node_name":"fact_orders","node_path":"models\\marts\\finance\\fact_orders.sql","node_relation":{"alias":"fact_orders","database":"analytics","relation_name":"analytics.dbt_ayajnik.fact_orders","schema":"dbt_ayajnik"},"node_started_at":"2025-12-23T18:24:12.547653Z","node_status":"success","resource_type":"model","unique_id":"model.jaffle_shop.fact_orders"},"run_result":{"execution_time":1.3754174709320068,"status":"success"}},"info":{"category":"","code":"Q025","extra":{},"invocation_id":"019b4c74-54fe-7b43-86e1-7af0770430f6","level":"debug","msg":"Finished running node model.jaffle_shop.fact_orders","name":"NodeFinished","pid":13204,"thread":"tokio-runtime-worker","ts":"2025-12-23T18:24:13.923345Z"}}
 {"data":{"completed_at":"2025-12-23T18:24:14.016887Z","elapsed":3.0052149295806885,"success":true},"info":{"category":"","code":"Q039","extra":{},"invocation_id":"019b4c74-54fe-7b43-86e1-7af0770430f6","level":"info","msg":"\n==================== Execution Summary =====================\nFinished 'show' successfully for target 'dev' [3.0s]","name":"CommandCompleted","pid":13204,"thread":"tokio-runtime-worker","ts":"2025-12-23T18:24:14.017067Z"}}
+{"data":{"log_version":3,"version":"=2.0.0-preview.89"},"info":{"category":"","code":"A001","extra":{},"invocation_id":"019b5115-1093-7170-8ef2-2c33ca3e7cc8","level":"info","msg":"Running with dbt-fusion=2.0.0-preview.89","name":"MainReportVersion","pid":34112,"thread":"tokio-runtime-worker","ts":"2025-12-24T15:58:13.682838Z"}}
+{"data":{"args":{"debug":"false","invocation_command":"C:\\Users\\ayush\\.local\\bin\\dbt.exe show --format json --log-format json --show none --defer --select models\\staging\\jaffle_shops\\stg_jaffle_shop__orders.sql --limit 1000","log_format":"json","quiet":"false","write_json":"true"}},"info":{"category":"","code":"A002","extra":{},"invocation_id":"019b5115-1093-7170-8ef2-2c33ca3e7cc8","level":"debug","msg":"running dbt-fusion with argumets {\"command\":\"show\",\"vars\":\"{}\",\"limit\":\"1000\",\"select\":[\"path:models\\\\staging\\\\jaffle_shops\\\\stg_jaffle_shop__orders.sql\"],\"resource_types\":[\"model\",\"snapshot\",\"seed\",\"source\",\"analysis\"],\"debug\":false,\"log_format\":\"json\",\"quiet\":false,\"write_json\":true,\"write_catalog\":false}","name":"MainReportArgs","pid":34112,"thread":"tokio-runtime-worker","ts":"2025-12-24T15:58:13.683000Z"}}
+{"data":{"msg":"dbt-fusion 2.0.0-preview.89"},"info":{"category":"","code":"","extra":{},"invocation_id":"019b5115-1093-7170-8ef2-2c33ca3e7cc8","level":"info","msg":"dbt-fusion 2.0.0-preview.89","name":"Generic","pid":34112,"thread":"tokio-runtime-worker","ts":"2025-12-24T15:58:13.688327Z"}}
+{"data":{"msg":"Loading ~/.dbt/profiles.yml"},"info":{"category":"","code":"","extra":{},"invocation_id":"019b5115-1093-7170-8ef2-2c33ca3e7cc8","level":"info","msg":"Loading ~/.dbt/profiles.yml","name":"Generic","pid":34112,"thread":"tokio-runtime-worker","ts":"2025-12-24T15:58:13.754665Z"}}
+{"data":{"artifact_path":"target\\semantic_manifest.json","artifact_type":"ARTIFACT_TYPE_SEMANTIC_MANIFEST"},"info":{"category":"","code":"P001","extra":{},"invocation_id":"019b5115-1093-7170-8ef2-2c33ca3e7cc8","level":"info","msg":"Artifact written to target\\semantic_manifest.json","name":"ArtifactWritten","pid":34112,"thread":"tokio-runtime-worker","ts":"2025-12-24T15:58:15.067436Z"}}
+{"data":{"artifact_path":"target\\manifest.json","artifact_type":"WritableManifest"},"info":{"category":"","code":"P001","extra":{},"invocation_id":"019b5115-1093-7170-8ef2-2c33ca3e7cc8","level":"info","msg":"Artifact written to target\\manifest.json","name":"ArtifactWritten","pid":34112,"thread":"tokio-runtime-worker","ts":"2025-12-24T15:58:15.113909Z"}}
+{"data":{"node_info":{"materialized":"view","node_checksum":"5b3390c6fc2d2a7b9ca1e525a193d1fada1d080fe4c60587e47321e0d63f56d1","node_finished_at":"","node_name":"stg_jaffle_shop__orders","node_path":"models\\staging\\jaffle_shops\\stg_jaffle_shop__orders.sql","node_relation":{"alias":"stg_jaffle_shop__orders","database":"analytics","relation_name":"analytics.dbt_ayajnik.stg_jaffle_shop__orders","schema":"dbt_ayajnik"},"node_started_at":"2025-12-24T15:58:15.437070Z","node_status":"started","resource_type":"model","unique_id":"model.jaffle_shop.stg_jaffle_shop__orders"}},"info":{"category":"","code":"Q024","extra":{},"invocation_id":"019b5115-1093-7170-8ef2-2c33ca3e7cc8","level":"debug","msg":"Began running node model.jaffle_shop.stg_jaffle_shop__orders","name":"NodeStart","pid":34112,"thread":"tokio-runtime-worker","ts":"2025-12-24T15:58:15.437847Z"}}
+{"data":{"node_info":{"materialized":"view","node_checksum":"5b3390c6fc2d2a7b9ca1e525a193d1fada1d080fe4c60587e47321e0d63f56d1","node_finished_at":"","node_name":"stg_jaffle_shop__orders","node_path":"models\\staging\\jaffle_shops\\stg_jaffle_shop__orders.sql","node_relation":{"alias":"stg_jaffle_shop__orders","database":"analytics","relation_name":"analytics.dbt_ayajnik.stg_jaffle_shop__orders","schema":"dbt_ayajnik"},"node_started_at":"2025-12-24T15:58:15.437070Z","node_status":"started","resource_type":"model","unique_id":"model.jaffle_shop.stg_jaffle_shop__orders"}},"info":{"category":"","code":"Q011","extra":{},"invocation_id":"019b5115-1093-7170-8ef2-2c33ca3e7cc8","level":"info","msg":"Started model dbt_ayajnik.stg_jaffle_shop__orders","name":"LogStartLine","pid":34112,"thread":"tokio-runtime-worker","ts":"2025-12-24T15:58:15.437872Z"}}
+{"data":{"node_info":{"materialized":"view","node_checksum":"5b3390c6fc2d2a7b9ca1e525a193d1fada1d080fe4c60587e47321e0d63f56d1","node_finished_at":"","node_name":"stg_jaffle_shop__orders","node_path":"models\\staging\\jaffle_shops\\stg_jaffle_shop__orders.sql","node_relation":{"alias":"stg_jaffle_shop__orders","database":"analytics","relation_name":"analytics.dbt_ayajnik.stg_jaffle_shop__orders","schema":"dbt_ayajnik"},"node_started_at":"2025-12-24T15:58:15.438053Z","node_status":"compiling","resource_type":"model","unique_id":"model.jaffle_shop.stg_jaffle_shop__orders"}},"info":{"category":"","code":"Q030","extra":{},"invocation_id":"019b5115-1093-7170-8ef2-2c33ca3e7cc8","level":"debug","msg":"Started rendering model dbt_ayajnik.stg_jaffle_shop__orders","name":"NodeCompiling","pid":34112,"thread":"tokio-runtime-worker","ts":"2025-12-24T15:58:15.438064Z"}}
+{"data":{"log_version":3,"version":"2.0.0-preview.89"},"info":{"category":"","code":"","extra":{},"invocation_id":"019b5115-1093-7170-8ef2-2c33ca3e7cc8","level":"info","msg":" Rendering models\\staging\\jaffle_shops\\stg_jaffle_shop__orders.sql","name":"CompileResource","pid":34112,"thread":"tokio-runtime-worker","ts":"2025-12-24T15:58:15.442168Z"}}
+{"data":{"node_info":{"materialized":"view","node_checksum":"5b3390c6fc2d2a7b9ca1e525a193d1fada1d080fe4c60587e47321e0d63f56d1","node_finished_at":"","node_name":"stg_jaffle_shop__orders","node_path":"models\\staging\\jaffle_shops\\stg_jaffle_shop__orders.sql","node_relation":{"alias":"stg_jaffle_shop__orders","database":"analytics","relation_name":"analytics.dbt_ayajnik.stg_jaffle_shop__orders","schema":"dbt_ayajnik"},"node_started_at":"2025-12-24T15:58:15.676667Z","node_status":"executing","resource_type":"model","unique_id":"model.jaffle_shop.stg_jaffle_shop__orders"}},"info":{"category":"","code":"Q031","extra":{},"invocation_id":"019b5115-1093-7170-8ef2-2c33ca3e7cc8","level":"debug","msg":"Started running model dbt_ayajnik.stg_jaffle_shop__orders","name":"NodeExecuting","pid":34112,"thread":"tokio-runtime-worker","ts":"2025-12-24T15:58:15.676690Z"}}
+{"data":{"log_version":3,"version":"2.0.0-preview.89"},"info":{"category":"","code":"","extra":{},"invocation_id":"019b5115-1093-7170-8ef2-2c33ca3e7cc8","level":"info","msg":"Previewing model (model.jaffle_shop.stg_jaffle_shop__orders)","name":"ShowNode","pid":34112,"thread":"tokio-runtime-worker","ts":"2025-12-24T15:58:15.677569Z"}}
+{"data":{"sql":"select * from (select\r\n        id as order_id,\r\n        user_id as customer_id,\r\n        order_date,\r\n        status, \r\n        _etl_loaded_at\r\n    from raw.jaffle_shop.orders) limit 1000"},"info":{"category":"","code":"E017","extra":{},"invocation_id":"019b5115-1093-7170-8ef2-2c33ca3e7cc8","level":"debug","msg":"-- created_at: 2025-12-24T15:58:16.728542800+00:00\n-- finished_at: 2025-12-24T15:58:18.198744400+00:00\n-- elapsed: 1.5s\n-- outcome: success\n-- dialect: snowflake\n-- node_id: not available\n-- query_id: not available\n-- desc: dbt run query\nselect * from (select\r\n        id as order_id,\r\n        user_id as customer_id,\r\n        order_date,\r\n        status, \r\n        _etl_loaded_at\r\n    from raw.jaffle_shop.orders) limit 1000;","name":"SQLQuery","pid":34112,"thread":"tokio-runtime-worker","ts":"2025-12-24T15:58:18.199685Z"}}
+{"data":{"columns":["ORDER_ID","CUSTOMER_ID","ORDER_DATE","STATUS","_ETL_LOADED_AT"],"is_inline":false,"node_name":"stg_jaffle_shop__orders","output_format":"json","preview":"[{\"ORDER_ID\":1,\"CUSTOMER_ID\":1,\"ORDER_DATE\":\"2018-01-01\",\"STATUS\":\"returned\",\"_ETL_LOADED_AT\":null},{\"ORDER_ID\":2,\"CUSTOMER_ID\":3,\"ORDER_DATE\":\"2018-01-02\",\"STATUS\":\"completed\",\"_ETL_LOADED_AT\":null},{\"ORDER_ID\":3,\"CUSTOMER_ID\":94,\"ORDER_DATE\":\"2018-01-04\",\"STATUS\":\"completed\",\"_ETL_LOADED_AT\":null},{\"ORDER_ID\":4,\"CUSTOMER_ID\":50,\"ORDER_DATE\":\"2018-01-05\",\"STATUS\":\"completed\",\"_ETL_LOADED_AT\":null},{\"ORDER_ID\":5,\"CUSTOMER_ID\":64,\"ORDER_DATE\":\"2018-01-05\",\"STATUS\":\"completed\",\"_ETL_LOADED_AT\":null},{\"ORDER_ID\":6,\"CUSTOMER_ID\":54,\"ORDER_DATE\":\"2018-01-07\",\"STATUS\":\"completed\",\"_ETL_LOADED_AT\":null},{\"ORDER_ID\":7,\"CUSTOMER_ID\":88,\"ORDER_DATE\":\"2018-01-09\",\"STATUS\":\"completed\",\"_ETL_LOADED_AT\":null},{\"ORDER_ID\":8,\"CUSTOMER_ID\":2,\"ORDER_DATE\":\"2018-01-11\",\"STATUS\":\"returned\",\"_ETL_LOADED_AT\":null},{\"ORDER_ID\":9,\"CUSTOMER_ID\":53,\"ORDER_DATE\":\"2018-01-12\",\"STATUS\":\"completed\",\"_ETL_LOADED_AT\":null},{\"ORDER_ID\":10,\"CUSTOMER_ID\":7,\"ORDER_DATE\":\"2018-01-14\",\"STATUS\":\"completed\",\"_ETL_LOADED_AT\":null},{\"ORDER_ID\":11,\"CUSTOMER_ID\":99,\"ORDER_DATE\":\"2018-01-14\",\"STATUS\":\"completed\",\"_ETL_LOADED_AT\":null},{\"ORDER_ID\":12,\"CUSTOMER_ID\":59,\"ORDER_DATE\":\"2018-01-15\",\"STATUS\":\"completed\",\"_ETL_LOADED_AT\":null},{\"ORDER_ID\":13,\"CUSTOMER_ID\":84,\"ORDER_DATE\":\"2018-01-17\",\"STATUS\":\"completed\",\"_ETL_LOADED_AT\":null},{\"ORDER_ID\":14,\"CUSTOMER_ID\":40,\"ORDER_DATE\":\"2018-01-17\",\"STATUS\":\"returned\",\"_ETL_LOADED_AT\":null},{\"ORDER_ID\":15,\"CUSTOMER_ID\":25,\"ORDER_DATE\":\"2018-01-17\",\"STATUS\":\"completed\",\"_ETL_LOADED_AT\":null},{\"ORDER_ID\":16,\"CUSTOMER_ID\":39,\"ORDER_DATE\":\"2018-01-18\",\"STATUS\":\"completed\",\"_ETL_LOADED_AT\":null},{\"ORDER_ID\":17,\"CUSTOMER_ID\":71,\"ORDER_DATE\":\"2018-01-18\",\"STATUS\":\"completed\",\"_ETL_LOADED_AT\":null},{\"ORDER_ID\":18,\"CUSTOMER_ID\":64,\"ORDER_DATE\":\"2018-01-20\",\"STATUS\":\"returned\",\"_ETL_LOADED_AT\":null},{\"ORDER_ID\":19,\"CUSTOMER_ID\":54,\"ORDER_DATE\":\"2018-01-22\",\"STATUS\":\"completed\",\"_ETL_LOADED_AT\":null},{\"ORDER_ID\":20,\"CUSTOMER_ID\":20,\"ORDER_DATE\":\"2018-01-23\",\"STATUS\":\"completed\",\"_ETL_LOADED_AT\":null},{\"ORDER_ID\":21,\"CUSTOMER_ID\":71,\"ORDER_DATE\":\"2018-01-23\",\"STATUS\":\"completed\",\"_ETL_LOADED_AT\":null},{\"ORDER_ID\":22,\"CUSTOMER_ID\":86,\"ORDER_DATE\":\"2018-01-24\",\"STATUS\":\"completed\",\"_ETL_LOADED_AT\":null},{\"ORDER_ID\":23,\"CUSTOMER_ID\":22,\"ORDER_DATE\":\"2018-01-26\",\"STATUS\":\"return_pending\",\"_ETL_LOADED_AT\":null},{\"ORDER_ID\":24,\"CUSTOMER_ID\":3,\"ORDER_DATE\":\"2018-01-27\",\"STATUS\":\"completed\",\"_ETL_LOADED_AT\":null},{\"ORDER_ID\":25,\"CUSTOMER_ID\":51,\"ORDER_DATE\":\"2018-01-28\",\"STATUS\":\"completed\",\"_ETL_LOADED_AT\":null},{\"ORDER_ID\":26,\"CUSTOMER_ID\":32,\"ORDER_DATE\":\"2018-01-28\",\"STATUS\":\"completed\",\"_ETL_LOADED_AT\":null},{\"ORDER_ID\":27,\"CUSTOMER_ID\":94,\"ORDER_DATE\":\"2018-01-29\",\"STATUS\":\"completed\",\"_ETL_LOADED_AT\":null},{\"ORDER_ID\":28,\"CUSTOMER_ID\":8,\"ORDER_DATE\":\"2018-01-29\",\"STATUS\":\"completed\",\"_ETL_LOADED_AT\":null},{\"ORDER_ID\":29,\"CUSTOMER_ID\":57,\"ORDER_DATE\":\"2018-01-31\",\"STATUS\":\"completed\",\"_ETL_LOADED_AT\":null},{\"ORDER_ID\":30,\"CUSTOMER_ID\":69,\"ORDER_DATE\":\"2018-02-02\",\"STATUS\":\"completed\",\"_ETL_LOADED_AT\":null},{\"ORDER_ID\":31,\"CUSTOMER_ID\":16,\"ORDER_DATE\":\"2018-02-02\",\"STATUS\":\"completed\",\"_ETL_LOADED_AT\":null},{\"ORDER_ID\":32,\"CUSTOMER_ID\":28,\"ORDER_DATE\":\"2018-02-04\",\"STATUS\":\"completed\",\"_ETL_LOADED_AT\":null},{\"ORDER_ID\":33,\"CUSTOMER_ID\":42,\"ORDER_DATE\":\"2018-02-04\",\"STATUS\":\"completed\",\"_ETL_LOADED_AT\":null},{\"ORDER_ID\":34,\"CUSTOMER_ID\":38,\"ORDER_DATE\":\"2018-02-06\",\"STATUS\":\"completed\",\"_ETL_LOADED_AT\":null},{\"ORDER_ID\":35,\"CUSTOMER_ID\":80,\"ORDER_DATE\":\"2018-02-08\",\"STATUS\":\"completed\",\"_ETL_LOADED_AT\":null},{\"ORDER_ID\":36,\"CUSTOMER_ID\":85,\"ORDER_DATE\":\"2018-02-10\",\"STATUS\":\"completed\",\"_ETL_LOADED_AT\":null},{\"ORDER_ID\":37,\"CUSTOMER_ID\":1,\"ORDER_DATE\":\"2018-02-10\",\"STATUS\":\"completed\",\"_ETL_LOADED_AT\":null},{\"ORDER_ID\":38,\"CUSTOMER_ID\":51,\"ORDER_DATE\":\"2018-02-10\",\"STATUS\":\"completed\",\"_ETL_LOADED_AT\":null},{\"ORDER_ID\":39,\"CUSTOMER_ID\":26,\"ORDER_DATE\":\"2018-02-11\",\"STATUS\":\"completed\",\"_ETL_LOADED_AT\":null},{\"ORDER_ID\":40,\"CUSTOMER_ID\":33,\"ORDER_DATE\":\"2018-02-13\",\"STATUS\":\"completed\",\"_ETL_LOADED_AT\":null},{\"ORDER_ID\":41,\"CUSTOMER_ID\":99,\"ORDER_DATE\":\"2018-02-14\",\"STATUS\":\"completed\",\"_ETL_LOADED_AT\":null},{\"ORDER_ID\":42,\"CUSTOMER_ID\":92,\"ORDER_DATE\":\"2018-02-16\",\"STATUS\":\"completed\",\"_ETL_LOADED_AT\":null},{\"ORDER_ID\":43,\"CUSTOMER_ID\":31,\"ORDER_DATE\":\"2018-02-17\",\"STATUS\":\"completed\",\"_ETL_LOADED_AT\":null},{\"ORDER_ID\":44,\"CUSTOMER_ID\":66,\"ORDER_DATE\":\"2018-02-17\",\"STATUS\":\"completed\",\"_ETL_LOADED_AT\":null},{\"ORDER_ID\":45,\"CUSTOMER_ID\":22,\"ORDER_DATE\":\"2018-02-17\",\"STATUS\":\"completed\",\"_ETL_LOADED_AT\":null},{\"ORDER_ID\":46,\"CUSTOMER_ID\":6,\"ORDER_DATE\":\"2018-02-19\",\"STATUS\":\"completed\",\"_ETL_LOADED_AT\":null},{\"ORDER_ID\":47,\"CUSTOMER_ID\":50,\"ORDER_DATE\":\"2018-02-20\",\"STATUS\":\"completed\",\"_ETL_LOADED_AT\":null},{\"ORDER_ID\":48,\"CUSTOMER_ID\":27,\"ORDER_DATE\":\"2018-02-21\",\"STATUS\":\"completed\",\"_ETL_LOADED_AT\":null},{\"ORDER_ID\":49,\"CUSTOMER_ID\":35,\"ORDER_DATE\":\"2018-02-21\",\"STATUS\":\"completed\",\"_ETL_LOADED_AT\":null},{\"ORDER_ID\":50,\"CUSTOMER_ID\":51,\"ORDER_DATE\":\"2018-02-23\",\"STATUS\":\"completed\",\"_ETL_LOADED_AT\":null},{\"ORDER_ID\":51,\"CUSTOMER_ID\":71,\"ORDER_DATE\":\"2018-02-24\",\"STATUS\":\"completed\",\"_ETL_LOADED_AT\":null},{\"ORDER_ID\":52,\"CUSTOMER_ID\":54,\"ORDER_DATE\":\"2018-02-25\",\"STATUS\":\"return_pending\",\"_ETL_LOADED_AT\":null},{\"ORDER_ID\":53,\"CUSTOMER_ID\":34,\"ORDER_DATE\":\"2018-02-26\",\"STATUS\":\"completed\",\"_ETL_LOADED_AT\":null},{\"ORDER_ID\":54,\"CUSTOMER_ID\":54,\"ORDER_DATE\":\"2018-02-26\",\"STATUS\":\"completed\",\"_ETL_LOADED_AT\":null},{\"ORDER_ID\":55,\"CUSTOMER_ID\":18,\"ORDER_DATE\":\"2018-02-27\",\"STATUS\":\"completed\",\"_ETL_LOADED_AT\":null},{\"ORDER_ID\":56,\"CUSTOMER_ID\":79,\"ORDER_DATE\":\"2018-02-28\",\"STATUS\":\"completed\",\"_ETL_LOADED_AT\":null},{\"ORDER_ID\":57,\"CUSTOMER_ID\":93,\"ORDER_DATE\":\"2018-03-01\",\"STATUS\":\"completed\",\"_ETL_LOADED_AT\":null},{\"ORDER_ID\":58,\"CUSTOMER_ID\":22,\"ORDER_DATE\":\"2018-03-01\",\"STATUS\":\"completed\",\"_ETL_LOADED_AT\":null},{\"ORDER_ID\":59,\"CUSTOMER_ID\":30,\"ORDER_DATE\":\"2018-03-02\",\"STATUS\":\"completed\",\"_ETL_LOADED_AT\":null},{\"ORDER_ID\":60,\"CUSTOMER_ID\":12,\"ORDER_DATE\":\"2018-03-03\",\"STATUS\":\"completed\",\"_ETL_LOADED_AT\":null},{\"ORDER_ID\":61,\"CUSTOMER_ID\":63,\"ORDER_DATE\":\"2018-03-03\",\"STATUS\":\"completed\",\"_ETL_LOADED_AT\":null},{\"ORDER_ID\":62,\"CUSTOMER_ID\":57,\"ORDER_DATE\":\"2018-03-05\",\"STATUS\":\"completed\",\"_ETL_LOADED_AT\":null},{\"ORDER_ID\":63,\"CUSTOMER_ID\":70,\"ORDER_DATE\":\"2018-03-06\",\"STATUS\":\"completed\",\"_ETL_LOADED_AT\":null},{\"ORDER_ID\":64,\"CUSTOMER_ID\":13,\"ORDER_DATE\":\"2018-03-07\",\"STATUS\":\"completed\",\"_ETL_LOADED_AT\":null},{\"ORDER_ID\":65,\"CUSTOMER_ID\":26,\"ORDER_DATE\":\"2018-03-08\",\"STATUS\":\"completed\",\"_ETL_LOADED_AT\":null},{\"ORDER_ID\":66,\"CUSTOMER_ID\":36,\"ORDER_DATE\":\"2018-03-10\",\"STATUS\":\"completed\",\"_ETL_LOADED_AT\":null},{\"ORDER_ID\":67,\"CUSTOMER_ID\":79,\"ORDER_DATE\":\"2018-03-11\",\"STATUS\":\"completed\",\"_ETL_LOADED_AT\":null},{\"ORDER_ID\":68,\"CUSTOMER_ID\":53,\"ORDER_DATE\":\"2018-03-11\",\"STATUS\":\"completed\",\"_ETL_LOADED_AT\":null},{\"ORDER_ID\":69,\"CUSTOMER_ID\":3,\"ORDER_DATE\":\"2018-03-11\",\"STATUS\":\"completed\",\"_ETL_LOADED_AT\":null},{\"ORDER_ID\":70,\"CUSTOMER_ID\":8,\"ORDER_DATE\":\"2018-03-12\",\"STATUS\":\"completed\",\"_ETL_LOADED_AT\":null},{\"ORDER_ID\":71,\"CUSTOMER_ID\":42,\"ORDER_DATE\":\"2018-03-12\",\"STATUS\":\"shipped\",\"_ETL_LOADED_AT\":null},{\"ORDER_ID\":72,\"CUSTOMER_ID\":30,\"ORDER_DATE\":\"2018-03-14\",\"STATUS\":\"shipped\",\"_ETL_LOADED_AT\":null},{\"ORDER_ID\":73,\"CUSTOMER_ID\":19,\"ORDER_DATE\":\"2018-03-16\",\"STATUS\":\"completed\",\"_ETL_LOADED_AT\":null},{\"ORDER_ID\":74,\"CUSTOMER_ID\":9,\"ORDER_DATE\":\"2018-03-17\",\"STATUS\":\"shipped\",\"_ETL_LOADED_AT\":null},{\"ORDER_ID\":75,\"CUSTOMER_ID\":69,\"ORDER_DATE\":\"2018-03-18\",\"STATUS\":\"completed\",\"_ETL_LOADED_AT\":null},{\"ORDER_ID\":76,\"CUSTOMER_ID\":25,\"ORDER_DATE\":\"2018-03-20\",\"STATUS\":\"completed\",\"_ETL_LOADED_AT\":null},{\"ORDER_ID\":77,\"CUSTOMER_ID\":35,\"ORDER_DATE\":\"2018-03-21\",\"STATUS\":\"shipped\",\"_ETL_LOADED_AT\":null},{\"ORDER_ID\":78,\"CUSTOMER_ID\":90,\"ORDER_DATE\":\"2018-03-23\",\"STATUS\":\"shipped\",\"_ETL_LOADED_AT\":null},{\"ORDER_ID\":79,\"CUSTOMER_ID\":52,\"ORDER_DATE\":\"2018-03-23\",\"STATUS\":\"shipped\",\"_ETL_LOADED_AT\":null},{\"ORDER_ID\":80,\"CUSTOMER_ID\":11,\"ORDER_DATE\":\"2018-03-23\",\"STATUS\":\"shipped\",\"_ETL_LOADED_AT\":null},{\"ORDER_ID\":81,\"CUSTOMER_ID\":76,\"ORDER_DATE\":\"2018-03-23\",\"STATUS\":\"shipped\",\"_ETL_LOADED_AT\":null},{\"ORDER_ID\":82,\"CUSTOMER_ID\":46,\"ORDER_DATE\":\"2018-03-24\",\"STATUS\":\"shipped\",\"_ETL_LOADED_AT\":null},{\"ORDER_ID\":83,\"CUSTOMER_ID\":54,\"ORDER_DATE\":\"2018-03-24\",\"STATUS\":\"shipped\",\"_ETL_LOADED_AT\":null},{\"ORDER_ID\":84,\"CUSTOMER_ID\":70,\"ORDER_DATE\":\"2018-03-26\",\"STATUS\":\"placed\",\"_ETL_LOADED_AT\":null},{\"ORDER_ID\":85,\"CUSTOMER_ID\":47,\"ORDER_DATE\":\"2018-03-26\",\"STATUS\":\"shipped\",\"_ETL_LOADED_AT\":null},{\"ORDER_ID\":86,\"CUSTOMER_ID\":68,\"ORDER_DATE\":\"2018-03-26\",\"STATUS\":\"placed\",\"_ETL_LOADED_AT\":null},{\"ORDER_ID\":87,\"CUSTOMER_ID\":46,\"ORDER_DATE\":\"2018-03-27\",\"STATUS\":\"placed\",\"_ETL_LOADED_AT\":null},{\"ORDER_ID\":88,\"CUSTOMER_ID\":91,\"ORDER_DATE\":\"2018-03-27\",\"STATUS\":\"shipped\",\"_ETL_LOADED_AT\":null},{\"ORDER_ID\":89,\"CUSTOMER_ID\":21,\"ORDER_DATE\":\"2018-03-28\",\"STATUS\":\"placed\",\"_ETL_LOADED_AT\":null},{\"ORDER_ID\":90,\"CUSTOMER_ID\":66,\"ORDER_DATE\":\"2018-03-30\",\"STATUS\":\"shipped\",\"_ETL_LOADED_AT\":null},{\"ORDER_ID\":91,\"CUSTOMER_ID\":47,\"ORDER_DATE\":\"2018-03-31\",\"STATUS\":\"placed\",\"_ETL_LOADED_AT\":null},{\"ORDER_ID\":92,\"CUSTOMER_ID\":84,\"ORDER_DATE\":\"2018-04-02\",\"STATUS\":\"placed\",\"_ETL_LOADED_AT\":null},{\"ORDER_ID\":93,\"CUSTOMER_ID\":66,\"ORDER_DATE\":\"2018-04-03\",\"STATUS\":\"placed\",\"_ETL_LOADED_AT\":null},{\"ORDER_ID\":94,\"CUSTOMER_ID\":63,\"ORDER_DATE\":\"2018-04-03\",\"STATUS\":\"placed\",\"_ETL_LOADED_AT\":null},{\"ORDER_ID\":95,\"CUSTOMER_ID\":27,\"ORDER_DATE\":\"2018-04-04\",\"STATUS\":\"placed\",\"_ETL_LOADED_AT\":null},{\"ORDER_ID\":96,\"CUSTOMER_ID\":90,\"ORDER_DATE\":\"2018-04-06\",\"STATUS\":\"placed\",\"_ETL_LOADED_AT\":null},{\"ORDER_ID\":97,\"CUSTOMER_ID\":89,\"ORDER_DATE\":\"2018-04-07\",\"STATUS\":\"placed\",\"_ETL_LOADED_AT\":null},{\"ORDER_ID\":98,\"CUSTOMER_ID\":41,\"ORDER_DATE\":\"2018-04-07\",\"STATUS\":\"placed\",\"_ETL_LOADED_AT\":null},{\"ORDER_ID\":99,\"CUSTOMER_ID\":85,\"ORDER_DATE\":\"2018-04-09\",\"STATUS\":\"placed\",\"_ETL_LOADED_AT\":null}]","unique_id":"model.jaffle_shop.stg_jaffle_shop__orders"},"info":{"category":"","code":"Q041","extra":{},"invocation_id":"019b5115-1093-7170-8ef2-2c33ca3e7cc8","level":"info","msg":"[{\"ORDER_ID\":1,\"CUSTOMER_ID\":1,\"ORDER_DATE\":\"2018-01-01\",\"STATUS\":\"returned\",\"_ETL_LOADED_AT\":null},{\"ORDER_ID\":2,\"CUSTOMER_ID\":3,\"ORDER_DATE\":\"2018-01-02\",\"STATUS\":\"completed\",\"_ETL_LOADED_AT\":null},{\"ORDER_ID\":3,\"CUSTOMER_ID\":94,\"ORDER_DATE\":\"2018-01-04\",\"STATUS\":\"completed\",\"_ETL_LOADED_AT\":null},{\"ORDER_ID\":4,\"CUSTOMER_ID\":50,\"ORDER_DATE\":\"2018-01-05\",\"STATUS\":\"completed\",\"_ETL_LOADED_AT\":null},{\"ORDER_ID\":5,\"CUSTOMER_ID\":64,\"ORDER_DATE\":\"2018-01-05\",\"STATUS\":\"completed\",\"_ETL_LOADED_AT\":null},{\"ORDER_ID\":6,\"CUSTOMER_ID\":54,\"ORDER_DATE\":\"2018-01-07\",\"STATUS\":\"completed\",\"_ETL_LOADED_AT\":null},{\"ORDER_ID\":7,\"CUSTOMER_ID\":88,\"ORDER_DATE\":\"2018-01-09\",\"STATUS\":\"completed\",\"_ETL_LOADED_AT\":null},{\"ORDER_ID\":8,\"CUSTOMER_ID\":2,\"ORDER_DATE\":\"2018-01-11\",\"STATUS\":\"returned\",\"_ETL_LOADED_AT\":null},{\"ORDER_ID\":9,\"CUSTOMER_ID\":53,\"ORDER_DATE\":\"2018-01-12\",\"STATUS\":\"completed\",\"_ETL_LOADED_AT\":null},{\"ORDER_ID\":10,\"CUSTOMER_ID\":7,\"ORDER_DATE\":\"2018-01-14\",\"STATUS\":\"completed\",\"_ETL_LOADED_AT\":null},{\"ORDER_ID\":11,\"CUSTOMER_ID\":99,\"ORDER_DATE\":\"2018-01-14\",\"STATUS\":\"completed\",\"_ETL_LOADED_AT\":null},{\"ORDER_ID\":12,\"CUSTOMER_ID\":59,\"ORDER_DATE\":\"2018-01-15\",\"STATUS\":\"completed\",\"_ETL_LOADED_AT\":null},{\"ORDER_ID\":13,\"CUSTOMER_ID\":84,\"ORDER_DATE\":\"2018-01-17\",\"STATUS\":\"completed\",\"_ETL_LOADED_AT\":null},{\"ORDER_ID\":14,\"CUSTOMER_ID\":40,\"ORDER_DATE\":\"2018-01-17\",\"STATUS\":\"returned\",\"_ETL_LOADED_AT\":null},{\"ORDER_ID\":15,\"CUSTOMER_ID\":25,\"ORDER_DATE\":\"2018-01-17\",\"STATUS\":\"completed\",\"_ETL_LOADED_AT\":null},{\"ORDER_ID\":16,\"CUSTOMER_ID\":39,\"ORDER_DATE\":\"2018-01-18\",\"STATUS\":\"completed\",\"_ETL_LOADED_AT\":null},{\"ORDER_ID\":17,\"CUSTOMER_ID\":71,\"ORDER_DATE\":\"2018-01-18\",\"STATUS\":\"completed\",\"_ETL_LOADED_AT\":null},{\"ORDER_ID\":18,\"CUSTOMER_ID\":64,\"ORDER_DATE\":\"2018-01-20\",\"STATUS\":\"returned\",\"_ETL_LOADED_AT\":null},{\"ORDER_ID\":19,\"CUSTOMER_ID\":54,\"ORDER_DATE\":\"2018-01-22\",\"STATUS\":\"completed\",\"_ETL_LOADED_AT\":null},{\"ORDER_ID\":20,\"CUSTOMER_ID\":20,\"ORDER_DATE\":\"2018-01-23\",\"STATUS\":\"completed\",\"_ETL_LOADED_AT\":null},{\"ORDER_ID\":21,\"CUSTOMER_ID\":71,\"ORDER_DATE\":\"2018-01-23\",\"STATUS\":\"completed\",\"_ETL_LOADED_AT\":null},{\"ORDER_ID\":22,\"CUSTOMER_ID\":86,\"ORDER_DATE\":\"2018-01-24\",\"STATUS\":\"completed\",\"_ETL_LOADED_AT\":null},{\"ORDER_ID\":23,\"CUSTOMER_ID\":22,\"ORDER_DATE\":\"2018-01-26\",\"STATUS\":\"return_pending\",\"_ETL_LOADED_AT\":null},{\"ORDER_ID\":24,\"CUSTOMER_ID\":3,\"ORDER_DATE\":\"2018-01-27\",\"STATUS\":\"completed\",\"_ETL_LOADED_AT\":null},{\"ORDER_ID\":25,\"CUSTOMER_ID\":51,\"ORDER_DATE\":\"2018-01-28\",\"STATUS\":\"completed\",\"_ETL_LOADED_AT\":null},{\"ORDER_ID\":26,\"CUSTOMER_ID\":32,\"ORDER_DATE\":\"2018-01-28\",\"STATUS\":\"completed\",\"_ETL_LOADED_AT\":null},{\"ORDER_ID\":27,\"CUSTOMER_ID\":94,\"ORDER_DATE\":\"2018-01-29\",\"STATUS\":\"completed\",\"_ETL_LOADED_AT\":null},{\"ORDER_ID\":28,\"CUSTOMER_ID\":8,\"ORDER_DATE\":\"2018-01-29\",\"STATUS\":\"completed\",\"_ETL_LOADED_AT\":null},{\"ORDER_ID\":29,\"CUSTOMER_ID\":57,\"ORDER_DATE\":\"2018-01-31\",\"STATUS\":\"completed\",\"_ETL_LOADED_AT\":null},{\"ORDER_ID\":30,\"CUSTOMER_ID\":69,\"ORDER_DATE\":\"2018-02-02\",\"STATUS\":\"completed\",\"_ETL_LOADED_AT\":null},{\"ORDER_ID\":31,\"CUSTOMER_ID\":16,\"ORDER_DATE\":\"2018-02-02\",\"STATUS\":\"completed\",\"_ETL_LOADED_AT\":null},{\"ORDER_ID\":32,\"CUSTOMER_ID\":28,\"ORDER_DATE\":\"2018-02-04\",\"STATUS\":\"completed\",\"_ETL_LOADED_AT\":null},{\"ORDER_ID\":33,\"CUSTOMER_ID\":42,\"ORDER_DATE\":\"2018-02-04\",\"STATUS\":\"completed\",\"_ETL_LOADED_AT\":null},{\"ORDER_ID\":34,\"CUSTOMER_ID\":38,\"ORDER_DATE\":\"2018-02-06\",\"STATUS\":\"completed\",\"_ETL_LOADED_AT\":null},{\"ORDER_ID\":35,\"CUSTOMER_ID\":80,\"ORDER_DATE\":\"2018-02-08\",\"STATUS\":\"completed\",\"_ETL_LOADED_AT\":null},{\"ORDER_ID\":36,\"CUSTOMER_ID\":85,\"ORDER_DATE\":\"2018-02-10\",\"STATUS\":\"completed\",\"_ETL_LOADED_AT\":null},{\"ORDER_ID\":37,\"CUSTOMER_ID\":1,\"ORDER_DATE\":\"2018-02-10\",\"STATUS\":\"completed\",\"_ETL_LOADED_AT\":null},{\"ORDER_ID\":38,\"CUSTOMER_ID\":51,\"ORDER_DATE\":\"2018-02-10\",\"STATUS\":\"completed\",\"_ETL_LOADED_AT\":null},{\"ORDER_ID\":39,\"CUSTOMER_ID\":26,\"ORDER_DATE\":\"2018-02-11\",\"STATUS\":\"completed\",\"_ETL_LOADED_AT\":null},{\"ORDER_ID\":40,\"CUSTOMER_ID\":33,\"ORDER_DATE\":\"2018-02-13\",\"STATUS\":\"completed\",\"_ETL_LOADED_AT\":null},{\"ORDER_ID\":41,\"CUSTOMER_ID\":99,\"ORDER_DATE\":\"2018-02-14\",\"STATUS\":\"completed\",\"_ETL_LOADED_AT\":null},{\"ORDER_ID\":42,\"CUSTOMER_ID\":92,\"ORDER_DATE\":\"2018-02-16\",\"STATUS\":\"completed\",\"_ETL_LOADED_AT\":null},{\"ORDER_ID\":43,\"CUSTOMER_ID\":31,\"ORDER_DATE\":\"2018-02-17\",\"STATUS\":\"completed\",\"_ETL_LOADED_AT\":null},{\"ORDER_ID\":44,\"CUSTOMER_ID\":66,\"ORDER_DATE\":\"2018-02-17\",\"STATUS\":\"completed\",\"_ETL_LOADED_AT\":null},{\"ORDER_ID\":45,\"CUSTOMER_ID\":22,\"ORDER_DATE\":\"2018-02-17\",\"STATUS\":\"completed\",\"_ETL_LOADED_AT\":null},{\"ORDER_ID\":46,\"CUSTOMER_ID\":6,\"ORDER_DATE\":\"2018-02-19\",\"STATUS\":\"completed\",\"_ETL_LOADED_AT\":null},{\"ORDER_ID\":47,\"CUSTOMER_ID\":50,\"ORDER_DATE\":\"2018-02-20\",\"STATUS\":\"completed\",\"_ETL_LOADED_AT\":null},{\"ORDER_ID\":48,\"CUSTOMER_ID\":27,\"ORDER_DATE\":\"2018-02-21\",\"STATUS\":\"completed\",\"_ETL_LOADED_AT\":null},{\"ORDER_ID\":49,\"CUSTOMER_ID\":35,\"ORDER_DATE\":\"2018-02-21\",\"STATUS\":\"completed\",\"_ETL_LOADED_AT\":null},{\"ORDER_ID\":50,\"CUSTOMER_ID\":51,\"ORDER_DATE\":\"2018-02-23\",\"STATUS\":\"completed\",\"_ETL_LOADED_AT\":null},{\"ORDER_ID\":51,\"CUSTOMER_ID\":71,\"ORDER_DATE\":\"2018-02-24\",\"STATUS\":\"completed\",\"_ETL_LOADED_AT\":null},{\"ORDER_ID\":52,\"CUSTOMER_ID\":54,\"ORDER_DATE\":\"2018-02-25\",\"STATUS\":\"return_pending\",\"_ETL_LOADED_AT\":null},{\"ORDER_ID\":53,\"CUSTOMER_ID\":34,\"ORDER_DATE\":\"2018-02-26\",\"STATUS\":\"completed\",\"_ETL_LOADED_AT\":null},{\"ORDER_ID\":54,\"CUSTOMER_ID\":54,\"ORDER_DATE\":\"2018-02-26\",\"STATUS\":\"completed\",\"_ETL_LOADED_AT\":null},{\"ORDER_ID\":55,\"CUSTOMER_ID\":18,\"ORDER_DATE\":\"2018-02-27\",\"STATUS\":\"completed\",\"_ETL_LOADED_AT\":null},{\"ORDER_ID\":56,\"CUSTOMER_ID\":79,\"ORDER_DATE\":\"2018-02-28\",\"STATUS\":\"completed\",\"_ETL_LOADED_AT\":null},{\"ORDER_ID\":57,\"CUSTOMER_ID\":93,\"ORDER_DATE\":\"2018-03-01\",\"STATUS\":\"completed\",\"_ETL_LOADED_AT\":null},{\"ORDER_ID\":58,\"CUSTOMER_ID\":22,\"ORDER_DATE\":\"2018-03-01\",\"STATUS\":\"completed\",\"_ETL_LOADED_AT\":null},{\"ORDER_ID\":59,\"CUSTOMER_ID\":30,\"ORDER_DATE\":\"2018-03-02\",\"STATUS\":\"completed\",\"_ETL_LOADED_AT\":null},{\"ORDER_ID\":60,\"CUSTOMER_ID\":12,\"ORDER_DATE\":\"2018-03-03\",\"STATUS\":\"completed\",\"_ETL_LOADED_AT\":null},{\"ORDER_ID\":61,\"CUSTOMER_ID\":63,\"ORDER_DATE\":\"2018-03-03\",\"STATUS\":\"completed\",\"_ETL_LOADED_AT\":null},{\"ORDER_ID\":62,\"CUSTOMER_ID\":57,\"ORDER_DATE\":\"2018-03-05\",\"STATUS\":\"completed\",\"_ETL_LOADED_AT\":null},{\"ORDER_ID\":63,\"CUSTOMER_ID\":70,\"ORDER_DATE\":\"2018-03-06\",\"STATUS\":\"completed\",\"_ETL_LOADED_AT\":null},{\"ORDER_ID\":64,\"CUSTOMER_ID\":13,\"ORDER_DATE\":\"2018-03-07\",\"STATUS\":\"completed\",\"_ETL_LOADED_AT\":null},{\"ORDER_ID\":65,\"CUSTOMER_ID\":26,\"ORDER_DATE\":\"2018-03-08\",\"STATUS\":\"completed\",\"_ETL_LOADED_AT\":null},{\"ORDER_ID\":66,\"CUSTOMER_ID\":36,\"ORDER_DATE\":\"2018-03-10\",\"STATUS\":\"completed\",\"_ETL_LOADED_AT\":null},{\"ORDER_ID\":67,\"CUSTOMER_ID\":79,\"ORDER_DATE\":\"2018-03-11\",\"STATUS\":\"completed\",\"_ETL_LOADED_AT\":null},{\"ORDER_ID\":68,\"CUSTOMER_ID\":53,\"ORDER_DATE\":\"2018-03-11\",\"STATUS\":\"completed\",\"_ETL_LOADED_AT\":null},{\"ORDER_ID\":69,\"CUSTOMER_ID\":3,\"ORDER_DATE\":\"2018-03-11\",\"STATUS\":\"completed\",\"_ETL_LOADED_AT\":null},{\"ORDER_ID\":70,\"CUSTOMER_ID\":8,\"ORDER_DATE\":\"2018-03-12\",\"STATUS\":\"completed\",\"_ETL_LOADED_AT\":null},{\"ORDER_ID\":71,\"CUSTOMER_ID\":42,\"ORDER_DATE\":\"2018-03-12\",\"STATUS\":\"shipped\",\"_ETL_LOADED_AT\":null},{\"ORDER_ID\":72,\"CUSTOMER_ID\":30,\"ORDER_DATE\":\"2018-03-14\",\"STATUS\":\"shipped\",\"_ETL_LOADED_AT\":null},{\"ORDER_ID\":73,\"CUSTOMER_ID\":19,\"ORDER_DATE\":\"2018-03-16\",\"STATUS\":\"completed\",\"_ETL_LOADED_AT\":null},{\"ORDER_ID\":74,\"CUSTOMER_ID\":9,\"ORDER_DATE\":\"2018-03-17\",\"STATUS\":\"shipped\",\"_ETL_LOADED_AT\":null},{\"ORDER_ID\":75,\"CUSTOMER_ID\":69,\"ORDER_DATE\":\"2018-03-18\",\"STATUS\":\"completed\",\"_ETL_LOADED_AT\":null},{\"ORDER_ID\":76,\"CUSTOMER_ID\":25,\"ORDER_DATE\":\"2018-03-20\",\"STATUS\":\"completed\",\"_ETL_LOADED_AT\":null},{\"ORDER_ID\":77,\"CUSTOMER_ID\":35,\"ORDER_DATE\":\"2018-03-21\",\"STATUS\":\"shipped\",\"_ETL_LOADED_AT\":null},{\"ORDER_ID\":78,\"CUSTOMER_ID\":90,\"ORDER_DATE\":\"2018-03-23\",\"STATUS\":\"shipped\",\"_ETL_LOADED_AT\":null},{\"ORDER_ID\":79,\"CUSTOMER_ID\":52,\"ORDER_DATE\":\"2018-03-23\",\"STATUS\":\"shipped\",\"_ETL_LOADED_AT\":null},{\"ORDER_ID\":80,\"CUSTOMER_ID\":11,\"ORDER_DATE\":\"2018-03-23\",\"STATUS\":\"shipped\",\"_ETL_LOADED_AT\":null},{\"ORDER_ID\":81,\"CUSTOMER_ID\":76,\"ORDER_DATE\":\"2018-03-23\",\"STATUS\":\"shipped\",\"_ETL_LOADED_AT\":null},{\"ORDER_ID\":82,\"CUSTOMER_ID\":46,\"ORDER_DATE\":\"2018-03-24\",\"STATUS\":\"shipped\",\"_ETL_LOADED_AT\":null},{\"ORDER_ID\":83,\"CUSTOMER_ID\":54,\"ORDER_DATE\":\"2018-03-24\",\"STATUS\":\"shipped\",\"_ETL_LOADED_AT\":null},{\"ORDER_ID\":84,\"CUSTOMER_ID\":70,\"ORDER_DATE\":\"2018-03-26\",\"STATUS\":\"placed\",\"_ETL_LOADED_AT\":null},{\"ORDER_ID\":85,\"CUSTOMER_ID\":47,\"ORDER_DATE\":\"2018-03-26\",\"STATUS\":\"shipped\",\"_ETL_LOADED_AT\":null},{\"ORDER_ID\":86,\"CUSTOMER_ID\":68,\"ORDER_DATE\":\"2018-03-26\",\"STATUS\":\"placed\",\"_ETL_LOADED_AT\":null},{\"ORDER_ID\":87,\"CUSTOMER_ID\":46,\"ORDER_DATE\":\"2018-03-27\",\"STATUS\":\"placed\",\"_ETL_LOADED_AT\":null},{\"ORDER_ID\":88,\"CUSTOMER_ID\":91,\"ORDER_DATE\":\"2018-03-27\",\"STATUS\":\"shipped\",\"_ETL_LOADED_AT\":null},{\"ORDER_ID\":89,\"CUSTOMER_ID\":21,\"ORDER_DATE\":\"2018-03-28\",\"STATUS\":\"placed\",\"_ETL_LOADED_AT\":null},{\"ORDER_ID\":90,\"CUSTOMER_ID\":66,\"ORDER_DATE\":\"2018-03-30\",\"STATUS\":\"shipped\",\"_ETL_LOADED_AT\":null},{\"ORDER_ID\":91,\"CUSTOMER_ID\":47,\"ORDER_DATE\":\"2018-03-31\",\"STATUS\":\"placed\",\"_ETL_LOADED_AT\":null},{\"ORDER_ID\":92,\"CUSTOMER_ID\":84,\"ORDER_DATE\":\"2018-04-02\",\"STATUS\":\"placed\",\"_ETL_LOADED_AT\":null},{\"ORDER_ID\":93,\"CUSTOMER_ID\":66,\"ORDER_DATE\":\"2018-04-03\",\"STATUS\":\"placed\",\"_ETL_LOADED_AT\":null},{\"ORDER_ID\":94,\"CUSTOMER_ID\":63,\"ORDER_DATE\":\"2018-04-03\",\"STATUS\":\"placed\",\"_ETL_LOADED_AT\":null},{\"ORDER_ID\":95,\"CUSTOMER_ID\":27,\"ORDER_DATE\":\"2018-04-04\",\"STATUS\":\"placed\",\"_ETL_LOADED_AT\":null},{\"ORDER_ID\":96,\"CUSTOMER_ID\":90,\"ORDER_DATE\":\"2018-04-06\",\"STATUS\":\"placed\",\"_ETL_LOADED_AT\":null},{\"ORDER_ID\":97,\"CUSTOMER_ID\":89,\"ORDER_DATE\":\"2018-04-07\",\"STATUS\":\"placed\",\"_ETL_LOADED_AT\":null},{\"ORDER_ID\":98,\"CUSTOMER_ID\":41,\"ORDER_DATE\":\"2018-04-07\",\"STATUS\":\"placed\",\"_ETL_LOADED_AT\":null},{\"ORDER_ID\":99,\"CUSTOMER_ID\":85,\"ORDER_DATE\":\"2018-04-09\",\"STATUS\":\"placed\",\"_ETL_LOADED_AT\":null}]","name":"ShowNode","pid":34112,"thread":"tokio-runtime-worker","ts":"2025-12-24T15:58:18.287450Z"}}
+{"data":{"execution_time":2.8507025241851807,"node_info":{"materialized":"view","node_checksum":"5b3390c6fc2d2a7b9ca1e525a193d1fada1d080fe4c60587e47321e0d63f56d1","node_finished_at":"2025-12-24T15:58:18.287772Z","node_name":"stg_jaffle_shop__orders","node_path":"models\\staging\\jaffle_shops\\stg_jaffle_shop__orders.sql","node_relation":{"alias":"stg_jaffle_shop__orders","database":"analytics","relation_name":"analytics.dbt_ayajnik.stg_jaffle_shop__orders","schema":"dbt_ayajnik"},"node_started_at":"2025-12-24T15:58:15.437070Z","node_status":"success","resource_type":"model","unique_id":"model.jaffle_shop.stg_jaffle_shop__orders"},"status":"success"},"info":{"category":"","code":"Q012","extra":{},"invocation_id":"019b5115-1093-7170-8ef2-2c33ca3e7cc8","level":"info","msg":" Succeeded [  2.85s] model dbt_ayajnik.stg_jaffle_shop__orders (view)","name":"LogModelResult","pid":34112,"thread":"tokio-runtime-worker","ts":"2025-12-24T15:58:18.289693Z"}}
+{"data":{"node_info":{"materialized":"view","node_checksum":"5b3390c6fc2d2a7b9ca1e525a193d1fada1d080fe4c60587e47321e0d63f56d1","node_finished_at":"2025-12-24T15:58:18.287772Z","node_name":"stg_jaffle_shop__orders","node_path":"models\\staging\\jaffle_shops\\stg_jaffle_shop__orders.sql","node_relation":{"alias":"stg_jaffle_shop__orders","database":"analytics","relation_name":"analytics.dbt_ayajnik.stg_jaffle_shop__orders","schema":"dbt_ayajnik"},"node_started_at":"2025-12-24T15:58:15.437070Z","node_status":"success","resource_type":"model","unique_id":"model.jaffle_shop.stg_jaffle_shop__orders"},"run_result":{"execution_time":2.8507025241851807,"status":"success"}},"info":{"category":"","code":"Q025","extra":{},"invocation_id":"019b5115-1093-7170-8ef2-2c33ca3e7cc8","level":"debug","msg":"Finished running node model.jaffle_shop.stg_jaffle_shop__orders","name":"NodeFinished","pid":34112,"thread":"tokio-runtime-worker","ts":"2025-12-24T15:58:18.289726Z"}}
+{"data":{"completed_at":"2025-12-24T15:58:19.048639Z","elapsed":5.369297504425049,"success":true},"info":{"category":"","code":"Q039","extra":{},"invocation_id":"019b5115-1093-7170-8ef2-2c33ca3e7cc8","level":"info","msg":"\n==================== Execution Summary =====================\nFinished 'show' successfully for target 'dev' [5.4s]","name":"CommandCompleted","pid":34112,"thread":"tokio-runtime-worker","ts":"2025-12-24T15:58:19.048762Z"}}
+==================== 2025-12-24T16:03:14.881971Z | 019b5119-a93a-7751-8891-a6519afd7274 ====================
+16:03:14.882234 [info ]: dbt-fusion 2.0.0-preview.89
+16:03:14.883610 [info ]: Started loading project
+16:03:14.891908 [info ]: Loading ~/.dbt/profiles.yml
+16:03:15.134110 [info ]: Finished loading project [  0.25s]
+16:03:15.135391 [info ]: Started parsing
+16:03:15.212824 [info ]: Finished parsing [  0.08s]
+16:03:15.236946 [info ]: Started scheduling
+16:03:15.237541 [info ]: Finished scheduling [  0.00s]
+16:03:15.237684 [warn ]: dbt1000: The selection criterion 'fqn:orders_snapshot' does not match any enabled nodes
+16:03:15.239230 [warn ]: dbt1000: Nothing to do. Try checking your model configs and model specification args
+16:03:15.415988 [info ]: Started building task graph
+16:03:15.417753 [info ]: Finished building task graph [  0.00s]
+16:03:15.777883 [info ]: 
+==================== Execution Summary =====================
+Finished 'snapshot' with 2 warnings for target 'dev' [895ms]
+==================== 2025-12-24T16:07:48.115825Z | 019b511d-d48f-70d3-aca7-50665ca9a1f6 ====================
+16:07:48.115945 [info ]: dbt-fusion 2.0.0-preview.89
+16:07:48.116601 [info ]: Started loading project
+16:07:48.122278 [info ]: Loading ~/.dbt/profiles.yml
+16:07:48.323337 [info ]: Finished loading project [  0.21s]
+16:07:48.324449 [info ]: Started parsing
+16:07:48.457293 [info ]: Finished parsing [  0.13s]
+16:07:48.488619 [info ]: Started scheduling
+16:07:48.489266 [info ]: Finished scheduling [  0.00s]
+16:07:48.489520 [warn ]: dbt1000: The selection criterion 'resource_type:source' does not match any enabled nodes
+16:07:48.489586 [warn ]: dbt1000: Nothing to do. Try checking your model configs and model specification args
+16:07:48.634900 [info ]: Started building task graph
+16:07:48.635203 [info ]: Finished building task graph [  0.00s]
+16:07:48.957729 [info ]: 
+==================== Execution Summary =====================
+Finished 'run' with 2 warnings for target 'dev' [841ms]
+==================== 2025-12-24T16:08:48.820217Z | 019b511e-c1b0-7d13-a7eb-a3a78393318b ====================
+16:08:48.820337 [info ]: dbt-fusion 2.0.0-preview.89
+16:08:48.821056 [info ]: Started loading project
+16:08:48.827213 [info ]: Loading ~/.dbt/profiles.yml
+16:08:49.052314 [info ]: Finished loading project [  0.23s]
+16:08:49.053256 [info ]: Started parsing
+16:08:49.158027 [info ]: Finished parsing [  0.10s]
+16:08:49.182463 [info ]: Started scheduling
+16:08:49.183056 [info ]: Finished scheduling [  0.00s]
+=======================Selected nodes=======================
+16:08:49.186016 [info ]: source:jaffle_shop.jaffle_shop.customers
+16:08:49.187304 [info ]: source:jaffle_shop.jaffle_shop.orders
+16:08:49.187591 [info ]: source:jaffle_shop.stripe.payment
+16:08:49.187929 [info ]: jaffle_shop.staging.jaffle_shops.source_not_null_jaffle_shop_customers_id
+16:08:49.188262 [info ]: jaffle_shop.staging.jaffle_shops.source_unique_jaffle_shop_customers_id
+16:08:49.698140 [info ]: 
+==================== Execution Summary =====================
+Finished 'list' successfully for target 'dev' [877ms]
+==================== 2025-12-24T16:09:50.036107Z | 019b511f-b0d0-7fd0-af66-72732414e10a ====================
+16:09:50.036248 [info ]: dbt-fusion 2.0.0-preview.89
+16:09:50.037086 [info ]: Started loading project
+16:09:50.042895 [info ]: Loading ~/.dbt/profiles.yml
+16:09:50.266430 [info ]: Finished loading project [  0.23s]
+16:09:50.267843 [info ]: Started parsing
+16:09:50.397856 [info ]: Finished parsing [  0.13s]
+16:09:50.437483 [info ]: Started scheduling
+16:09:50.438026 [info ]: Finished scheduling [  0.00s]
+16:09:50.438308 [warn ]: dbt1000: The selection criterion 'resource_type:source:jaffle_shop.orders' does not match any enabled nodes
+16:09:50.438363 [warn ]: dbt1000: Nothing to do. Try checking your model configs and model specification args
+16:09:50.595160 [info ]: Started building task graph
+16:09:50.595583 [info ]: Finished building task graph [  0.00s]
+16:09:50.789705 [info ]: 
+==================== Execution Summary =====================
+Finished 'run' with 2 warnings for target 'dev' [753ms]
+==================== 2025-12-24T16:10:45.156955Z | 019b5120-8820-7540-ad9c-a2c207e11a1a ====================
+16:10:45.157071 [info ]: dbt-fusion 2.0.0-preview.89
+16:10:45.157939 [info ]: Started loading project
+16:10:45.163447 [info ]: Loading ~/.dbt/profiles.yml
+16:10:45.347027 [info ]: Finished loading project [  0.19s]
+16:10:45.348040 [info ]: Started parsing
+16:10:45.484040 [info ]: Finished parsing [  0.14s]
+16:10:45.522360 [info ]: Started scheduling
+16:10:45.524577 [info ]: Finished scheduling [  0.00s]
+16:10:46.246706 [debug]: Query executed on node unknown:
+SHOW OBJECTS IN SCHEMA "ANALYTICS"."DBT_AYAJNIK" LIMIT 10000
+16:10:46.894827 [info ]: Started building task graph
+16:10:46.897004 [info ]: Finished building task graph [  0.00s]
+16:10:47.250245 [debug]: Query executed on node unknown:
+show terse schemas in database analytics
+    limit 10000
+/* {"app": "dbt", "connection_name": "", "dbt_version": "2.0.0", "profile_name": "default", "target_name": "dev"} */
+16:10:47.256837 [info ]: Started rendering (4 nodes)
+16:10:47.257232 [info ]: Started model dbt_ayajnik.stg_jaffle_shop__orders
+16:10:47.257265 [debug]: Started rendering model dbt_ayajnik.stg_jaffle_shop__orders
+16:10:47.261609 [debug]: Finished rendering [  0.00s] model dbt_ayajnik.stg_jaffle_shop__orders [success]
+16:10:47.263819 [info ]: Started analyzing (4 nodes)
+16:10:47.264329 [debug]: Started analyzing model dbt_ayajnik.stg_jaffle_shop__orders
+16:10:47.347874 [debug]: Finished analyzing [  0.08s] model dbt_ayajnik.stg_jaffle_shop__orders [success]
+16:10:47.348412 [info ]: Started model dbt_ayajnik.fact_orders
+16:10:47.348432 [debug]: Started rendering model dbt_ayajnik.fact_orders
+16:10:47.348470 [info ]: Started model dbt_ayajnik.dim_customers
+16:10:47.348480 [debug]: Started rendering model dbt_ayajnik.dim_customers
+16:10:47.348497 [info ]: Started running (4 nodes)
+16:10:47.348804 [debug]: Started running model dbt_ayajnik.stg_jaffle_shop__orders
+16:10:47.351407 [debug]: Finished rendering [  0.00s] model dbt_ayajnik.dim_customers [success]
+16:10:47.352279 [debug]: Started analyzing model dbt_ayajnik.dim_customers
+16:10:47.367652 [debug]: Finished rendering [  0.02s] model dbt_ayajnik.fact_orders [success]
+16:10:47.368305 [debug]: Started analyzing model dbt_ayajnik.fact_orders
+16:10:47.371233 [debug]: Writing runtime sql for node "model.jaffle_shop.stg_jaffle_shop__orders"
+16:10:47.532624 [debug]: Finished analyzing [  0.18s] model dbt_ayajnik.dim_customers [success]
+16:10:47.899428 [debug]: Query executed on node model.jaffle_shop.stg_jaffle_shop__orders:
+create or replace   view analytics.dbt_ayajnik.stg_jaffle_shop__orders
+  
+   as (
+    select
+        id as order_id,
+        user_id as customer_id,
+        order_date,
+        status, 
+        _etl_loaded_at
+    from raw.jaffle_shop.orders
+  )
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.jaffle_shop.stg_jaffle_shop__orders", "profile_name": "default", "target_name": "dev"} */
+16:10:47.906020 [info ]:  Succeeded [  0.64s] model dbt_ayajnik.stg_jaffle_shop__orders (view)
+16:10:47.907166 [debug]: Finished running [  0.56s] model dbt_ayajnik.stg_jaffle_shop__orders [success]
+16:10:47.907661 [debug]: Started running model dbt_ayajnik.dim_customers
+16:10:47.910899 [debug]: Writing runtime sql for node "model.jaffle_shop.dim_customers"
+16:10:47.967437 [debug]: Query executed on node model.jaffle_shop.fact_orders:
+describe table "ANALYTICS"."DBT_AYAJNIK"."FACT_ORDERS"
+16:10:48.435280 [debug]: Finished analyzing [  1.07s] model dbt_ayajnik.fact_orders [success]
+16:10:48.435796 [debug]: Started running model dbt_ayajnik.fact_orders
+16:10:48.435838 [info ]: Started model dbt_ayajnik.fct_customers
+16:10:48.435855 [debug]: Started rendering model dbt_ayajnik.fct_customers
+16:10:48.440377 [debug]: Invalid value for on_schema_change (none) specified. Setting default value of ignore.
+16:10:48.441943 [debug]: Finished rendering [  0.01s] model dbt_ayajnik.fct_customers [success]
+16:10:48.442436 [info ]: Finished rendering [  1.19s] (4 nodes, 0 skipped, 0 errors)
+16:10:48.444705 [debug]: Started analyzing model dbt_ayajnik.fct_customers
+16:10:48.464359 [debug]: Finished analyzing [  0.02s] model dbt_ayajnik.fct_customers [success]
+16:10:48.467607 [info ]: Finished analyzing [  1.20s] (4 nodes, 0 skipped, 0 errors)
+16:10:49.003649 [debug]: Query executed on node model.jaffle_shop.fact_orders:
+create or replace  temporary view analytics.dbt_ayajnik.fact_orders__dbt_tmp
+  
+   as (
+    
+
+with orders as  (
+    select * from analytics.dbt_ayajnik.stg_jaffle_shop__orders
+),
+
+payments as (
+    select * from analytics.dbt_ayajnik.stg_stripe__payment
+),
+
+order_payments as (
+    select
+        order_id,
+        sum (case when status = 'success' then amount end) as amount
+
+    from payments
+    group by 1
+),
+
+ final as (
+
+    select
+        orders.order_id,
+        orders.customer_id,
+        orders.order_date,
+        coalesce (order_payments.amount, 0) as amount
+
+    from orders
+    left join order_payments using (order_id)
+)
+
+select * from final
+
+  where order_date > (select max(order_date) from analytics.dbt_ayajnik.fact_orders)
+
+order by order_date desc
+  )
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.jaffle_shop.fact_orders", "profile_name": "default", "target_name": "dev"} */
+16:10:49.120702 [debug]: Query executed on node model.jaffle_shop.fact_orders:
+describe table analytics.dbt_ayajnik.fact_orders__dbt_tmp
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.jaffle_shop.fact_orders", "profile_name": "default", "target_name": "dev"} */
+16:10:49.199031 [debug]: Query executed on node model.jaffle_shop.fact_orders:
+describe table analytics.dbt_ayajnik.fact_orders
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.jaffle_shop.fact_orders", "profile_name": "default", "target_name": "dev"} */
+16:10:49.349696 [debug]: Query executed on node model.jaffle_shop.fact_orders:
+describe table ANALYTICS.DBT_AYAJNIK.FACT_ORDERS
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.jaffle_shop.fact_orders", "profile_name": "default", "target_name": "dev"} */
+16:10:49.357040 [debug]: Writing runtime sql for node "model.jaffle_shop.fact_orders"
+16:10:49.475495 [debug]: Query executed on node model.jaffle_shop.fact_orders:
+-- back compat for old kwarg name
+  
+  begin
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.jaffle_shop.fact_orders", "profile_name": "default", "target_name": "dev"} */
+16:10:50.106369 [debug]: Query executed on node model.jaffle_shop.dim_customers:
+create or replace transient  table analytics.dbt_ayajnik.dim_customers
+    
+    
+    
+    as (
+
+with customers as (
+
+select * from analytics.dbt_ayajnik.stg_jaffle_shop__customers
+
+),
+
+orders as (
+
+    select * from analytics.dbt_ayajnik.stg_jaffle_shop__orders
+
+),
+
+customer_orders as (
+
+    select
+        customer_id,
+
+        min(order_date) as first_order_date,
+        max(order_date) as most_recent_order_date,
+        count(order_id) as number_of_orders
+
+    from orders
+
+    group by 1
+
+),
+
+
+final as (
+
+    select
+        customers.customer_id,
+        customers.first_name,
+        customers.last_name,
+        customer_orders.first_order_date,
+        customer_orders.most_recent_order_date,
+        coalesce(customer_orders.number_of_orders, 0) as number_of_orders
+
+    from customers
+
+    left join customer_orders using (customer_id)
+
+)
+
+select * from final
+    )
+
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.jaffle_shop.dim_customers", "profile_name": "default", "target_name": "dev"} */
+16:10:50.107942 [info ]:  Succeeded [  2.38s] model dbt_ayajnik.dim_customers (table)
+16:10:50.109106 [debug]: Finished running [  2.20s] model dbt_ayajnik.dim_customers [success]
+16:10:50.754465 [debug]: Query executed on node model.jaffle_shop.fact_orders:
+
+    
+
+        insert into analytics.dbt_ayajnik.fact_orders ("ORDER_ID", "CUSTOMER_ID", "ORDER_DATE", "AMOUNT")
+        (
+            select "ORDER_ID", "CUSTOMER_ID", "ORDER_DATE", "AMOUNT"
+            from analytics.dbt_ayajnik.fact_orders__dbt_tmp
+        )
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.jaffle_shop.fact_orders", "profile_name": "default", "target_name": "dev"} */
+16:10:50.975559 [debug]: Query executed on node model.jaffle_shop.fact_orders:
+
+    commit
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.jaffle_shop.fact_orders", "profile_name": "default", "target_name": "dev"} */
+16:10:50.977395 [debug]: Applying DROP to: analytics.dbt_ayajnik.fact_orders__dbt_tmp
+16:10:51.101066 [debug]: Query executed on node model.jaffle_shop.fact_orders:
+drop view if exists analytics.dbt_ayajnik.fact_orders__dbt_tmp cascade
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.jaffle_shop.fact_orders", "profile_name": "default", "target_name": "dev"} */
+16:10:51.110957 [info ]:  Succeeded [  3.76s] model dbt_ayajnik.fact_orders (incremental)
+16:10:51.114257 [debug]: Finished running [  2.68s] model dbt_ayajnik.fact_orders [success]
+16:10:51.114614 [debug]: Started running model dbt_ayajnik.fct_customers
+16:10:51.119330 [debug]: Writing runtime sql for node "model.jaffle_shop.fct_customers"
+16:10:51.992017 [debug]: Query executed on node model.jaffle_shop.fct_customers:
+create or replace transient  table analytics.dbt_ayajnik.fct_customers
+    
+    
+    
+    as (with customers as (
+    select * from analytics.dbt_ayajnik.stg_jaffle_shop__customers
+),
+orders as (
+    select * from analytics.dbt_ayajnik.fact_orders
+),
+customer_orders as (
+    select
+        customer_id,
+        min (order_date) as first_order_date,
+        max (order_date) as most_recent_order_date,
+        count(order_id) as number_of_orders,
+        sum(amount) as lifetime_value
+    from orders
+    group by 1
+),
+ final as (
+    select
+        customers.customer_id,
+        customers.first_name,
+        customers.last_name,
+        customer_orders.first_order_date,
+        customer_orders.most_recent_order_date,
+        coalesce (customer_orders.number_of_orders, 0) as number_of_orders,
+        customer_orders.lifetime_value
+    from customers
+    left join customer_orders using (customer_id)
+)
+select * from final
+    )
+
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "model.jaffle_shop.fct_customers", "profile_name": "default", "target_name": "dev"} */
+16:10:51.993762 [info ]:  Succeeded [  0.90s] model dbt_ayajnik.fct_customers (table)
+16:10:51.995252 [debug]: Finished running [  0.88s] model dbt_ayajnik.fct_customers [success]
+16:10:51.995463 [info ]: Finished running [  4.65s] (4 nodes, 0 skipped, 0 errors)
+16:10:52.079645 [info ]: 
+==================== Execution Summary =====================
+Finished 'run' successfully for target 'dev' [6.9s]
+Processed: 4 models
+Summary: 4 total | 4 success
+==================== 2025-12-24T16:11:55.485960Z | 019b5121-9ad9-7292-9935-679cb9949d52 ====================
+16:11:55.486169 [info ]: dbt-fusion 2.0.0-preview.89
+16:11:55.487224 [info ]: Started loading project
+16:11:55.493260 [info ]: Loading ~/.dbt/profiles.yml
+16:11:55.703419 [info ]: Finished loading project [  0.22s]
+16:11:55.704260 [info ]: Started parsing
+16:11:55.815592 [info ]: Finished parsing [  0.11s]
+16:11:55.840014 [info ]: Started scheduling
+16:11:55.842416 [info ]: Finished scheduling [  0.00s]
+16:11:56.027330 [info ]: Started building task graph
+16:11:56.027809 [info ]: Finished building task graph [  0.00s]
+16:11:56.750850 [debug]: Query executed on node unknown:
+show terse schemas in database analytics
+    limit 10000
+/* {"app": "dbt", "connection_name": "", "dbt_version": "2.0.0", "profile_name": "default", "target_name": "dev"} */
+16:11:56.849846 [debug]: Query executed on node unknown:
+create schema if not exists analytics.dbt_ayajnik_snapshots
+/* {"app": "dbt", "connection_name": "", "dbt_version": "2.0.0", "profile_name": "default", "target_name": "dev"} */
+16:11:56.850467 [info ]: Started rendering (1 nodes)
+16:11:56.851622 [info ]: Started snapshot dbt_ayajnik_snapshots.orders_snapshot
+16:11:56.851682 [debug]: Started rendering snapshot dbt_ayajnik_snapshots.orders_snapshot
+16:11:56.860486 [debug]: Finished rendering [  0.01s] snapshot dbt_ayajnik_snapshots.orders_snapshot [success]
+16:11:56.861416 [info ]: Finished rendering [  0.01s] (1 nodes, 0 skipped, 0 errors)
+16:11:56.862245 [info ]: Started analyzing (1 nodes)
+16:11:56.862516 [debug]: Started analyzing snapshot dbt_ayajnik_snapshots.orders_snapshot
+16:11:56.949953 [debug]: Finished analyzing [  0.09s] snapshot dbt_ayajnik_snapshots.orders_snapshot [success]
+16:11:56.950811 [info ]: Finished analyzing [  0.09s] (1 nodes, 0 skipped, 0 errors)
+16:11:56.951900 [info ]: Started running (1 nodes)
+16:11:56.952158 [debug]: Started running snapshot dbt_ayajnik_snapshots.orders_snapshot
+16:11:57.321990 [debug]: Query executed on node snapshot.jaffle_shop.orders_snapshot:
+SHOW OBJECTS IN SCHEMA "ANALYTICS"."DBT_AYAJNIK_SNAPSHOTS" LIMIT 10000
+16:11:57.464923 [debug]: Query executed on node snapshot.jaffle_shop.orders_snapshot:
+select * from (
+        
+    
+
+    select *,
+        md5(coalesce(cast(id as varchar ), '')
+         || '|' || coalesce(cast(to_timestamp_ntz(convert_timezone('UTC', current_timestamp())) as varchar ), '')
+        ) as dbt_scd_id,
+        to_timestamp_ntz(convert_timezone('UTC', current_timestamp())) as dbt_updated_at,
+        to_timestamp_ntz(convert_timezone('UTC', current_timestamp())) as dbt_valid_from,
+        
+  
+  coalesce(nullif(to_timestamp_ntz(convert_timezone('UTC', current_timestamp())), to_timestamp_ntz(convert_timezone('UTC', current_timestamp()))), null)
+  as dbt_valid_to
+from (
+        select * from raw.jaffle_shop.orders
+    ) sbq
+
+
+
+    ) as __dbt_sbq
+    where false
+    limit 0
+
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "snapshot.jaffle_shop.orders_snapshot", "profile_name": "default", "target_name": "dev"} */
+16:11:57.536642 [debug]: Query executed on node snapshot.jaffle_shop.orders_snapshot:
+select * from (
+        select to_timestamp_ntz(convert_timezone('UTC', current_timestamp())) as dbt_snapshot_time
+    ) as __dbt_sbq
+    where false
+    limit 0
+
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "snapshot.jaffle_shop.orders_snapshot", "profile_name": "default", "target_name": "dev"} */
+16:11:57.537618 [debug]: Writing runtime sql for node "snapshot.jaffle_shop.orders_snapshot"
+16:11:58.575648 [debug]: Query executed on node snapshot.jaffle_shop.orders_snapshot:
+create or replace transient  table analytics.dbt_ayajnik_snapshots.orders_snapshot
+    
+    
+    
+    as (
+    
+
+    select *,
+        md5(coalesce(cast(id as varchar ), '')
+         || '|' || coalesce(cast(to_timestamp_ntz(convert_timezone('UTC', current_timestamp())) as varchar ), '')
+        ) as dbt_scd_id,
+        to_timestamp_ntz(convert_timezone('UTC', current_timestamp())) as dbt_updated_at,
+        to_timestamp_ntz(convert_timezone('UTC', current_timestamp())) as dbt_valid_from,
+        
+  
+  coalesce(nullif(to_timestamp_ntz(convert_timezone('UTC', current_timestamp())), to_timestamp_ntz(convert_timezone('UTC', current_timestamp()))), null)
+  as dbt_valid_to
+from (
+        select * from raw.jaffle_shop.orders
+    ) sbq
+
+
+
+    )
+
+/* {"app": "dbt", "dbt_version": "2.0.0", "node_id": "snapshot.jaffle_shop.orders_snapshot", "profile_name": "default", "target_name": "dev"} */
+16:11:58.582939 [info ]:  Succeeded [  1.73s] snapshot dbt_ayajnik_snapshots.orders_snapshot (table)
+16:11:58.585813 [debug]: Finished running [  1.63s] snapshot dbt_ayajnik_snapshots.orders_snapshot [success]
+16:11:58.586580 [info ]: Finished running [  1.63s] (1 nodes, 0 skipped, 0 errors)
+16:11:58.684232 [info ]: 
+==================== Execution Summary =====================
+Finished 'snapshot' successfully for target 'dev' [3.2s]
+Processed: 1 snapshot
+Summary: 1 total | 1 success
